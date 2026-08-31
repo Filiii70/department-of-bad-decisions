@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Official seal of the Department of Bad Decisions, Solana Division">
+  <defs>
+    <path id="sealTop" d="M100,100 m-74,0 a74,74 0 1,1 148,0" fill="none"/>
+    <path id="sealBottom" d="M100,100 m74,0 a74,74 0 1,1 -148,0" fill="none"/>
+  </defs>
+  <g fill="none" stroke="#b3261e" stroke-width="3">
+    <circle cx="100" cy="100" r="92"/>
+    <circle cx="100" cy="100" r="80"/>
+    <circle cx="100" cy="100" r="52"/>
+  </g>
+  <g fill="#b3261e" font-family="Arial Narrow, Arial, sans-serif" font-weight="bold" letter-spacing="3">
+    <text font-size="13"><textPath href="#sealTop" startOffset="50%" text-anchor="middle">DEPARTMENT OF BAD DECISIONS</textPath></text>
+    <text font-size="13"><textPath href="#sealBottom" startOffset="50%" text-anchor="middle">★ SOLANA DIVISION ★</textPath></text>
+  </g>
+  <!-- central emblem: a weary star over a stamp -->
+  <g transform="translate(100 100)">
+    <path d="M0,-34 L9,-11 L33,-11 L14,4 L21,28 L0,13 L-21,28 L-14,4 L-33,-11 L-9,-11 Z" fill="none" stroke="#b3261e" stroke-width="3" stroke-linejoin="round"/>
+    <text y="6" text-anchor="middle" font-family="Courier New, monospace" font-weight="bold" font-size="12" fill="#b3261e">DBD</text>
+  </g>
+</svg>

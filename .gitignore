@@ -1,0 +1,54 @@
+# === Secrets: never commit anything that can sign or authenticate ===
+.env
+.env.*
+!.env.example
+*.env
+secrets/
+*.key
+*.pem
+*.p12
+*.pfx
+id_*
+id_*.json
+
+# Solana / wallet signing material (never commit)
+keypair.json
+*-keypair.json
+*keypair*.json
+wallet.json
+*.wallet
+phantom-export*
+seed.txt
+mnemonic.txt
+*.mnemonic
+
+# Generic credential-looking files
+credentials.json
+service-account*.json
+*.pkcs8
+
+# === Build output ===
+site/dist/
+dist/
+build/
+
+# === Generated monitoring / report artifacts ===
+monitoring/output/
+*.report.json
+*.report.txt
+
+# === Node ===
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# === OS / editor noise ===
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*~

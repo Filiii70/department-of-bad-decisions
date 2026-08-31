@@ -1,0 +1,27 @@
+{
+  "config_version": "1.0.0",
+  "last_updated": "2026-08-30T00:00:00Z",
+
+  "project_name": "Department of Bad Decisions",
+  "ticker": "DBD",
+  "network": "solana",
+
+  "launch_status": "prelaunch",
+  "launch_platform": "pump.fun",
+  "launch_timestamp": null,
+
+  "official_mint": "NOT_YET_ISSUED",
+
+  "creator_wallet": "REPLACE_ME_CREATOR_WALLET",
+  "treasury_wallet": "REPLACE_ME_TREASURY_WALLET",
+  "operational_wallet": "",
+
+  "official_x": "https://x.com/REPLACE_ME_DBD",
+  "official_telegram": "https://t.me/REPLACE_ME_DBD",
+  "official_github": "https://github.com/REPLACE_ME_DBD/department-of-bad-decisions",
+  "official_website": "https://REPLACE_ME_DBD.example",
+
+  "explorer_base_url": "https://solscan.io",
+
+  "disclaimer_text": "Department of Bad Decisions ($DBD) is a parody meme-token project. $DBD has no promised utility, guaranteed value, guaranteed liquidity, or promise of financial return. Nothing published by the Department constitutes financial, investment, legal, or tax advice. Digital assets are highly speculative and may lose all value. Verify the official mint address through this portal before interacting with any token claiming to be $DBD. The Department will never ask you for your seed phrase or private key."
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" role="img" aria-label="APPROVED stamp">
+  <g transform="rotate(-7 120 60)" opacity="0.9">
+    <rect x="10" y="30" width="220" height="60" rx="8" fill="none" stroke="#b3261e" stroke-width="5"/>
+    <rect x="18" y="38" width="204" height="44" rx="5" fill="none" stroke="#b3261e" stroke-width="2"/>
+    <text x="120" y="72" text-anchor="middle" font-family="Courier New, monospace" font-size="34" font-weight="bold" fill="#b3261e" letter-spacing="6">APPROVED</text>
+  </g>
+</svg>

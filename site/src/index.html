@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Department of Bad Decisions ($DBD) - Public Information Portal</title>
+  <meta name="description" content="Department of Bad Decisions, Solana Division. Your judgement has been reviewed. It was terrible. APPROVED. A read-only public records portal for the $DBD meme coin." />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <script>document.documentElement.className += ' js';</script>
+</head>
+<body>
+  <div class="portal">
+
+    <!-- MASTHEAD -->
+    <header class="masthead">
+      <img class="seal" src="./assets/seal.svg" alt="Official seal of the Department of Bad Decisions" />
+      <div>
+        <div class="m-title">Department of Bad Decisions</div>
+        <div class="m-sub">Solana Division &middot; Public Information Portal</div>
+      </div>
+      <div class="m-right">
+        <div class="doc-no">FILE NO. DBD-SOL-0001</div>
+        <div>ISSUED UNDER PROTEST</div>
+        <div>RETAIN FOR YOUR RECORDS</div>
+      </div>
+    </header>
+
+    <!-- NAV (file tabs) -->
+    <nav class="filetabs" aria-label="Department sections">
+      <a class="filetab" href="#public-records">Public Records</a>
+      <a class="filetab" href="#token-file">Token File</a>
+      <a class="filetab" href="#bulletins">Bulletins</a>
+      <a class="filetab" href="#transparency">Transparency</a>
+      <a class="filetab" href="#fraud-office">Fraud Office</a>
+    </nav>
+
+    <div id="load-error" class="load-error"></div>
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Department of Bad Decisions">
+      <span class="h-classified">FOR PUBLIC RELEASE &middot; NO APPOINTMENT REQUIRED</span>
+      <div class="h-copy">
+        <span class="division">Solana Division</span>
+        <h1>Department<br />of Bad<br />Decisions</h1>
+        <p class="core"><strong>Your judgement has been reviewed.</strong><br />It was terrible.</p>
+      </div>
+      <div class="h-art">
+        <div class="clerk-panel">
+          <div class="clerk-frame">
+            <img src="./assets/clerk.png" alt="The Clerk: the exhausted Department bureaucrat, thin weary face, dark eye bags, messy hair, loose tie, pens in his shirt pocket, buried in paperwork under a desk lamp." />
+          </div>
+          <div class="clerk-caption">
+            <span class="cc-id">FIG. 1</span>
+            <span>The Clerk &middot; on duty, regrettably</span>
+          </div>
+        </div>
+        <div class="stamp stamp-giant" role="img" aria-label="APPROVED">
+          <span class="micro">Official use only</span>
+          <span class="stamp-main">Approved</span>
+          <span class="micro">Do not distribute</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFICIAL NOTICE -->
+    <section class="section">
+      <div class="gov-form">
+        <div class="form-head">
+          <div class="fh-left">
+            <div class="fh-id">PUBLIC NOTICE</div>
+            <div class="fh-title">Notice to the Public</div>
+          </div>
+          <div class="fh-meta">POSTED BY ORDER<br />OF THE DEPARTMENT</div>
+        </div>
+        <div class="form-body">
+          <p class="core" id="official-notice" style="border-color:var(--red);">
+            The Department does not recommend purchasing meme coins.<br />
+            Unfortunately, the Department is preparing to issue one.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOKEN FILE (FORM DBD-001) -->
+    <section class="section" id="token-file" aria-labelledby="tf-title">
+      <div class="sec-kicker">Section 01 &middot; Token File</div>
+      <div class="gov-form">
+        <div class="form-head">
+          <div class="fh-left">
+            <div class="fh-id">FORM DBD-001</div>
+            <div class="fh-title" id="tf-title">Official Token Record</div>
+          </div>
+          <div class="fh-meta">CLASSIFICATION: PUBLIC<br />DEPARTMENT STATUS: QUESTIONABLE</div>
+        </div>
+        <div class="form-body">
+          <div class="field"><span class="f-label">Name</span><span class="f-value" id="rec-name">&hellip;</span></div>
+          <div class="field"><span class="f-label">Ticker</span><span class="f-value" id="rec-ticker">&hellip;</span></div>
+          <div class="field"><span class="f-label">Network</span><span class="f-value" id="rec-network">&hellip;</span></div>
+          <div class="field"><span class="f-label">Status</span><span class="f-value" id="rec-status">&hellip;</span></div>
+          <div class="field"><span class="f-label">Official Mint</span><span class="f-value addr" id="rec-mint">&hellip;</span></div>
+          <div class="field"><span class="f-label">Classification</span><span class="f-value"><span class="status classified">Public</span></span></div>
+          <div class="field"><span class="f-label">Department Status</span><span class="f-value"><span class="status">Questionable</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PUBLIC RECORDS (FORM DBD-002) -->
+    <section class="section" id="public-records" aria-labelledby="pr-title">
+      <div class="sec-kicker">Section 02 &middot; Public Records</div>
+      <div class="gov-form">
+        <div class="form-head">
+          <div class="fh-left">
+            <div class="fh-id">FORM DBD-002</div>
+            <div class="fh-title" id="pr-title">Register of Public Wallets &amp; Channels</div>
+          </div>
+          <div class="fh-meta">FILED WITH THE<br />OFFICE OF RECORDS</div>
+        </div>
+        <div class="form-body">
+          <div class="field"><span class="f-label">Creator Wallet</span><span class="f-value addr" id="pub-creator">&hellip;</span></div>
+          <div class="field"><span class="f-label">Treasury Wallet</span><span class="f-value addr" id="pub-treasury">&hellip;</span></div>
+          <div class="field" id="pub-operational-row"><span class="f-label">Operational Wallet</span><span class="f-value addr" id="pub-operational">&hellip;</span></div>
+          <div class="field"><span class="f-label">Official X</span><span class="f-value" id="pub-x">&hellip;</span></div>
+          <div class="field"><span class="f-label">Official Telegram</span><span class="f-value" id="pub-telegram">&hellip;</span></div>
+          <div class="field"><span class="f-label">GitHub</span><span class="f-value" id="pub-github">&hellip;</span></div>
+          <div class="field"><span class="f-label">Mint Address</span><span class="f-value addr" id="pub-mint">&hellip;</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRAUD OFFICE (Case File) -->
+    <section class="section" id="fraud-office" aria-labelledby="fo-title">
+      <div class="sec-kicker">Section 03 &middot; Office of Fraud Prevention</div>
+      <div class="case-file" data-tab="Case File No. DBD-419">
+        <h2 id="fo-title">Case File: Fraud Prevention</h2>
+        <div class="cf-body">
+          <ul>
+            <li><span data-name>DBD</span> has exactly <strong>one</strong> official mint address. It is published only on this portal.</li>
+            <li>Any other token using the same name or the ticker <span data-ticker>$DBD</span> is <strong>not official</strong>. File it under "impostor."</li>
+            <li>Never trust a mint address posted outside official channels without verifying it against this portal.</li>
+            <li>The Department will <strong>never</strong> ask you for your seed phrase or private key. Anyone who does is committing fraud, not paperwork.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BULLETINS -->
+    <section class="section" id="bulletins" aria-labelledby="bl-title">
+      <div class="sec-kicker" id="bl-title">Section 04 &middot; Department Bulletins</div>
+      <div class="bulletins">
+
+        <article class="memo memo--slip">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="memo-kicker">Bad Decision of the Day</div>
+          <p class="memo-quote">&ldquo;I read the whitepaper. It was one sentence. I aped anyway.&rdquo;</p>
+          <div class="memo-foot">
+            <span class="memo-ref">REF: BD-0007</span>
+            <span class="stamp small"><span class="stamp-main">Approved</span></span>
+          </div>
+        </article>
+
+        <article class="memo memo--memorandum">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="memo-head">
+            <div>TO: <b>All Citizens</b></div>
+            <div>FROM: <b>The Clerk</b></div>
+            <div>RE: <b>Finality of Decisions</b></div>
+          </div>
+          <p class="memo-quote">&ldquo;All decisions are final, especially the bad ones. Refunds are processed by the Department of Wishful Thinking, which does not exist.&rdquo;</p>
+          <div class="memo-foot"><span class="memo-ref">MEMORANDUM DBD-002</span></div>
+        </article>
+
+        <article class="memo memo--note">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="memo-kicker">Sticky Note (Unfiled)</div>
+          <p class="memo-quote">&ldquo;Coffee machine broken. Approved anyway.&rdquo;</p>
+          <div class="memo-foot"><span class="memo-ref">FOUND ON DESK</span></div>
+        </article>
+
+        <article class="memo memo--slip">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="memo-kicker">Department Notice</div>
+          <p class="memo-quote">&ldquo;Subject applied sound judgement exactly once. Application denied for being out of character.&rdquo;</p>
+          <div class="memo-foot">
+            <span class="memo-ref">CASE #0000</span>
+            <span class="stamp small"><span class="stamp-main">Approved</span></span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- TRANSPARENCY (FORM DBD-003) -->
+    <section class="section" id="transparency" aria-labelledby="tr-title">
+      <div class="sec-kicker">Section 05 &middot; Office of Transparency</div>
+      <div class="gov-form">
+        <div class="form-head">
+          <div class="fh-left">
+            <div class="fh-id">FORM DBD-003</div>
+            <div class="fh-title" id="tr-title">Public Records Registry</div>
+          </div>
+          <div class="fh-meta">MAINTAINED FOR<br />PUBLIC INSPECTION</div>
+        </div>
+        <div class="form-body">
+          <div class="field"><span class="f-label">GitHub</span><span class="f-value" id="t-github">&hellip;</span></div>
+          <div class="field"><span class="f-label">Launch Status</span><span class="f-value" id="t-status">&hellip;</span></div>
+          <div class="field"><span class="f-label">Config Version</span><span class="f-value" id="t-version">&hellip;</span></div>
+          <div class="field"><span class="f-label">Last Updated</span><span class="f-value" id="t-updated">&hellip;</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEGAL (collapsible FORM DBD-000) -->
+    <section class="legal" aria-labelledby="legal-title">
+      <details>
+        <summary>
+          <span><span class="l-id">FORM DBD-000</span> &middot; <span id="legal-title">Mandatory Boring Legal Document</span></span>
+          <span class="l-toggle"></span>
+        </summary>
+        <div class="l-body" id="disclaimer">&hellip;</div>
+      </details>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="dept-footer">
+      <img class="seal" src="./assets/seal.svg" alt="Department seal" />
+      <div>
+        <div class="f-title">Department of Bad Decisions &middot; Solana Division</div>
+        <div class="f-sub">Public Information Office</div>
+      </div>
+      <div class="f-rules">
+        No wallet connection.<br />
+        No tracking.<br />
+        No login.
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./scripts/site.js"></script>
+</body>
+</html>

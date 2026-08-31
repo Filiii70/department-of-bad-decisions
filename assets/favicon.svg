@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DBD stamp">
+  <rect width="64" height="64" rx="6" fill="#f4efe1"/>
+  <g transform="rotate(-8 32 32)">
+    <rect x="8" y="22" width="48" height="20" rx="3" fill="none" stroke="#b3261e" stroke-width="3"/>
+    <text x="32" y="36" text-anchor="middle" font-family="Courier New, monospace" font-size="12" font-weight="bold" fill="#b3261e" letter-spacing="1">DBD</text>
+  </g>
+</svg>
