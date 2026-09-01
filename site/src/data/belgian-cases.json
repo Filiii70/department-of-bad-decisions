@@ -1,0 +1,87 @@
+[
+  {
+    "caseNumber": "DBD-BE-0001",
+    "title": "Oosterweel Link (Antwerp)",
+    "subtitle": "Closing the Antwerp ring road, one rising estimate at a time",
+    "status": "UNDER REVIEW",
+    "institution": "Flemish Government · Lantis (project company)",
+    "governmentLevel": "FLEMISH",
+    "location": "Antwerp",
+    "date": "2026-03-26",
+    "year": 2026,
+    "people": [],
+    "politicalParties": [],
+    "category": "INFRASTRUCTURE",
+    "intended": "Close the Antwerp ring road (R1) and improve mobility around the city, as the central works of the Flemish 'Toekomstverbond' programme.",
+    "actual": "Cost estimates have risen over successive years. In March 2026 the effective construction cost was put at €10 billion (2024 price level); the project's projected accounting value is €13.6 billion by 2034, and the Court of Audit warns the financing is 'strongly problematic'.",
+    "summary": "The Oosterweelverbinding is the final phase of closing Antwerp's ring road (R1), part of the Flemish 'Toekomstverbond' programme and delivered through the project company Lantis (formerly BAM) on behalf of the Flemish Government. In its March 2026 progress report to the Flemish Parliament, Lantis and the responsible minister put the effective construction cost at €10 billion at 2024 price level, described as unchanged from the previous year. Lantis's financial model projects an accounting value of €13.6 billion by 2034 at full completion, a figure that (per the government) reflects subordinated lending, risk financing and indexation rather than additional construction cost. The Court of Audit (Rekenhof) has repeatedly reported that the financing is 'strongly problematic', flagging a projected financing shortfall of about €2.3 billion above a loan ceiling already raised from €3.6 billion to €6.7 billion, and warning that expected toll revenues after 2034 are overestimated. Earlier estimates for the project were reported to be far lower (around €7 billion); an exact original budget figure is not documented here.",
+    "publicMoney": {
+      "currency": "EUR",
+      "originalBudget": "NOT_DOCUMENTED",
+      "currentEstimate": 10000000000,
+      "finalCost": "NOT_DOCUMENTED",
+      "documentedLoss": "NOT_DOCUMENTED",
+      "currentStatus": "Under construction. Construction cost €10bn (2024 price level, Lantis/Flemish Government); projected accounting value €13.6bn by 2034; Court of Audit flags a projected financing shortfall of about €2.3bn above the raised €6.7bn loan ceiling."
+    },
+    "documentedOutcome": "Ongoing. The Court of Audit warns of budgetary shortfalls and a drastic increase in Flemish debt levels if no additional income or savings are found, and considers expected toll revenues after 2034 to be overestimated.",
+    "timeline": [
+      { "date": "2025-03-13", "event": "The Court of Audit again warns that the Oosterweel financing is 'strongly problematic'." },
+      { "date": "2026-03-24", "event": "The Court of Audit reports that expected toll revenues will not be sufficient to cover the project's financing." },
+      { "date": "2026-03-26", "event": "Annual Toekomstverbond progress report to the Flemish Parliament: construction cost held at €10 billion (2024), projected accounting value €13.6 billion by 2034." }
+    ],
+    "sources": [
+      {
+        "sourceName": "Lantis / Oosterweelverbinding (official project communication)",
+        "sourceTitle": "Bouwkosten Oosterweelverbinding blijven op 10 miljard euro",
+        "sourceType": "GOVERNMENT",
+        "sourceURL": "https://www.oosterweelverbinding.be/nieuws/bouwkosten-oosterweelverbinding-blijven-op-10-miljard-euro",
+        "publicationDate": "2026-03-27",
+        "accessDate": "2026-08-31"
+      },
+      {
+        "sourceName": "Vlaams Parlement",
+        "sourceTitle": "Dossier: Oosterweelverbinding – Toekomstverbond",
+        "sourceType": "PARLIAMENT",
+        "sourceURL": "https://www.vlaamsparlement.be/nl/parlementair-werk/dossiers/dossiers/oosterweelverbinding-toekomstverbond",
+        "accessDate": "2026-08-31"
+      },
+      {
+        "sourceName": "VRT NWS (reporting the Court of Audit / Rekenhof)",
+        "sourceTitle": "Oosterweelverbinding loopt op tot 13,6 miljard euro, kritiek is fors",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.vrt.be/vrtnws/nl/2026/03/26/oosterweelverbinding-nog-duurder-kritiek-rekenhof-en-bogdan-van/",
+        "publicationDate": "2026-03-26",
+        "accessDate": "2026-08-31"
+      },
+      {
+        "sourceName": "VRT NWS (reporting the Court of Audit / Rekenhof)",
+        "sourceTitle": "Tolinkomsten zullen niet voldoende zijn om Oosterweel te betalen, zegt Rekenhof",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.vrt.be/vrtnws/nl/2026/03/24/oosterweel-antwerpen-rekenhof-tolinkomsten-niet-voldoende/",
+        "publicationDate": "2026-03-24",
+        "accessDate": "2026-08-31"
+      },
+      {
+        "sourceName": "VRT NWS (reporting the Court of Audit / Rekenhof)",
+        "sourceTitle": "Rekenhof trekt nog maar eens aan de alarmbel over Oosterweel: 'Financiering nog altijd sterk problematisch'",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.vrt.be/vrtnws/nl/2025/03/13/rekenhof-trekt-nog-maar-eens-aan-de-alarmbel-over-oosterweel/",
+        "publicationDate": "2025-03-13",
+        "accessDate": "2026-08-31"
+      }
+    ],
+    "clerkAssessment": {
+      "financialJudgement": "Questionable, at €10 billion and counting.",
+      "administrativeCompetence": "Under administrative review, indefinitely.",
+      "paperworkGenerated": "Exceptional. Possibly the true deliverable.",
+      "accountabilityStatus": "Please contact another department, or the next generation.",
+      "lessonsLearned": "Pending.",
+      "departmentVerdict": "APPROVED."
+    },
+    "departmentNotes": "The Department admires any road whose financing model requires a projected accounting value larger than several small economies. Filed under 'mobility, eventually'.",
+    "illustration": null,
+    "tags": ["infrastructure", "antwerp", "budget-overrun", "court-of-audit", "toekomstverbond"],
+    "publishedDate": "2026-08-31",
+    "updatedDate": "2026-08-31"
+  }
+]

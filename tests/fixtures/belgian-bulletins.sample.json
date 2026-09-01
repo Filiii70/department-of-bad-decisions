@@ -1,0 +1,18 @@
+[
+  {
+    "sample": true,
+    "caseNumber": "DBD-BE-B-0001",
+    "subject": "SAMPLE BULLETIN — Layout Demonstration Only",
+    "date": "2026-02-01",
+    "publicRecord": "Fictional public record for layout preview. Contains no real facts.",
+    "departmentResponse": "The Department acknowledges this fictional event and files it under 'entirely hypothetical'.",
+    "sources": [
+      {
+        "sourceName": "DEVELOPMENT SAMPLE (not a real source)",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://example.org/sample-bulletin"
+      }
+    ],
+    "tags": ["sample", "development"]
+  }
+]

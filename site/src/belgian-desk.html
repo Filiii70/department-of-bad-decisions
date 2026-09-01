@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belgian Desk - Department of Bad Decisions ($DBD)</title>
+  <meta name="description" content="The Belgian Desk: a satirical public-record archive by the Department of Bad Decisions. Public facts, sourced. Department commentary, obvious satire. Properly filed." />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/belgian-desk.css" />
+  <script>document.documentElement.className += ' js';</script>
+</head>
+<body class="belgian">
+  <div class="portal">
+
+    <!-- MASTHEAD (shared DBD identity) -->
+    <header class="masthead">
+      <img class="seal" src="./assets/seal.svg" alt="Official seal of the Department of Bad Decisions" />
+      <div>
+        <div class="m-title">Department of Bad Decisions</div>
+        <div class="m-sub">Belgian Desk &middot; Public Records Office</div>
+      </div>
+      <div class="m-right">
+        <div class="doc-no">FILE NO. DBD-BE-ARCHIVE</div>
+        <div>PUBLIC FACTS. POOR JUDGEMENT.</div>
+        <div>PROPERLY FILED.</div>
+      </div>
+    </header>
+
+    <!-- NAV (shared file tabs; Belgian Desk active) -->
+    <nav class="filetabs" aria-label="Department sections">
+      <a class="filetab" href="./index.html#public-records">Public Records</a>
+      <a class="filetab" href="./index.html#token-file">Token File</a>
+      <a class="filetab" href="./index.html#bulletins">Bulletins</a>
+      <a class="filetab" href="./index.html#transparency">Transparency</a>
+      <a class="filetab" href="./index.html#fraud-office">Fraud Office</a>
+      <a class="filetab filetab--belgian" href="./belgian-desk.html" aria-current="page">Belgian Desk</a>
+      <a class="filetab" href="./eu-desk.html">EU Desk</a>
+    </nav>
+
+    <div id="load-error" class="load-error"></div>
+
+    <!-- ============ ARCHIVE VIEW (default) ============ -->
+    <div id="be-archive-view">
+
+      <!-- HERO -->
+      <section class="be-header" aria-label="The Belgian Desk">
+        <div class="flag" aria-hidden="true"></div>
+        <div class="be-head-inner">
+          <div class="hh-copy">
+            <div class="be-kicker">Department of Bad Decisions</div>
+            <h1>Belgian Desk</h1>
+            <p class="be-primary">Public facts. <span>Poor judgement.</span> Properly filed.</p>
+            <p class="be-intro">&ldquo;Belgium has been generating source material since 1830. The Department merely files the paperwork.&rdquo;</p>
+          </div>
+          <div class="be-idmark" role="img" aria-label="DBD Belgian Desk, Public Records Office">
+            <div class="idm-top">DBD</div>
+            <div class="idm-mid">Belgian Desk</div>
+            <div class="idm-bot">Public Records Office</div>
+            <div class="be-tricolor"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- THE CLERK (canonical, unchanged) -->
+      <section class="be-clerkstrip">
+        <div class="be-clerk-thumb">
+          <img src="./assets/clerk.png" alt="The Clerk, the permanent face of the Department of Bad Decisions." />
+        </div>
+        <div class="bc-text">
+          <div class="bc-name">The Clerk &middot; Belgian Desk, reluctantly</div>
+          <p>Same exhausted bureaucrat. New archive. He has reviewed Belgium's public record and stamped it, as he stamps everything, APPROVED.</p>
+        </div>
+      </section>
+
+      <!-- EDITORIAL NOTICE (available on every case too) -->
+      <section class="editorial-notice" aria-label="Editorial notice">
+        <span class="en-badge">Editorial Notice</span>
+        <p id="editorial-notice-text">Belgian Desk combines documented public information with obvious bureaucratic satire. Factual statements are sourced. Department assessments, stamps and commentary are editorial satire.</p>
+      </section>
+
+      <div id="be-sample-banner-slot"></div>
+
+      <!-- ARCHIVE -->
+      <section class="be-section case-archive" id="archive" aria-labelledby="archive-h">
+        <div class="be-section-head">
+          <h2 id="archive-h">Central Archive of Questionable Judgement</h2>
+          <span class="bsh-meta" id="archive-count">0 files</span>
+        </div>
+        <div class="be-filters" id="be-filters" aria-label="Filter cases"></div>
+        <div class="be-grid" id="be-archive-grid"></div>
+      </section>
+
+      <!-- BULLETINS -->
+      <section class="be-section" id="be-bulletins-section" aria-labelledby="bebul-h">
+        <div class="be-section-head">
+          <h2 id="bebul-h">Department Bulletins &middot; Belgium</h2>
+          <span class="bsh-meta">Short files</span>
+        </div>
+        <div id="be-bulletins"></div>
+      </section>
+
+      <!-- SUBMIT CONCEPT (no backend) -->
+      <section class="be-submit" id="be-submit" aria-labelledby="submit-h">
+        <h2 id="submit-h">Submit a Bad Decision</h2>
+        <p>Found something the Department should file? Belgium is large and the Clerk is only one man.</p>
+        <p class="submit-fields">A future submission will ask only for: a public source URL &middot; a short explanation &middot; the institution &middot; the date. Documented public matters only.</p>
+        <p class="submit-note" id="submit-note">No submission system is built yet: no database, no login, no form backend, no anonymous accusations about private individuals. For now, refer documented cases to the Department's official public channels.</p>
+      </section>
+    </div>
+
+    <!-- ============ CASE DETAIL VIEW (shown when ?case=DBD-BE-XXXX) ============ -->
+    <div id="be-case-view" style="display:none;">
+      <div class="be-detail-topbar">
+        <a class="be-back" href="./belgian-desk.html">&larr; Back to Archive</a>
+        <span class="be-share-hint">Case file &middot; built to be screenshot-shared</span>
+      </div>
+      <div id="be-case-detail"></div>
+    </div>
+
+    <!-- FOOTER (shared) -->
+    <footer class="dept-footer">
+      <img class="seal" src="./assets/seal.svg" alt="Department seal" />
+      <div>
+        <div class="f-title">Department of Bad Decisions &middot; Belgian Desk</div>
+        <div class="f-sub">Public Records Office</div>
+      </div>
+      <div class="f-rules">
+        No wallet connection.<br />
+        No tracking. No login.<br />
+        Facts sourced. Satire obvious.
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="./scripts/belgian-desk.js"></script>
+</body>
+</html>

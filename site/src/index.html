@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Department of Bad Decisions ($DBD) - Public Information Portal</title>
-  <meta name="description" content="Department of Bad Decisions, Solana Division. Your judgement has been reviewed. It was terrible. APPROVED. A read-only public records portal for the $DBD meme coin." />
+  <title>Department of Bad Decisions - Public Records &amp; the Belgian Desk</title>
+  <meta name="description" content="Department of Bad Decisions: an independent authority on decisions that should probably not have been made. Real, sourced public-record case files, the Belgian Desk, and The Clerk. There is also, regrettably, a $DBD token." />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/belgian-desk.css" />
   <script>document.documentElement.className += ' js';</script>
 </head>
-<body>
+<body class="belgian home">
   <div class="portal">
 
     <!-- MASTHEAD -->
@@ -17,7 +18,7 @@
       <img class="seal" src="./assets/seal.svg" alt="Official seal of the Department of Bad Decisions" />
       <div>
         <div class="m-title">Department of Bad Decisions</div>
-        <div class="m-sub">Solana Division &middot; Public Information Portal</div>
+        <div class="m-sub">Public Records &middot; Solana Division</div>
       </div>
       <div class="m-right">
         <div class="doc-no">FILE NO. DBD-SOL-0001</div>
@@ -26,44 +27,55 @@
       </div>
     </header>
 
-    <!-- NAV (file tabs) -->
+    <!-- NAV -->
     <nav class="filetabs" aria-label="Department sections">
-      <a class="filetab" href="#public-records">Public Records</a>
-      <a class="filetab" href="#token-file">Token File</a>
+      <a class="filetab" href="#files-under-review">Case Files</a>
+      <a class="filetab" href="./eu-desk.html">EU Desk</a>
+      <a class="filetab filetab--belgian" href="./belgian-desk.html">Belgian Desk</a>
       <a class="filetab" href="#bulletins">Bulletins</a>
+      <a class="filetab" href="#meet-the-clerk">The Clerk</a>
+      <a class="filetab" href="#token-file">$DBD</a>
+      <a class="filetab" href="#public-records">Public Records</a>
       <a class="filetab" href="#transparency">Transparency</a>
       <a class="filetab" href="#fraud-office">Fraud Office</a>
     </nav>
 
     <div id="load-error" class="load-error"></div>
 
-    <!-- HERO -->
-    <section class="hero" aria-label="Department of Bad Decisions">
-      <span class="h-classified">FOR PUBLIC RELEASE &middot; NO APPOINTMENT REQUIRED</span>
-      <div class="h-copy">
-        <span class="division">Solana Division</span>
-        <h1>Department<br />of Bad<br />Decisions</h1>
-        <p class="core"><strong>Your judgement has been reviewed.</strong><br />It was terrible.</p>
-      </div>
-      <div class="h-art">
-        <div class="clerk-panel">
-          <div class="clerk-frame">
-            <img src="./assets/clerk.png" alt="The Clerk: the exhausted Department bureaucrat, thin weary face, dark eye bags, messy hair, loose tie, pens in his shirt pocket, buried in paperwork under a desk lamp." />
-          </div>
-          <div class="clerk-caption">
-            <span class="cc-id">FIG. 1</span>
-            <span>The Clerk &middot; on duty, regrettably</span>
+    <!-- HOME HERO with big weathered Belgian flag -->
+    <section class="home-hero" aria-label="Department of Bad Decisions">
+      <div class="flag" aria-hidden="true"></div>
+      <div class="home-hero-inner">
+        <div class="hh-copy">
+          <span class="division">Department of Bad Decisions</span>
+          <h1>Department of Bad Decisions</h1>
+          <p class="hh-lead">An independent authority on decisions that should probably not have been made.</p>
+          <p class="core"><strong>Your judgement has been reviewed.</strong><br />It was terrible.</p>
+          <div class="stamp" role="img" aria-label="APPROVED">
+            <span class="micro">Official use only</span>
+            <span class="stamp-main">Approved</span>
+            <span class="micro">Do not distribute</span>
           </div>
         </div>
-        <div class="stamp stamp-giant" role="img" aria-label="APPROVED">
-          <span class="micro">Official use only</span>
-          <span class="stamp-main">Approved</span>
-          <span class="micro">Do not distribute</span>
+        <div class="hh-clerk">
+          <div class="hhc-frame">
+            <img src="./assets/clerk.png" alt="The Clerk, the permanent face of the Department of Bad Decisions." />
+          </div>
+          <div class="hhc-cap">FIG. 1 &middot; The Clerk &middot; on duty, regrettably</div>
         </div>
       </div>
     </section>
 
-    <!-- OFFICIAL NOTICE -->
+    <!-- BELGIAN DESK CTA -->
+    <section class="be-cta" aria-label="Belgian Desk">
+      <div>
+        <div class="cta-title">Belgian Desk<div class="be-tricolor"></div></div>
+        <div class="cta-sub">Belgium has been generating source material since 1830. <b>We finally started filing it.</b> Public records, public money, questionable judgement, properly documented.</div>
+      </div>
+      <a class="cta-btn" href="./belgian-desk.html">Enter the Belgian Desk &rarr;</a>
+    </section>
+
+    <!-- OFFICIAL NOTICE (status-driven) -->
     <section class="section">
       <div class="gov-form">
         <div class="form-head">
@@ -82,14 +94,56 @@
       </div>
     </section>
 
-    <!-- TOKEN FILE (FORM DBD-001) -->
-    <section class="section" id="token-file" aria-labelledby="tf-title">
-      <div class="sec-kicker">Section 01 &middot; Token File</div>
+    <!-- FILES CURRENTLY UNDER REVIEW (real, sourced) -->
+    <section class="home-section" id="files-under-review" aria-labelledby="fur-h">
+      <div class="hs-head">
+        <h2 id="fur-h">Files Currently Under Review <span class="stencil" style="font-size:11px;color:var(--be-red);">&middot; <span id="home-files-count">…</span></span></h2>
+        <div class="hs-note">The archive is being declassified. The paperwork is, predictably, taking longer than expected.</div>
+      </div>
+      <div class="home-files" id="home-files"></div>
+      <p style="margin-top:16px;"><a href="./belgian-desk.html">View the full Belgian Desk archive &rarr;</a></p>
+    </section>
+
+    <!-- MEET THE CLERK -->
+    <section class="home-section" id="meet-the-clerk" aria-labelledby="clerk-h">
+      <div class="hs-head"><h2 id="clerk-h">Meet the Clerk</h2><div class="hs-note">One character. One face. One visual identity.</div></div>
+      <div class="meet-clerk">
+        <div class="mc-portrait"><img src="./assets/clerk.png" alt="The Clerk" /></div>
+        <div class="mc-body">
+          <div class="mc-name">The Clerk</div>
+          <p>He has reviewed budgets. He has reviewed procurement. He has reviewed political judgement.</p>
+          <p>He regrets opening the first file. Unfortunately, the regulations require him to continue.</p>
+          <p>His responsibilities include: receive, review, regret, stamp. <span class="stamp small"><span class="stamp-main">Approved</span></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAD DECISION OF THE DAY -->
+    <section class="section">
+      <div class="bulletins" style="grid-template-columns:1fr;">
+        <article class="memo memo--slip">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="memo-kicker">Bad Decision of the Day</div>
+          <p class="memo-quote">&ldquo;We needed a study to understand we needed a study.&rdquo;</p>
+          <div class="memo-foot">
+            <span class="memo-ref">REF: BD-0126</span>
+            <span class="stamp small"><span class="stamp-main">Approved</span></span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= $DBD / TOKEN (secondary) ================= -->
+    <section class="home-section dbd-office" id="token-file" aria-labelledby="tf-title">
+      <div class="hs-head">
+        <h2 id="tf-title">Office of Questionable Financial Decisions &middot; $DBD</h2>
+        <div class="hs-note">After years of documenting poor financial judgement, the Department decided to participate.</div>
+      </div>
       <div class="gov-form">
         <div class="form-head">
           <div class="fh-left">
             <div class="fh-id">FORM DBD-001</div>
-            <div class="fh-title" id="tf-title">Official Token Record</div>
+            <div class="fh-title">Official Token Record</div>
           </div>
           <div class="fh-meta">CLASSIFICATION: PUBLIC<br />DEPARTMENT STATUS: QUESTIONABLE</div>
         </div>
@@ -99,15 +153,13 @@
           <div class="field"><span class="f-label">Network</span><span class="f-value" id="rec-network">&hellip;</span></div>
           <div class="field"><span class="f-label">Status</span><span class="f-value" id="rec-status">&hellip;</span></div>
           <div class="field"><span class="f-label">Official Mint</span><span class="f-value addr" id="rec-mint">&hellip;</span></div>
-          <div class="field"><span class="f-label">Classification</span><span class="f-value"><span class="status classified">Public</span></span></div>
-          <div class="field"><span class="f-label">Department Status</span><span class="f-value"><span class="status">Questionable</span></span></div>
         </div>
       </div>
     </section>
 
     <!-- PUBLIC RECORDS (FORM DBD-002) -->
     <section class="section" id="public-records" aria-labelledby="pr-title">
-      <div class="sec-kicker">Section 02 &middot; Public Records</div>
+      <div class="sec-kicker">Public Records</div>
       <div class="gov-form">
         <div class="form-head">
           <div class="fh-left">
@@ -128,9 +180,9 @@
       </div>
     </section>
 
-    <!-- FRAUD OFFICE (Case File) -->
+    <!-- FRAUD OFFICE -->
     <section class="section" id="fraud-office" aria-labelledby="fo-title">
-      <div class="sec-kicker">Section 03 &middot; Office of Fraud Prevention</div>
+      <div class="sec-kicker">Office of Fraud Prevention</div>
       <div class="case-file" data-tab="Case File No. DBD-419">
         <h2 id="fo-title">Case File: Fraud Prevention</h2>
         <div class="cf-body">
@@ -144,55 +196,9 @@
       </div>
     </section>
 
-    <!-- BULLETINS -->
-    <section class="section" id="bulletins" aria-labelledby="bl-title">
-      <div class="sec-kicker" id="bl-title">Section 04 &middot; Department Bulletins</div>
-      <div class="bulletins">
-
-        <article class="memo memo--slip">
-          <span class="pin" aria-hidden="true"></span>
-          <div class="memo-kicker">Bad Decision of the Day</div>
-          <p class="memo-quote">&ldquo;I read the whitepaper. It was one sentence. I aped anyway.&rdquo;</p>
-          <div class="memo-foot">
-            <span class="memo-ref">REF: BD-0007</span>
-            <span class="stamp small"><span class="stamp-main">Approved</span></span>
-          </div>
-        </article>
-
-        <article class="memo memo--memorandum">
-          <span class="pin" aria-hidden="true"></span>
-          <div class="memo-head">
-            <div>TO: <b>All Citizens</b></div>
-            <div>FROM: <b>The Clerk</b></div>
-            <div>RE: <b>Finality of Decisions</b></div>
-          </div>
-          <p class="memo-quote">&ldquo;All decisions are final, especially the bad ones. Refunds are processed by the Department of Wishful Thinking, which does not exist.&rdquo;</p>
-          <div class="memo-foot"><span class="memo-ref">MEMORANDUM DBD-002</span></div>
-        </article>
-
-        <article class="memo memo--note">
-          <span class="pin" aria-hidden="true"></span>
-          <div class="memo-kicker">Sticky Note (Unfiled)</div>
-          <p class="memo-quote">&ldquo;Coffee machine broken. Approved anyway.&rdquo;</p>
-          <div class="memo-foot"><span class="memo-ref">FOUND ON DESK</span></div>
-        </article>
-
-        <article class="memo memo--slip">
-          <span class="pin" aria-hidden="true"></span>
-          <div class="memo-kicker">Department Notice</div>
-          <p class="memo-quote">&ldquo;Subject applied sound judgement exactly once. Application denied for being out of character.&rdquo;</p>
-          <div class="memo-foot">
-            <span class="memo-ref">CASE #0000</span>
-            <span class="stamp small"><span class="stamp-main">Approved</span></span>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
     <!-- TRANSPARENCY (FORM DBD-003) -->
     <section class="section" id="transparency" aria-labelledby="tr-title">
-      <div class="sec-kicker">Section 05 &middot; Office of Transparency</div>
+      <div class="sec-kicker">Office of Transparency</div>
       <div class="gov-form">
         <div class="form-head">
           <div class="fh-left">
@@ -207,6 +213,29 @@
           <div class="field"><span class="f-label">Config Version</span><span class="f-value" id="t-version">&hellip;</span></div>
           <div class="field"><span class="f-label">Last Updated</span><span class="f-value" id="t-updated">&hellip;</span></div>
         </div>
+      </div>
+    </section>
+
+    <!-- BULLETINS -->
+    <section class="section" id="bulletins" aria-labelledby="bl-title">
+      <div class="sec-kicker" id="bl-title">Department Bulletins</div>
+      <div class="bulletins">
+        <article class="memo memo--memorandum">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="memo-head">
+            <div>TO: <b>All Citizens</b></div>
+            <div>FROM: <b>The Clerk</b></div>
+            <div>RE: <b>Finality of Decisions</b></div>
+          </div>
+          <p class="memo-quote">&ldquo;All decisions are final, especially the bad ones. Refunds are processed by the Department of Wishful Thinking, which does not exist.&rdquo;</p>
+          <div class="memo-foot"><span class="memo-ref">MEMORANDUM DBD-002</span></div>
+        </article>
+        <article class="memo memo--note">
+          <span class="pin" aria-hidden="true"></span>
+          <div class="memo-kicker">Sticky Note (Unfiled)</div>
+          <p class="memo-quote">&ldquo;Coffee machine broken. Approved anyway.&rdquo;</p>
+          <div class="memo-foot"><span class="memo-ref">FOUND ON DESK</span></div>
+        </article>
       </div>
     </section>
 
@@ -230,13 +259,14 @@
       </div>
       <div class="f-rules">
         No wallet connection.<br />
-        No tracking.<br />
-        No login.
+        No tracking. No login.<br />
+        Facts sourced. Satire obvious.
       </div>
     </footer>
 
   </div>
 
   <script src="./scripts/site.js"></script>
+  <script type="module" src="./scripts/home-cases.js"></script>
 </body>
 </html>

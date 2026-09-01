@@ -14,7 +14,7 @@
     "postlaunch-check": "node scripts/postlaunch-check.js",
     "monitor": "node monitoring/monitor.js",
     "solana": "node scripts/solana-util.js",
-    "test": "node --test \"tests/**/*.test.js\""
+    "test": "node --test --test-concurrency=1 \"tests/**/*.test.js\""
   },
   "dependencies": {},
   "devDependencies": {},

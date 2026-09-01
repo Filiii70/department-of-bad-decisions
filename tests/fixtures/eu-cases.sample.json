@@ -1,0 +1,100 @@
+[
+  {
+    "sample": true,
+    "caseNumber": "DBD-EU-0001",
+    "title": "SAMPLE FILE — Layout Demonstration Only",
+    "subtitle": "A fictional EU case used to preview the EU Desk model. Not real.",
+    "status": "ONGOING INVESTIGATION",
+    "institutions": ["Fictional Parliament of Nowhere (SAMPLE)"],
+    "category": "MONEY",
+    "executiveSummary": "This is a development sample. It contains no real facts about any real person or institution. It exists only to exercise the EU Desk data model (money, people, network, investigation, aftermath, sources). It never appears on the production website.",
+    "whatIsAlleged": "It is ALLEGED, purely for demonstration, that a fictional company paid a fictional official. No real allegation is made against anyone.",
+    "whatIsEstablished": "Nothing is established. This is fictional sample data.",
+    "money": [
+      { "amount": 1500000, "currency": "EUR", "classification": "SEIZED CASH", "description": "Fictional seized cash (sample)", "date": "2024-01-01", "sourceIds": ["S1"] },
+      { "amount": "NOT_DOCUMENTED", "currency": "EUR", "classification": "ALLEGED PAYMENT", "description": "Fictional alleged payment, amount not documented (sample)", "sourceIds": ["S1"] }
+    ],
+    "people": [
+      {
+        "name": "A. Placeholder (SAMPLE)",
+        "publicRole": "Fictional official",
+        "roleAtTime": "Fictional official",
+        "institution": "Fictional Parliament of Nowhere",
+        "caseRole": "SUSPECT",
+        "proceduralStatus": "UNDER INVESTIGATION",
+        "allegations": ["Fictional allegation for layout only"],
+        "establishedFindings": [],
+        "currentStatus": "Under investigation (sample). No finding established.",
+        "lastVerified": "2026-09-01",
+        "sourceIds": ["S1"]
+      },
+      {
+        "name": "B. Example (SAMPLE)",
+        "publicRole": "Fictional cooperating witness",
+        "caseRole": "COOPERATING WITNESS",
+        "proceduralStatus": "COOPERATING WITNESS",
+        "allegations": [],
+        "establishedFindings": [],
+        "currentStatus": "Cooperating witness (sample).",
+        "lastVerified": "2026-09-01",
+        "sourceIds": ["S1"]
+      }
+    ],
+    "network": {
+      "nodes": [
+        { "id": "n1", "label": "A. Placeholder (SAMPLE)", "nodeType": "OFFICIAL" },
+        { "id": "n2", "label": "Fictional Company (SAMPLE)", "nodeType": "COMPANY" }
+      ],
+      "edges": [
+        { "from": "n1", "to": "n2", "relationshipType": "DECLARED MEETING", "description": "Fictional declared meeting (sample)", "sourceIds": ["S1"], "sourceDate": "2024-01-02" }
+      ]
+    },
+    "investigation": [
+      { "date": "2024-01-05", "authority": "Fictional Prosecutor (SAMPLE)", "event": "INVESTIGATION OPENED", "person": "A. Placeholder", "status": "UNDER INVESTIGATION", "sourceIds": ["S1"] }
+    ],
+    "timeline": [
+      { "date": "2024-01-05", "event": "Fictional investigation opened (sample).", "sourceIds": ["S1"] }
+    ],
+    "immunityStatus": "No immunity proceedings (sample).",
+    "whatHappenedNext": [
+      { "person": "A. Placeholder", "development": "NO LATER PUBLIC PROCEDURAL UPDATE LOCATED (sample).", "date": "2026-09-01", "sourceIds": ["S1"] }
+    ],
+    "currentStatus": {
+      "statusLabel": "ONGOING INVESTIGATION",
+      "lastProceduralEvent": "Fictional investigation opened",
+      "date": "2024-01-05",
+      "authority": "Fictional Prosecutor (SAMPLE)",
+      "lastVerified": "2026-09-01",
+      "sourceIds": ["S1"]
+    },
+    "statusHistory": [
+      { "date": "2024-01-05", "status": "ONGOING INVESTIGATION", "note": "Opened (sample).", "sourceIds": ["S1"] }
+    ],
+    "sources": [
+      {
+        "sourceId": "S1",
+        "sourceType": "DEVELOPMENT SAMPLE",
+        "institution": "DEVELOPMENT SAMPLE (not a real source)",
+        "title": "Placeholder source for EU layout preview",
+        "publicationDate": "2026-01-01",
+        "sourceURL": "https://example.org/eu-development-sample",
+        "accessDate": "2026-09-01",
+        "language": "en",
+        "primaryOrSecondary": "SECONDARY",
+        "claimsSupported": ["c1"]
+      }
+    ],
+    "claims": [
+      { "claimId": "c1", "claimText": "Fictional claim for the sample.", "claimType": "money", "status": "ALLEGED", "sourceIds": ["S1"], "lastVerified": "2026-09-01" }
+    ],
+    "clerkAssessment": {
+      "administrativeAmbition": "Fictional. For layout only.",
+      "financialJudgement": "Undetermined (sample).",
+      "departmentVerdict": "APPROVED."
+    },
+    "johnNotes": "John notes that this file is fictional and files it under 'sample'.",
+    "lastVerified": "2026-09-01",
+    "publishedDate": "2026-09-01",
+    "updatedDate": "2026-09-01"
+  }
+]

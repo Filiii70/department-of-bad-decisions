@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>European Union Desk - Department of Bad Decisions</title>
+  <meta name="description" content="Department of Bad Decisions, European Union Desk. They run Europe. We pay. Public-record satire: the money, the power, the connections, the investigation, and what happened next. John keeps the receipts." />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/eu-desk.css" />
+  <script>document.documentElement.className += ' js';</script>
+</head>
+<body class="eu">
+  <div class="portal">
+
+    <!-- MASTHEAD -->
+    <header class="masthead">
+      <img class="seal" src="./assets/seal.svg" alt="Official seal of the Department of Bad Decisions" />
+      <div>
+        <div class="m-title">Department of Bad Decisions</div>
+        <div class="m-sub">European Union Desk &middot; Public Record Office</div>
+      </div>
+      <div class="m-right">
+        <div class="doc-no">FILE NO. DBD-EU-ARCHIVE</div>
+        <div>THEY RUN EUROPE.</div>
+        <div>WE PAY.</div>
+      </div>
+    </header>
+
+    <!-- NAV -->
+    <nav class="filetabs" aria-label="Department sections">
+      <a class="filetab" href="./index.html">Department</a>
+      <a class="filetab" href="#eu-archive">Case Files</a>
+      <a class="filetab" href="#john">John</a>
+      <a class="filetab" href="./belgian-desk.html">Belgian Desk</a>
+      <a class="filetab" href="./index.html#token-file">$DBD</a>
+    </nav>
+
+    <div id="load-error" class="load-error"></div>
+
+    <!-- ============ ARCHIVE VIEW ============ -->
+    <div id="eu-archive-view">
+
+      <!-- HERO with big EU flag -->
+      <section class="eu-hero" aria-label="European Union Desk">
+        <div class="eu-flag" aria-hidden="true"></div>
+        <div class="eu-hero-inner">
+          <div class="eu-copy">
+            <div class="eu-kicker">Department of Bad Decisions</div>
+            <div class="eu-division">European Union Desk</div>
+            <h1>They run Europe.<br /><span class="pay">We pay.</span></h1>
+            <p class="eu-support">Power. Money. Connections. Properly filed.</p>
+            <p class="eu-secondary">&ldquo;We keep the receipts.&rdquo;</p>
+          </div>
+          <div class="eu-idmark" role="img" aria-label="DBD European Union Desk">
+            <div class="idm-top">DBD</div>
+            <div class="idm-mid">EU Desk</div>
+            <div class="idm-bot">Public Record Office</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- JOHN -->
+      <section class="john-strip" id="john">
+        <div class="john-portrait"><img src="./assets/clerk.png" alt="John, The Clerk of the Department of Bad Decisions." /></div>
+        <div>
+          <div class="john-name">John</div>
+          <div class="john-title">The Clerk &middot; Department of Bad Decisions</div>
+          <p>John reads the paperwork. John checks the receipts. John follows the connections. John stamps the file. John does not make criminal findings. Courts and investigators do that. <span id="john-microcopy">John is reviewing the receipts.</span></p>
+        </div>
+      </section>
+
+      <!-- EDITORIAL NOTICE -->
+      <section class="editorial-notice" aria-label="Editorial notice">
+        <span class="en-badge">Editorial Notice</span>
+        <p>The European Union Desk is public-record satire, not activism. Every factual statement is sourced and every legal status is dated. <strong>Investigated is not the same as guilty; alleged is not the same as proven. The Department states procedural facts; John supplies the satire.</strong></p>
+      </section>
+
+      <!-- WHAT THIS DESK DOES -->
+      <section class="eu-section">
+        <div class="eu-section-head"><h2>What this desk follows</h2><span class="esh-meta">Money &middot; Power &middot; Connections &middot; Investigations &middot; Aftermath</span></div>
+        <div class="editorial-notice" style="background:var(--eu-blue-soft);">
+          <span class="en-badge">The Questions</span>
+          <p>Where did the money go? Who received it? Who knew whom? Who was investigated? What exactly was alleged? What was actually proven? Who was charged, acquitted, convicted? Who kept immunity? Who resigned, who stayed? What money was recovered? And, when the headlines stopped: <strong>where does the case stand today?</strong></p>
+        </div>
+      </section>
+
+      <!-- ARCHIVE -->
+      <section class="eu-section" id="eu-archive" aria-labelledby="eua-h">
+        <div class="eu-section-head">
+          <h2 id="eua-h">EU Case Files</h2>
+          <span class="esh-meta" id="eu-archive-count">&hellip;</span>
+        </div>
+        <div class="eu-grid" id="eu-archive-grid"></div>
+      </section>
+    </div>
+
+    <!-- ============ CASE DETAIL VIEW ============ -->
+    <div id="eu-case-view" style="display:none;">
+      <div class="eu-detail-topbar">
+        <a class="eu-back" href="./eu-desk.html">&larr; Back to EU Case Files</a>
+        <span class="esh-meta">Public record &middot; built to be read and shared</span>
+      </div>
+      <div id="eu-case-detail"></div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="dept-footer">
+      <img class="seal" src="./assets/seal.svg" alt="Department seal" />
+      <div>
+        <div class="f-title">Department of Bad Decisions &middot; European Union Desk</div>
+        <div class="f-sub">Public Record Office</div>
+      </div>
+      <div class="f-rules">
+        No wallet connection.<br />
+        No tracking. No login.<br />
+        Facts sourced &amp; dated. Satire obvious.
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="./scripts/eu-desk.js"></script>
+</body>
+</html>

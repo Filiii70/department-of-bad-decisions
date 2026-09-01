@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="European Union flag motif">
+  <defs>
+    <path id="euStar" d="M0,-16 L3.76,-5.18 L15.22,-4.94 L6.09,1.98 L9.40,12.94 L0,6.4 L-9.40,12.94 L-6.09,1.98 L-15.22,-4.94 L-3.76,-5.18 Z" fill="#FFCC00"/>
+  </defs>
+  <rect width="300" height="300" fill="#003399"/>
+  <g>
+    <use href="#euStar" transform="translate(150,50)"/>
+    <use href="#euStar" transform="translate(200,63.4)"/>
+    <use href="#euStar" transform="translate(236.6,100)"/>
+    <use href="#euStar" transform="translate(250,150)"/>
+    <use href="#euStar" transform="translate(236.6,200)"/>
+    <use href="#euStar" transform="translate(200,236.6)"/>
+    <use href="#euStar" transform="translate(150,250)"/>
+    <use href="#euStar" transform="translate(100,236.6)"/>
+    <use href="#euStar" transform="translate(63.4,200)"/>
+    <use href="#euStar" transform="translate(50,150)"/>
+    <use href="#euStar" transform="translate(63.4,100)"/>
+    <use href="#euStar" transform="translate(100,63.4)"/>
+  </g>
+</svg>

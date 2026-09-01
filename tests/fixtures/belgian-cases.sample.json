@@ -1,0 +1,91 @@
+[
+  {
+    "sample": true,
+    "caseNumber": "DBD-BE-0001",
+    "title": "SAMPLE DOSSIER — Layout Demonstration Only",
+    "subtitle": "A fictional file used to preview the Belgian Desk layout",
+    "status": "FILED",
+    "institution": "Ministry of Hypothetical Affairs (SAMPLE)",
+    "governmentLevel": "FEDERAL",
+    "location": "Nowhere, Belgium (fictional)",
+    "date": "2026-01-15",
+    "year": 2026,
+    "people": [],
+    "politicalParties": [],
+    "category": "PUBLIC MONEY",
+    "summary": "This is a development sample. It contains no real facts about any real person, party, or institution. It exists only to demonstrate how a real, sourced case would be laid out. It never appears on the production website.",
+    "publicMoney": {
+      "currency": "EUR",
+      "originalBudget": 1000000,
+      "finalCost": 3400000,
+      "amountPaid": 3400000,
+      "amountRecovered": 0,
+      "documentedLoss": 2400000,
+      "currentStatus": "SAMPLE / NOT REAL"
+    },
+    "documentedOutcome": "Fictional outcome for layout preview only.",
+    "timeline": [
+      { "date": "2024-03-01", "event": "Fictional project approved (sample)." },
+      { "date": "2025-09-01", "event": "Fictional budget overrun recorded (sample)." },
+      { "date": "2026-01-15", "event": "Fictional file closed (sample)." }
+    ],
+    "sources": [
+      {
+        "sourceName": "DEVELOPMENT SAMPLE (not a real source)",
+        "sourceTitle": "Placeholder source for layout preview",
+        "sourceType": "OFFICIAL REPORT",
+        "sourceURL": "https://example.org/development-sample",
+        "publicationDate": "2026-01-10",
+        "accessDate": "2026-01-12"
+      }
+    ],
+    "clerkAssessment": {
+      "financialJudgement": "Questionable.",
+      "administrativeCompetence": "Under administrative review.",
+      "paperworkGenerated": "Exceptional.",
+      "accountabilityStatus": "Please contact another department.",
+      "lessonsLearned": "Pending.",
+      "departmentVerdict": "APPROVED."
+    },
+    "departmentNotes": "The Department has reviewed this fictional decision and found it fictionally terrible.",
+    "illustration": null,
+    "tags": ["sample", "development", "layout"],
+    "publishedDate": "2026-01-15",
+    "updatedDate": "2026-01-15"
+  },
+  {
+    "sample": true,
+    "caseNumber": "DBD-BE-0002",
+    "title": "SAMPLE DOSSIER — Missing-Data Demonstration",
+    "subtitle": "Shows how undocumented values are handled",
+    "status": "UNDER REVIEW",
+    "institution": "Agency for Imaginary Procurement (SAMPLE)",
+    "governmentLevel": "FLEMISH",
+    "location": "Fictional Municipality",
+    "date": "2025-11-02",
+    "year": 2025,
+    "category": "PROCUREMENT",
+    "summary": "Second development sample. Demonstrates a case where some financial values are not documented, so they render as NOT DOCUMENTED rather than being invented.",
+    "publicMoney": {
+      "currency": "EUR",
+      "originalBudget": 500000,
+      "finalCost": "NOT_DOCUMENTED",
+      "documentedLoss": "NOT_DOCUMENTED"
+    },
+    "sources": [
+      {
+        "sourceName": "DEVELOPMENT SAMPLE (not a real source)",
+        "sourceType": "PROCUREMENT",
+        "sourceURL": "https://example.org/development-sample-2",
+        "publicationDate": "2025-11-01"
+      }
+    ],
+    "clerkAssessment": {
+      "financialJudgement": "Undetermined, like most things here.",
+      "paperworkGenerated": "Sufficient to bury a small town.",
+      "departmentVerdict": "APPROVED."
+    },
+    "tags": ["sample", "development"],
+    "publishedDate": "2025-11-02"
+  }
+]

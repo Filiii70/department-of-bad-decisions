@@ -1,0 +1,383 @@
+[
+  {
+    "caseNumber": "DBD-EU-0001",
+    "title": "Qatargate",
+    "subtitle": "Cash-for-influence at the European Parliament",
+    "category": "CORRUPTION",
+    "institutions": ["European Parliament", "Belgian Federal Prosecutor", "Brussels indictment chamber"],
+    "executiveSummary": "Qatargate is a cash-for-influence criminal investigation led by the Belgian Federal Prosecutor into allegations that Qatar and Morocco paid cash and gifts to members and staff of the European Parliament to influence Parliament's positions. It broke publicly on 9 December 2022 with police raids in Brussels, several arrests, and the seizure of more than 1.5 million euros in cash. As of the latest located procedural event, the case is still in the pre-trial (instruction) phase: no one has been tried or convicted by a court on the core charges. On 19-20 February 2026 the Brussels indictment chamber rejected the accused parties' attempts to annul the investigation and validated its continuation, a procedural decision that is expressly not a verdict on guilt. Every named living person denies wrongdoing except former MEP Pier Antonio Panzeri, who admitted participation under a January 2023 cooperation agreement.",
+    "whatIsAlleged": "Prosecutors ALLEGE a corruption network in which Qatar and Morocco channelled cash and gifts to MEPs, former MEPs and NGO figures in exchange for favourable interventions inside the European Parliament, and that former MEP Pier Antonio Panzeri was the central organiser, partly through the Brussels NGO Fight Impunity. These remain allegations; no court has established them, and the individuals charged deny wrongdoing.",
+    "whatIsEstablished": "Established as fact: more than 1.5 million euros in cash was physically seized during the December 2022 searches (a seizure, not a proven bribe). Pier Antonio Panzeri admitted criminal participation under a January 2023 cooperation agreement (an admission within that agreement, not a trial verdict). The European Parliament removed Eva Kaili as a Vice-President (13 December 2022) and later lifted the immunity of several MEPs. On 19-20 February 2026 the Brussels indictment chamber validated continuation of the procedure, stating this is in no way a definitive judgment on the legality or evidentiary value of the evidence. No conviction and no acquittal on the core charges has occurred. NO LATER PUBLIC PROCEDURAL UPDATE LOCATED AS OF 1 SEPTEMBER 2026.",
+    "money": [
+      { "amount": 1500000, "currency": "EUR", "classification": "SEIZED CASH", "description": "More than 1.5 million euros in banknotes seized in total during the December 2022 searches. A seizure is not a proven bribe.", "date": "2022-12-11", "sourceIds": ["S12"] },
+      { "amount": 600000, "currency": "EUR", "classification": "SEIZED CASH", "description": "Cash seized at Pier Antonio Panzeri's Brussels home.", "date": "2022-12-09", "sourceIds": ["S12"] },
+      { "amount": 20000, "currency": "EUR", "classification": "SEIZED CASH", "description": "Cash reported seized at Francesco Giorgi's home (press-reported).", "date": "2022-12-09", "sourceIds": ["S14"] },
+      { "amount": 1000000, "currency": "EUR", "classification": "AMOUNT RECOVERED", "description": "Agreed confiscation of 1,000,000 euros under Panzeri's January 2023 cooperation agreement, plus a suspended fine of 80,000 euros.", "date": "2023-01-17", "sourceIds": ["S6"] },
+      { "amount": "NOT_DOCUMENTED", "currency": "EUR", "classification": "COURT-ESTABLISHED LOSS", "description": "No court-established bribe total or loss exists: the case has not been tried. The seized cash must not be read as a proven bribe amount.", "sourceIds": ["S8"] }
+    ],
+    "people": [
+      {
+        "name": "Eva Kaili", "publicRole": "Greek MEP; former European Parliament Vice-President", "roleAtTime": "EP Vice-President", "institution": "European Parliament",
+        "caseRole": "ACCUSED", "proceduralStatus": "CHARGED",
+        "allegations": ["Participation in a criminal organisation, corruption and money laundering (charges she denies)."],
+        "establishedFindings": [],
+        "currentStatus": "Removed as EP Vice-President on 13 December 2022; charged and denies all wrongdoing. Her electronic tag was reportedly removed by late 2025; she did not seek re-election in 2024 and won an unrelated EU General Court document-access case on 9 July 2025. Her defence said it would appeal the February 2026 procedural ruling.",
+        "lastVerified": "2026-02-20", "sourceIds": ["S8", "S9"]
+      },
+      {
+        "name": "Pier Antonio Panzeri", "publicRole": "Former Italian MEP; founder of the NGO Fight Impunity", "roleAtTime": "Former MEP / NGO founder", "institution": "Fight Impunity",
+        "caseRole": "COOPERATING WITNESS", "proceduralStatus": "COOPERATING WITNESS",
+        "allegations": [],
+        "establishedFindings": [],
+        "currentStatus": "Admitted criminal participation under a January 2023 cooperation ('repentant') agreement: an agreed sentence framework (up to one year in detention/electronic surveillance, remainder suspended), an 80,000 euro suspended fine and a 1,000,000 euro confiscation, in exchange for testimony. This is an admission within a cooperation deal, not a trial verdict. The admissibility of his statements was upheld at the procedural level in February 2026.",
+        "lastVerified": "2026-02-20", "sourceIds": ["S6", "S7"]
+      },
+      {
+        "name": "Francesco Giorgi", "publicRole": "Parliamentary assistant", "roleAtTime": "EP assistant (partner of Eva Kaili; former aide to Panzeri)", "institution": "European Parliament",
+        "caseRole": "ACCUSED", "proceduralStatus": "CHARGED",
+        "allegations": ["Participation in a criminal organisation, corruption and money laundering (charges he denies in his current posture)."],
+        "establishedFindings": [],
+        "currentStatus": "Charged; reportedly made admissions early in the investigation. A court of appeal lifted the restrictions on him speaking publicly in June 2024. Party to the February 2026 indictment-chamber ruling.",
+        "lastVerified": "2026-02-20", "sourceIds": ["S8"]
+      },
+      {
+        "name": "Marc Tarabella", "publicRole": "Belgian MEP (at the relevant time)", "roleAtTime": "MEP", "institution": "European Parliament",
+        "caseRole": "ACCUSED", "proceduralStatus": "CHARGED",
+        "allegations": ["Corruption and money laundering (charges he denies)."],
+        "establishedFindings": [],
+        "currentStatus": "His immunity was lifted by the European Parliament on 2 February 2023; he was then arrested and charged. Released from detention in 2023; he did not seek EP re-election in 2024 and was re-elected mayor of Anthisnes. Denies wrongdoing.",
+        "lastVerified": "2026-02-20", "sourceIds": ["S1", "S8"]
+      },
+      {
+        "name": "Andrea Cozzolino", "publicRole": "Italian MEP (at the relevant time)", "roleAtTime": "MEP", "institution": "European Parliament",
+        "caseRole": "ACCUSED", "proceduralStatus": "CHARGED",
+        "allegations": ["Public corruption, criminal-organisation membership and money laundering (charges he denies)."],
+        "establishedFindings": [],
+        "currentStatus": "His immunity was lifted on 2 February 2023; he was extradited to Belgium and charged around June 2023, then released under conditions. Denies wrongdoing.",
+        "lastVerified": "2026-02-20", "sourceIds": ["S1", "S13"]
+      },
+      {
+        "name": "Niccolo Figa-Talamanca", "publicRole": "Secretary-General of the NGO No Peace Without Justice", "roleAtTime": "NGO Secretary-General", "institution": "No Peace Without Justice",
+        "caseRole": "ACCUSED", "proceduralStatus": "CHARGED",
+        "allegations": ["Corruption, participation in a criminal group and money laundering (charges he denies; he says he received nothing from Qatar or Morocco)."],
+        "establishedFindings": [],
+        "currentStatus": "Released in February 2023; publicly challenges the investigation as flawed. Case continues.",
+        "lastVerified": "2026-02-20", "sourceIds": ["S8"]
+      },
+      {
+        "name": "Marie Arena", "publicRole": "Former Belgian MEP; former chair of the EP human-rights subcommittee", "roleAtTime": "MEP / DROI chair", "institution": "European Parliament",
+        "caseRole": "ACCUSED", "proceduralStatus": "CHARGED",
+        "allegations": ["Membership of a criminal organisation. She states she was not charged with corruption or money laundering. She denies wrongdoing."],
+        "establishedFindings": [],
+        "currentStatus": "Charged in January 2025 after a roughly two-year investigation. She had resigned the human-rights subcommittee chair in January 2023 and did not seek re-election. Party to the February 2026 ruling.",
+        "lastVerified": "2026-02-20", "sourceIds": ["S10"]
+      },
+      {
+        "name": "Alessandra Moretti", "publicRole": "Italian MEP", "roleAtTime": "MEP", "institution": "European Parliament",
+        "caseRole": "SUSPECT", "proceduralStatus": "IMMUNITY LIFTED",
+        "allegations": ["Under investigation; no charge is confirmed in the public record. She maintains her innocence."],
+        "establishedFindings": [],
+        "currentStatus": "The European Parliament waived her immunity on 16 December 2025 (497-139, 15 abstentions), after the JURI committee recommended it. No charge confirmed in the public record as of the last verified date.",
+        "lastVerified": "2025-12-16", "sourceIds": ["S11", "S2"]
+      },
+      {
+        "name": "Elisabetta Gualmini", "publicRole": "Italian MEP", "roleAtTime": "MEP", "institution": "European Parliament",
+        "caseRole": "SUSPECT", "proceduralStatus": "UNDER INVESTIGATION",
+        "allegations": ["Under investigation; she denies wrongdoing."],
+        "establishedFindings": [],
+        "currentStatus": "The European Parliament declined to waive her immunity on 16 December 2025 (382-254 against a waiver, 19 abstentions); her immunity is retained, which limits investigative measures against her.",
+        "lastVerified": "2025-12-16", "sourceIds": ["S11", "S3"]
+      },
+      {
+        "name": "Luca Visentini", "publicRole": "Then General Secretary of the International Trade Union Confederation", "roleAtTime": "ITUC General Secretary", "institution": "International Trade Union Confederation",
+        "caseRole": "OTHER", "proceduralStatus": "STATUS UNKNOWN FROM PUBLIC RECORD",
+        "allegations": ["Arrested and questioned in December 2022, then conditionally released; he denies corruption or money laundering."],
+        "establishedFindings": [],
+        "currentStatus": "Arrested on 14 December 2022 and conditionally released; dismissed by the ITUC on 11 March 2023 for having accepted funds linked to Panzeri. He was not among the initial group charged. NO LATER PUBLIC PROCEDURAL UPDATE ON ANY FORMAL CHARGE LOCATED AS OF 1 SEPTEMBER 2026.",
+        "lastVerified": "2026-09-01", "sourceIds": ["S8"]
+      }
+    ],
+    "network": {
+      "nodes": [
+        { "id": "panzeri", "label": "Pier Antonio Panzeri", "nodeType": "PERSON" },
+        { "id": "kaili", "label": "Eva Kaili", "nodeType": "MEP" },
+        { "id": "giorgi", "label": "Francesco Giorgi", "nodeType": "PARLIAMENTARY ASSISTANT" },
+        { "id": "figa", "label": "Niccolo Figa-Talamanca", "nodeType": "PERSON" },
+        { "id": "fightimpunity", "label": "Fight Impunity (NGO)", "nodeType": "NGO" },
+        { "id": "npwj", "label": "No Peace Without Justice (NGO)", "nodeType": "NGO" },
+        { "id": "ep", "label": "European Parliament", "nodeType": "AUTHORITY" }
+      ],
+      "edges": [
+        { "from": "giorgi", "to": "panzeri", "relationshipType": "FORMER EMPLOYMENT", "description": "Giorgi is a former parliamentary aide to Panzeri.", "sourceIds": ["S8"], "sourceDate": "2025-12-12" },
+        { "from": "giorgi", "to": "kaili", "relationshipType": "FAMILY RELATIONSHIP", "description": "Giorgi is the partner of Eva Kaili (documented personal relationship).", "sourceIds": ["S8"], "sourceDate": "2025-12-12" },
+        { "from": "panzeri", "to": "fightimpunity", "relationshipType": "BOARD MEMBERSHIP", "description": "Panzeri founded the NGO Fight Impunity.", "sourceIds": ["S6"], "sourceDate": "2023-01-17" },
+        { "from": "figa", "to": "npwj", "relationshipType": "EMPLOYMENT", "description": "Figa-Talamanca is Secretary-General of No Peace Without Justice.", "sourceIds": ["S8"], "sourceDate": "2025-12-12" },
+        { "from": "kaili", "to": "ep", "relationshipType": "PARLIAMENTARY ROLE", "description": "Kaili was a Vice-President of the European Parliament until 13 December 2022.", "sourceIds": ["S8"], "sourceDate": "2025-12-12" },
+        { "from": "panzeri", "to": "ep", "relationshipType": "PARLIAMENTARY ROLE", "description": "Panzeri was a Member of the European Parliament (former).", "sourceIds": ["S6"], "sourceDate": "2023-01-17" }
+      ]
+    },
+    "investigation": [
+      { "date": "2022-12-09", "authority": "Belgian Federal Prosecutor", "event": "SEARCH", "person": "Multiple addresses", "status": "Raids across around 20 addresses in Brussels", "sourceIds": ["S12"] },
+      { "date": "2022-12-09", "authority": "Belgian Federal Prosecutor", "event": "ARREST", "person": "Kaili, Giorgi, Panzeri, Figa-Talamanca, Visentini and others", "status": "Arrests", "sourceIds": ["S12"] },
+      { "date": "2022-12-11", "authority": "Belgian Federal Prosecutor", "event": "SEIZURE", "person": "", "status": "More than 1.5 million euros in cash seized", "sourceIds": ["S12"] },
+      { "date": "2023-02-02", "authority": "European Parliament", "event": "IMMUNITY DECISION", "person": "Cozzolino and Tarabella", "status": "Immunities waived at the Belgian authorities' request", "sourceIds": ["S1"] },
+      { "date": "2023-06-22", "authority": "Belgian Federal Prosecutor", "event": "CHARGE", "person": "Andrea Cozzolino", "status": "Charged after extradition to Belgium", "sourceIds": ["S13"] },
+      { "date": "2025-01-20", "authority": "Belgian Federal Prosecutor", "event": "CHARGE", "person": "Marie Arena", "status": "Charged with membership of a criminal organisation", "sourceIds": ["S10"] },
+      { "date": "2025-12-16", "authority": "European Parliament", "event": "IMMUNITY DECISION", "person": "Moretti (waived) and Gualmini (retained)", "status": "Moretti's immunity waived; Gualmini's retained", "sourceIds": ["S11"] },
+      { "date": "2026-02-20", "authority": "Brussels indictment chamber", "event": "JUDGMENT", "person": "All accused parties", "status": "Validated continuation of the procedure; rejected the nullity objections. Not a verdict on guilt.", "sourceIds": ["S7"] }
+    ],
+    "timeline": [
+      { "date": "2022-12-09", "event": "Brussels raids; multiple arrests; cash seizures begin.", "sourceIds": ["S12"] },
+      { "date": "2022-12-13", "event": "European Parliament removes Eva Kaili as Vice-President; more than 1.5 million euros in cash reported seized in total.", "sourceIds": ["S12"] },
+      { "date": "2023-01-17", "event": "Pier Antonio Panzeri signs a 'repentant' cooperation agreement (agreed sentence framework, 1,000,000 euro confiscation, 80,000 euro suspended fine).", "sourceIds": ["S6"] },
+      { "date": "2023-02-02", "event": "European Parliament waives the immunity of Cozzolino and Tarabella.", "sourceIds": ["S1"] },
+      { "date": "2023-06-22", "event": "Cozzolino charged after extradition to Belgium.", "sourceIds": ["S13"] },
+      { "date": "2025-01-20", "event": "Former MEP Marie Arena charged with membership of a criminal organisation.", "sourceIds": ["S10"] },
+      { "date": "2025-07-09", "event": "EU General Court rules for Kaili in an unrelated document-access case.", "sourceIds": ["S9"] },
+      { "date": "2025-12-16", "event": "European Parliament waives Moretti's immunity and declines to waive Gualmini's.", "sourceIds": ["S11"] },
+      { "date": "2026-02-20", "event": "Brussels indictment chamber validates continuation of the procedure and rejects the accused's annulment objections; not a verdict on guilt.", "sourceIds": ["S7"] }
+    ],
+    "immunityStatus": "European Parliament immunity actions: Kaili removed as Vice-President (13 Dec 2022); Cozzolino and Tarabella immunities waived (2 Feb 2023); Moretti's immunity waived and Gualmini's retained (16 Dec 2025).",
+    "whatHappenedNext": [
+      { "person": "Eva Kaili", "development": "Not re-elected in 2024; electronic tag reportedly removed by late 2025; still formally charged and denies wrongdoing.", "date": "2026-02-20", "sourceIds": ["S8"] },
+      { "person": "Pier Antonio Panzeri", "development": "Remains the cooperating ('repentant') witness; use of his statements upheld at the procedural level.", "date": "2026-02-20", "sourceIds": ["S7"] },
+      { "person": "Marc Tarabella", "development": "Left the European Parliament in 2024; re-elected mayor of Anthisnes; still charged and denies wrongdoing.", "date": "2024-06-09", "sourceIds": ["S8"] },
+      { "person": "Alessandra Moretti", "development": "Immunity waived in December 2025; the investigation can proceed against her. No charge confirmed publicly.", "date": "2025-12-16", "sourceIds": ["S11"] },
+      { "person": "Elisabetta Gualmini", "development": "Immunity retained in December 2025.", "date": "2025-12-16", "sourceIds": ["S11"] },
+      { "person": "Luca Visentini", "development": "Lost his ITUC post in March 2023; no confirmed formal charge located since.", "date": "2023-03-11", "sourceIds": ["S8"] },
+      { "person": "European Parliament", "development": "Adopted a 14-point integrity plan after Qatargate, including a lobbying cooling-off period for departing MEPs and tighter declaration rules. Watchdogs note implementation gaps.", "date": "2023-09-13", "sourceIds": ["S5"] }
+    ],
+    "currentStatus": {
+      "statusLabel": "PRE-TRIAL",
+      "lastProceduralEvent": "Indictment chamber validated continuation of the procedure (not a verdict on guilt)",
+      "date": "2026-02-20",
+      "authority": "Brussels indictment chamber (chambre des mises en accusation)",
+      "lastVerified": "2026-09-01",
+      "note": "No trial date has been set; no conviction or acquittal on the core charges. NO LATER PUBLIC PROCEDURAL UPDATE LOCATED AS OF 1 SEPTEMBER 2026.",
+      "sourceIds": ["S7", "S8"]
+    },
+    "statusHistory": [
+      { "date": "2022-12-09", "status": "ONGOING INVESTIGATION", "note": "Raids, arrests and seizures begin.", "sourceIds": ["S12"] },
+      { "date": "2023-01-17", "status": "PRE-TRIAL", "note": "Panzeri cooperation agreement.", "sourceIds": ["S6"] },
+      { "date": "2026-02-20", "status": "PRE-TRIAL", "note": "Indictment chamber validates continuation.", "sourceIds": ["S7"] }
+    ],
+    "sources": [
+      { "sourceId": "S1", "sourceType": "PARLIAMENT", "institution": "European Parliament", "title": "Parliament lifts immunity of MEPs Cozzolino and Tarabella", "publicationDate": "2023-02-02", "sourceURL": "https://www.europarl.europa.eu/news/en/press-room/20230130IPR70211/parliament-lifts-immunity-of-meps-cozzolino-and-tarabella", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "PRIMARY", "claimsSupported": ["c-immunity-2023"] },
+      { "sourceId": "S2", "sourceType": "PARLIAMENT", "institution": "European Parliament (Legislative Observatory)", "title": "Immunity procedure file (Moretti)", "publicationDate": "2025-12-16", "sourceURL": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1880083", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S3", "sourceType": "PARLIAMENT", "institution": "European Parliament (Legislative Observatory)", "title": "Immunity procedure file (Gualmini)", "publicationDate": "2025-12-16", "sourceURL": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1880081", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S4", "sourceType": "GOVERNMENT", "institution": "OLAF (European Anti-Fraud Office)", "title": "OLAF statement on recent media reports concerning the European Parliament", "publicationDate": "2022-12-16", "sourceURL": "https://anti-fraud.ec.europa.eu/media-corner/news/olaf-statement-recent-media-reports-concerning-european-parliament-2022-12-16_en", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S5", "sourceType": "PARLIAMENT", "institution": "eucrim (reporting European Parliament acts)", "title": "EP Pushes for Increased Transparency and Integrity after Qatargate", "publicationDate": "2023-10-01", "sourceURL": "https://eucrim.eu/news/ep-pushes-for-increased-transparency-and-integrity-after-qatargate/", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S6", "sourceType": "MEDIA", "institution": "Euronews", "title": "Corruption scandal: Pier Antonio Panzeri admits guilt and signs deal", "publicationDate": "2023-01-17", "sourceURL": "https://www.euronews.com/my-europe/2023/01/17/corruption-scandal-pier-antonio-panzeri-admits-guilt-and-signs-deal-to-share-revealing-det", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S7", "sourceType": "MEDIA", "institution": "La Libre", "title": "Qatargate: la chambre des mises en accusation valide la poursuite de la procedure", "publicationDate": "2026-02-20", "sourceURL": "https://www.lalibre.be/dernieres-depeches/2026/02/20/enquete-pour-corruption-au-parlement-europeen-qatargate-la-chambre-des-mises-en-accusation-valide-la-poursuite-de-la-procedure-Q6WMSG66YRH4VFPMHCAGNA2EDQ/", "accessDate": "2026-09-01", "language": "fr", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S8", "sourceType": "MEDIA", "institution": "Euronews", "title": "Three years on, former MEP Kaili still awaits trial in case slammed as 'Belgiangate'", "publicationDate": "2025-12-12", "sourceURL": "https://www.euronews.com/news/2025/12/12/three-years-on-former-mep-kaili-still-awaits-trial-in-case-slammed-as-belgiangate", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S9", "sourceType": "JUDGMENT", "institution": "eucrim (reporting EU General Court)", "title": "Former MEP Eva Kaili Gets Win before General Court Regarding Public Access to Documents", "publicationDate": "2025-07-09", "sourceURL": "https://eucrim.eu/news/former-mep-eva-kaili-gets-win-before-general-court-regarding-public-access-to-documents/", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S10", "sourceType": "MEDIA", "institution": "Euronews", "title": "Ex-MEP Maria Arena charged with membership of criminal organisation", "publicationDate": "2025-01-20", "sourceURL": "https://www.euronews.com/my-europe/2025/01/20/ex-mep-maria-arena-charged-with-membership-of-criminal-organisation", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S11", "sourceType": "MEDIA", "institution": "Eunews", "title": "Qatargate: European Parliament lifts immunity for Alessandra Moretti, keeps it for Elisabetta Gualmini", "publicationDate": "2025-12-16", "sourceURL": "https://www.eunews.it/en/2025/12/16/qatargate-european-parliament-lifts-immunity-for-alessandra-moretti-keeps-it-for-elisabetta-gualmini/", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S12", "sourceType": "MEDIA", "institution": "The Brussels Times", "title": "Qatar corruption scandal: Over 1.5 million euros cash seized from Panzeri and Kaili", "publicationDate": "2022-12-13", "sourceURL": "https://www.brusselstimes.com/336743/qatar-corruption-scandal-over-e1-5-million-cash-seized-from-panzeri-and-kaili", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S13", "sourceType": "MEDIA", "institution": "Al Jazeera", "title": "European lawmaker Cozzolino charged in EU corruption probe", "publicationDate": "2023-06-22", "sourceURL": "https://www.aljazeera.com/news/2023/6/22/european-lawmaker-cozzolino-charged-in-eu-corruption-probe", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S14", "sourceType": "MEDIA", "institution": "ANSA / Italy-24 (wire)", "title": "Qatargate: over 1.5 million euros found; 20 thousand euros at Giorgi's house", "publicationDate": "2022-12-12", "sourceURL": "https://news.italy-24.com/news/258519/", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" }
+    ],
+    "claims": [
+      { "claimId": "c-seizure", "claimText": "More than 1.5 million euros in cash was seized during the December 2022 searches.", "claimType": "money", "status": "VERIFIED", "sourceIds": ["S12"], "lastVerified": "2026-09-01" },
+      { "claimId": "c-immunity-2023", "claimText": "The European Parliament waived the immunity of Cozzolino and Tarabella on 2 February 2023.", "claimType": "procedural", "status": "VERIFIED", "sourceIds": ["S1"], "lastVerified": "2026-09-01" },
+      { "claimId": "c-influence", "claimText": "Qatar and Morocco paid EU actors for favourable Parliament positions.", "claimType": "allegation", "status": "ALLEGED", "sourceIds": ["S8"], "lastVerified": "2026-09-01" },
+      { "claimId": "c-status-2026", "claimText": "As of 20 February 2026 the case is pre-trial; the indictment chamber validated continuation.", "claimType": "procedural", "status": "PROCEDURAL", "sourceIds": ["S7"], "lastVerified": "2026-09-01" }
+    ],
+    "clerkAssessment": {
+      "administrativeAmbition": "Ambitious. Human-rights advocacy and undeclared cash, filed in the same cabinet.",
+      "financialJudgement": "The 1.5 million euros was located before the paperwork was.",
+      "paperworkGenerated": "Three years of procedure and counting. John requested a larger filing cabinet.",
+      "accountabilityStatus": "A fourteen-point integrity plan was adopted. John has been advised that this is perfectly normal.",
+      "lessonsLearned": "A cooling-off period has been introduced to determine whether lessons were learned.",
+      "departmentVerdict": "APPROVED."
+    },
+    "johnNotes": "John notes that one person has admitted participation, several are charged and deny it, two had their immunity decided in December 2025 in opposite directions on the same afternoon, and no court has yet ruled on the core charges. John will update the file.",
+    "lastVerified": "2026-09-01",
+    "publishedDate": "2026-09-01",
+    "updatedDate": "2026-09-01"
+  },
+  {
+    "caseNumber": "DBD-EU-0002",
+    "title": "Huaweigate",
+    "subtitle": "Alleged cash-for-influence lobbying at the European Parliament",
+    "category": "LOBBYING",
+    "institutions": ["European Parliament", "Belgian Federal Prosecutor"],
+    "executiveSummary": "Huaweigate is a Belgian criminal investigation into alleged bribery of members and staff of the European Parliament by lobbyists working for the Chinese technology company Huawei. It became public on 13 March 2025, when Belgian federal police carried out about 21 searches across Belgium and Portugal, including Huawei's Brussels office, on suspicion of bribery, forgery, money laundering and criminal-organisation membership. Prosecutors first charged five people (18 March 2025) and then eight (early April 2025). The alleged centrepiece is a January 2021 letter signed by eight MEPs urging the Commission not to ban foreign 5G equipment. The Parliament suspended Huawei lobbyists' building access on 14 March 2025. On 16 June 2026 the Parliament lifted the immunity of one MEP, Fulvio Martusciello, and upheld the immunity of three others. Everyone named denies wrongdoing; no one has been tried or convicted.",
+    "whatIsAlleged": "Belgian prosecutors ALLEGE that, under the guise of commercial lobbying and 'practised regularly and very discreetly' since 2021, Huawei representatives offered cash and 'excessive gifts' (meals, travel, and regular football-match invitations) to MEPs and assistants in exchange for favourable positions on EU 5G policy, the central artefact being a January 2021 letter. These are allegations, largely drawn from leaked investigative material; the individuals named deny them and no court has established them.",
+    "whatIsEstablished": "Established as fact: Belgian federal police conducted about 21 searches on 13 March 2025, including Huawei's Brussels office. The Belgian Federal Prosecutor charged five people on 18 March 2025 and eight by early April 2025 (a charge, in Belgian law 'inculpation', is a formal investigative status, not a conviction). The European Parliament suspended Huawei lobbyists' access badges on 14 March 2025. On 16 June 2026 the Parliament lifted Fulvio Martusciello's immunity (344 for, 234 against, 25 abstentions) and upheld the immunity of Salvatore De Meo, Daniel Attard and Nikola Minchev, citing 'a flagrant scarcity of concrete elements' in the requests. The EU anti-fraud office OLAF had declined in 2022 to investigate the 2021 letter. No trial, conviction, acquittal or dismissal of the core case has been located. NO LATER PUBLIC PROCEDURAL UPDATE LOCATED AS OF 1 SEPTEMBER 2026.",
+    "money": [
+      { "amount": 15000, "currency": "EUR", "classification": "ALLEGED BRIBE", "description": "Sum that, per a leaked arrest warrant, may have been proposed to the author of the 2021 letter. Alleged, not established; disputed.", "date": "2021-01-01", "sourceIds": ["S5"] },
+      { "amount": 1500, "currency": "EUR", "classification": "ALLEGED BRIBE", "description": "Sum allegedly proposed to each of the other co-signatories of the 2021 letter. Alleged, not established.", "date": "2021-01-01", "sourceIds": ["S5"] },
+      { "amount": 6700, "currency": "EUR", "classification": "ALLEGED PAYMENT", "description": "Bank transfers into MEP Fulvio Martusciello's Belgian account. He says these were repayment of a personal loan to a former aide, not a bribe. Disputed.", "sourceIds": ["S18"] },
+      { "amount": 49450, "currency": "EUR", "classification": "OTHER", "description": "Cash a former Martusciello aide allegedly received from two companies servicing Huawei via fictitious invoices, routed through Portuguese bank accounts over about five months. Alleged.", "sourceIds": ["S5"] },
+      { "amount": 50000, "currency": "EUR", "classification": "OTHER", "description": "Reported seasonal cost of an Anderlecht VIP football box allegedly used for match invitations. Hospitality value, not a cash payment; the MEP gift-declaration threshold it allegedly exceeded is 150 euros.", "sourceIds": ["S5"] },
+      { "amount": "NOT_DOCUMENTED", "currency": "EUR", "classification": "SEIZED CASH", "description": "No specific seized-cash figure has been published in this case (unlike Qatargate).", "sourceIds": ["S3"] }
+    ],
+    "people": [
+      {
+        "name": "Valerio Ottati", "publicRole": "Huawei EU public-affairs director (from 2019); previously about ten years a European Parliament assistant", "roleAtTime": "Huawei EU public-affairs director", "institution": "Huawei",
+        "caseRole": "SUSPECT", "proceduralStatus": "CHARGED",
+        "allegations": ["Named in reporting as the principal suspect / alleged organiser of the lobbying scheme (charges he has not publicly answered; his lawyer reserves explanations for the investigating judge)."],
+        "establishedFindings": [],
+        "currentStatus": "Charged in March 2025 and reportedly dismissed by Huawei. His earlier career (about a decade as an MEP assistant before moving to Huawei in 2019) is a documented revolving-door path. No later individual procedural update located.",
+        "lastVerified": "2026-06-16", "sourceIds": ["S6", "S17"]
+      },
+      {
+        "name": "Fulvio Martusciello", "publicRole": "Italian MEP (Forza Italia / EPP)", "roleAtTime": "MEP", "institution": "European Parliament",
+        "caseRole": "SUSPECT", "proceduralStatus": "IMMUNITY LIFTED",
+        "allegations": ["Reported to have promoted the 2021 letter; alleged to have received payments. He denies bribery and denies pressure or promises."],
+        "establishedFindings": [],
+        "currentStatus": "The European Parliament lifted his immunity on 16 June 2026 (344 for, 234 against, 25 abstentions), authorising the Belgian investigation to proceed against him. He denies wrongdoing and says the 6,700 euros were repayment of a personal loan. Immunity lifted is not a finding of guilt.",
+        "lastVerified": "2026-06-16", "sourceIds": ["S10", "S11", "S18"]
+      },
+      {
+        "name": "Salvatore De Meo", "publicRole": "Italian MEP (Forza Italia / EPP)", "roleAtTime": "MEP", "institution": "European Parliament",
+        "caseRole": "SUSPECT", "proceduralStatus": "IMMUNITY UPHELD",
+        "allegations": ["Under investigation; he says he never defended Huawei's interests and never signed the letter. Denies wrongdoing."],
+        "establishedFindings": [],
+        "currentStatus": "Belgium requested a waiver of his immunity; on 16 June 2026 the European Parliament declined to lift it, citing a scarcity of concrete elements. He remains under investigation with immunity intact.",
+        "lastVerified": "2026-06-16", "sourceIds": ["S10", "S12"]
+      },
+      {
+        "name": "Daniel Attard", "publicRole": "Maltese MEP (S&D)", "roleAtTime": "MEP", "institution": "European Parliament",
+        "caseRole": "SUSPECT", "proceduralStatus": "IMMUNITY UPHELD",
+        "allegations": ["Under investigation; the request against him was reported to rest partly on a mistaken-identity mix-up with a namesake. Denies wrongdoing."],
+        "establishedFindings": [],
+        "currentStatus": "On 16 June 2026 the European Parliament declined to lift his immunity. Reporting indicated the case against him was partly built on confusion with a same-named person.",
+        "lastVerified": "2026-06-16", "sourceIds": ["S10", "S19"]
+      },
+      {
+        "name": "Nikola Minchev", "publicRole": "Bulgarian MEP (Renew)", "roleAtTime": "MEP", "institution": "European Parliament",
+        "caseRole": "SUSPECT", "proceduralStatus": "IMMUNITY UPHELD",
+        "allegations": ["Under investigation; denies wrongdoing."],
+        "establishedFindings": [],
+        "currentStatus": "On 16 June 2026 the European Parliament declined to lift his immunity, citing a scarcity of concrete elements in the request.",
+        "lastVerified": "2026-06-16", "sourceIds": ["S10", "S13"]
+      },
+      {
+        "name": "Giusi Princi", "publicRole": "Italian MEP (Forza Italia / EPP)", "roleAtTime": "MEP", "institution": "European Parliament",
+        "caseRole": "OTHER", "proceduralStatus": "NOT ACCUSED",
+        "allegations": [],
+        "establishedFindings": [],
+        "currentStatus": "The Belgian prosecutor's waiver request naming her was withdrawn within about 24 hours: she was not an MEP at the time of the alleged conduct and was documented in Reggio Calabria on the date of an alleged Brussels meeting. Treated as cleared in this matter.",
+        "lastVerified": "2025-05-22", "sourceIds": ["S14"]
+      },
+      {
+        "name": "Former aide to Martusciello (reporting masks the name as 'Nuno WM')", "publicRole": "Former parliamentary aide", "roleAtTime": "Former parliamentary aide", "institution": "European Parliament",
+        "caseRole": "SUSPECT", "proceduralStatus": "CHARGED",
+        "allegations": ["Alleged to have handled cash routed through Portuguese accounts via fictitious invoices. His lawyer declines comment."],
+        "establishedFindings": [],
+        "currentStatus": "Reportedly arrested in France, consented to extradition to Belgium, and charged. No later individual procedural update located.",
+        "lastVerified": "2026-06-16", "sourceIds": ["S5"]
+      },
+      {
+        "name": "Cristian Busoi", "publicRole": "Former Romanian MEP (EPP)", "roleAtTime": "Former MEP", "institution": "European Parliament",
+        "caseRole": "OTHER", "proceduralStatus": "STATUS UNKNOWN FROM PUBLIC RECORD",
+        "allegations": ["Reported to be among the letter's signatories. He says he does not recall signing and fully respected the rules. Not charged; no immunity procedure (he is not a sitting MEP)."],
+        "establishedFindings": [],
+        "currentStatus": "Named in reporting as a signatory; not charged. Denies. No public procedural status located.",
+        "lastVerified": "2026-06-16", "sourceIds": ["S4"]
+      }
+    ],
+    "network": {
+      "nodes": [
+        { "id": "ottati", "label": "Valerio Ottati", "nodeType": "LOBBYIST" },
+        { "id": "huawei", "label": "Huawei", "nodeType": "COMPANY" },
+        { "id": "ep", "label": "European Parliament", "nodeType": "AUTHORITY" },
+        { "id": "martusciello", "label": "Fulvio Martusciello", "nodeType": "MEP" },
+        { "id": "letter", "label": "2021 5G letter", "nodeType": "OTHER" },
+        { "id": "nuno", "label": "Former Martusciello aide", "nodeType": "PARLIAMENTARY ASSISTANT" },
+        { "id": "rivellini", "label": "MEP C. Rivellini", "nodeType": "MEP" },
+        { "id": "caputo", "label": "MEP N. Caputo", "nodeType": "MEP" }
+      ],
+      "edges": [
+        { "from": "ottati", "to": "ep", "relationshipType": "FORMER EMPLOYMENT", "description": "Ottati worked about ten years as a European Parliament assistant before joining industry.", "sourceIds": ["S17"], "sourceDate": "2025-05-21" },
+        { "from": "ottati", "to": "huawei", "relationshipType": "EMPLOYMENT", "description": "Ottati was hired by Huawei in 2019 and became its EU public-affairs director: a documented revolving-door move.", "sourceIds": ["S6"], "sourceDate": "2025-03-18" },
+        { "from": "ottati", "to": "rivellini", "relationshipType": "FORMER EMPLOYMENT", "description": "Ottati previously advised MEP Crescenzio Rivellini.", "sourceIds": ["S17"], "sourceDate": "2025-05-21" },
+        { "from": "ottati", "to": "caputo", "relationshipType": "FORMER EMPLOYMENT", "description": "Ottati previously advised MEP Nicola Caputo.", "sourceIds": ["S17"], "sourceDate": "2025-05-21" },
+        { "from": "martusciello", "to": "letter", "relationshipType": "PARLIAMENTARY ROLE", "description": "Martusciello is widely reported as a promoter of the January 2021 letter (he disputes the authorship framing).", "sourceIds": ["S10"], "sourceDate": "2026-06-16" },
+        { "from": "nuno", "to": "martusciello", "relationshipType": "FORMER EMPLOYMENT", "description": "The masked suspect is a former parliamentary aide to Martusciello.", "sourceIds": ["S5"], "sourceDate": "2025-03-27" },
+        { "from": "huawei", "to": "ep", "relationshipType": "LOBBY REGISTRATION", "description": "Huawei's accredited lobbyists held EU Parliament access badges; the Parliament suspended them on 14 March 2025.", "sourceIds": ["S8"], "sourceDate": "2025-03-14" }
+      ]
+    },
+    "investigation": [
+      { "date": "2023-01-01", "authority": "Belgian Federal Prosecutor", "event": "INVESTIGATION OPENED", "person": "", "status": "Covert investigation opened after a tip from the Belgian State Security service (approximate start).", "sourceIds": ["S1"] },
+      { "date": "2025-03-13", "authority": "Belgian Federal Prosecutor", "event": "SEARCH", "person": "Multiple addresses; Huawei EU office", "status": "About 21 searches with roughly 100 officers across Belgium and Portugal.", "sourceIds": ["S2"] },
+      { "date": "2025-03-18", "authority": "Belgian Federal Prosecutor", "event": "CHARGE", "person": "Five people", "status": "Four charged with active corruption and criminal-organisation membership; one with money laundering.", "sourceIds": ["S6"] },
+      { "date": "2025-04-08", "authority": "Belgian Federal Prosecutor", "event": "CHARGE", "person": "Eight people (total)", "status": "Number charged expanded to eight (corruption, money laundering, criminal-organisation participation).", "sourceIds": ["S7"] },
+      { "date": "2025-05-21", "authority": "Belgian Federal Prosecutor", "event": "IMMUNITY REQUEST", "person": "Five MEPs (one withdrawn the next day)", "status": "Waiver requests made public; the request naming Giusi Princi was withdrawn about 24 hours later.", "sourceIds": ["S3"] },
+      { "date": "2026-06-16", "authority": "European Parliament", "event": "IMMUNITY DECISION", "person": "Martusciello (lifted); De Meo, Attard, Minchev (upheld)", "status": "Martusciello's immunity lifted (344-234-25); the other three upheld for scarcity of concrete elements.", "sourceIds": ["S10"] }
+    ],
+    "timeline": [
+      { "date": "2021-01-04", "event": "Eight MEPs sign a letter to Commissioners Vestager, Dombrovskis and Breton urging the Commission not to ban foreign 5G equipment. The letter does not name Huawei.", "sourceIds": ["S4"] },
+      { "date": "2022-01-01", "event": "OLAF declines to investigate the 2021 letter after a Transparency International EU referral.", "sourceIds": ["S16"] },
+      { "date": "2025-03-13", "event": "Belgian federal police carry out about 21 searches, including Huawei's Brussels office.", "sourceIds": ["S2"] },
+      { "date": "2025-03-14", "event": "European Parliament suspends Huawei lobbyists' access badges as a precautionary measure.", "sourceIds": ["S8"] },
+      { "date": "2025-03-18", "event": "Five people charged.", "sourceIds": ["S6"] },
+      { "date": "2025-04-08", "event": "Number charged rises to eight.", "sourceIds": ["S7"] },
+      { "date": "2025-05-21", "event": "Belgium's requests to waive five MEPs' immunity made public; one withdrawn the next day.", "sourceIds": ["S3"] },
+      { "date": "2025-07-10", "event": "Parliament President announces a rule change requiring immunity-waiver requests to contain 'essential elements' before any public announcement, after the Princi and Attard blunders.", "sourceIds": ["S15"] },
+      { "date": "2026-06-16", "event": "Parliament lifts Martusciello's immunity and upholds the immunity of De Meo, Attard and Minchev.", "sourceIds": ["S10"] }
+    ],
+    "immunityStatus": "Belgium requested waivers for five MEPs (announced 21 May 2025); one (Princi) was withdrawn within a day. On 16 June 2026 the European Parliament lifted Martusciello's immunity (344-234-25) and upheld the immunity of De Meo, Attard and Minchev, citing a scarcity of concrete elements in the requests.",
+    "whatHappenedNext": [
+      { "person": "Fulvio Martusciello", "development": "Immunity lifted (16 June 2026); the Belgian investigation may now proceed against him. He denies wrongdoing.", "date": "2026-06-16", "sourceIds": ["S10"] },
+      { "person": "De Meo, Attard, Minchev", "development": "Immunity upheld; they remain under investigation with immunity intact.", "date": "2026-06-16", "sourceIds": ["S10"] },
+      { "person": "Giusi Princi", "development": "Waiver request withdrawn within about 24 hours; treated as cleared in this matter.", "date": "2025-05-22", "sourceIds": ["S14"] },
+      { "person": "European Parliament", "development": "President Metsola announced tighter rules for immunity-waiver requests after mistaken-identity and timing blunders.", "date": "2025-07-10", "sourceIds": ["S15"] },
+      { "person": "Huawei", "development": "Lobbyists' Parliament access suspended (14 March 2025); a formal Transparency Register removal is not documented in located sources.", "date": "2025-03-14", "sourceIds": ["S8"] }
+    ],
+    "currentStatus": {
+      "statusLabel": "ONGOING INVESTIGATION",
+      "lastProceduralEvent": "Parliament lifted Martusciello's immunity and upheld three others' immunity",
+      "date": "2026-06-16",
+      "authority": "European Parliament / Belgian Federal Prosecutor",
+      "lastVerified": "2026-09-01",
+      "note": "No trial, conviction, acquittal or dismissal of the core case located. NO LATER PUBLIC PROCEDURAL UPDATE LOCATED AS OF 1 SEPTEMBER 2026.",
+      "sourceIds": ["S10"]
+    },
+    "statusHistory": [
+      { "date": "2025-03-13", "status": "ONGOING INVESTIGATION", "note": "Raids and searches.", "sourceIds": ["S2"] },
+      { "date": "2025-03-18", "status": "ONGOING INVESTIGATION", "note": "First charges.", "sourceIds": ["S6"] },
+      { "date": "2026-06-16", "status": "ONGOING INVESTIGATION", "note": "Immunity decisions.", "sourceIds": ["S10"] }
+    ],
+    "sources": [
+      { "sourceId": "S1", "sourceType": "MEDIA", "institution": "Follow the Money", "title": "Huawei targeted in new European Parliament corruption probe", "publicationDate": "2025-03-14", "sourceURL": "https://www.ftm.eu/articles/huawei-targeted-in-european-parliament-corruption-probe", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S2", "sourceType": "MEDIA", "institution": "Franceinfo (quoting the Belgian Federal Prosecutor)", "title": "Une vague de perquisitions menee en Belgique pour corruption au sein du Parlement europeen", "publicationDate": "2025-03-13", "sourceURL": "https://www.franceinfo.fr/monde/europe/union-europeenne/soupcons-de-corruption-au-parlement-europeen/une-vague-de-perquisitions-menee-en-belgique-pour-corruption-au-sein-du-parlement-europeen_7127490.html", "accessDate": "2026-09-01", "language": "fr", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S3", "sourceType": "MEDIA", "institution": "Euronews", "title": "Lobbying scandal related to Huawei: what we know so far", "publicationDate": "2025-05-21", "sourceURL": "https://www.euronews.com/my-europe/2025/05/21/lobbying-scandal-related-to-huawei-what-we-know-so-far", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S4", "sourceType": "MEDIA", "institution": "Euronews", "title": "MEPs who signed Huawei-linked 5G letter deny payments", "publicationDate": "2025-03-27", "sourceURL": "https://www.euronews.com/my-europe/2025/03/27/meps-who-signed-huawei-linked-5g-letter-deny-payments", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S5", "sourceType": "MEDIA", "institution": "Follow the Money", "title": "Huawei's EU bribery scheme exposed", "publicationDate": "2025-04-01", "sourceURL": "https://www.ftm.eu/articles/huaweis-eu-bribery-scheme-exposed", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S6", "sourceType": "MEDIA", "institution": "Euronews", "title": "Five people charged in European Parliament corruption probe", "publicationDate": "2025-03-18", "sourceURL": "https://www.euronews.com/my-europe/2025/03/18/five-people-charged-in-european-parliament-corruption-probe-linked-to-suspected-bribery-by", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S7", "sourceType": "MEDIA", "institution": "The Register", "title": "Eight charged with corruption, money laundering in Huawei lobbying case", "publicationDate": "2025-04-08", "sourceURL": "https://www.theregister.com/2025/04/08/belgium_arrests_huawei_raid_links/", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S8", "sourceType": "MEDIA", "institution": "France 24", "title": "European Parliament bans Huawei lobbyists from premises amid corruption probe", "publicationDate": "2025-03-14", "sourceURL": "https://www.france24.com/en/europe/20250314-european-parliament-bans-huawei-lobbyists-from-premises-amid-corruption-probe", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S10", "sourceType": "MEDIA", "institution": "Euronews", "title": "European Parliament lifts immunity of Italian MEP investigated for Huawei corruption scandal", "publicationDate": "2026-06-16", "sourceURL": "https://www.euronews.com/my-europe/2026/06/16/european-parliament-lifts-immunity-of-italian-mep-investigated-for-huawei-corruption-scand", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S11", "sourceType": "PARLIAMENT", "institution": "European Parliament (Legislative Observatory)", "title": "Immunity procedure file 2025/2099(IMM) - Martusciello", "publicationDate": "2026-06-16", "sourceURL": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/2099(IMM)", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S12", "sourceType": "PARLIAMENT", "institution": "European Parliament (Legislative Observatory)", "title": "Immunity procedure file 2025/2098(IMM) - De Meo", "publicationDate": "2026-06-16", "sourceURL": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/2098(IMM)", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S13", "sourceType": "PARLIAMENT", "institution": "European Parliament (Legislative Observatory)", "title": "Immunity procedure file 2025/2100(IMM) - Minchev", "publicationDate": "2026-06-16", "sourceURL": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2025/2100(IMM)", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S14", "sourceType": "MEDIA", "institution": "Eunews", "title": "Princi (FI): in less than 24 hours the Belgian prosecutor withdraws request to revoke my immunity", "publicationDate": "2025-05-22", "sourceURL": "https://www.eunews.it/en/2025/05/22/princi-fi-in-less-than-24-hours-the-belgian-prosecutors-office-withdraws-request-to-revoke-my-parliamentary-immunity/", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S15", "sourceType": "MEDIA", "institution": "France 24 / AFP", "title": "Huawei probe blunder sparks EU parliament rules change", "publicationDate": "2025-07-10", "sourceURL": "https://www.france24.com/en/live-news/20250710-huawei-probe-blunder-sparks-eu-parliament-rules-change", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S16", "sourceType": "MEDIA", "institution": "The European Conservative", "title": "EU's Anti-Fraud Office will not investigate 'Huaweigate'", "publicationDate": "2025-03-20", "sourceURL": "https://europeanconservative.com/articles/news/eus-anti-fraud-office-will-not-investigate-huaweigate/", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S17", "sourceType": "MEDIA", "institution": "Follow the Money", "title": "Huawei lobbyist career path (Ottati: Rivellini, Caputo, Commission)", "publicationDate": "2025-04-01", "sourceURL": "https://www.ftm.eu/articles/huawei-lobbyist-bragged-about-corruption-office", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S18", "sourceType": "MEDIA", "institution": "Follow the Money", "title": "Italian MEP rejects bribery allegations amid immunity battle", "publicationDate": "2025-05-01", "sourceURL": "https://www.ftm.eu/articles/huawei-bribery-allegations-italian-mep-european-parliament-immunity-battle", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S19", "sourceType": "MEDIA", "institution": "MaltaToday", "title": "Maltese MEP Daniel Attard mistaken for namesake as Belgian prosecutors fudge Huawei bribery probe", "publicationDate": "2025-05-01", "sourceURL": "https://www.maltatoday.com.mt/news/europe/140311/maltese_mep_daniel_attard_mistaken_for_namesake_as_belgian_prosecutors_fudge_huawei_bribery_probe", "accessDate": "2026-09-01", "language": "en", "primaryOrSecondary": "SECONDARY" }
+    ],
+    "claims": [
+      { "claimId": "c-raids", "claimText": "Belgian police carried out about 21 searches on 13 March 2025, including Huawei's Brussels office.", "claimType": "procedural", "status": "VERIFIED", "sourceIds": ["S2"], "lastVerified": "2026-09-01" },
+      { "claimId": "c-charged", "claimText": "Five people were charged on 18 March 2025; eight by early April 2025.", "claimType": "procedural", "status": "VERIFIED", "sourceIds": ["S6", "S7"], "lastVerified": "2026-09-01" },
+      { "claimId": "c-letter", "claimText": "Eight MEPs signed a January 2021 letter urging the Commission not to ban foreign 5G equipment.", "claimType": "historical", "status": "VERIFIED", "sourceIds": ["S4"], "lastVerified": "2026-09-01" },
+      { "claimId": "c-immunity-2026", "claimText": "On 16 June 2026 the Parliament lifted Martusciello's immunity and upheld three others'.", "claimType": "procedural", "status": "VERIFIED", "sourceIds": ["S10", "S11"], "lastVerified": "2026-09-01" }
+    ],
+    "clerkAssessment": {
+      "administrativeAmbition": "Ambitious. A letter about 'technological racism' that somehow never mentioned the technology company.",
+      "financialJudgement": "Undetermined. John notes that a VIP football box is not, strictly, a declarable gift if nobody declares it.",
+      "paperworkGenerated": "Considerable. One immunity request had the wrong person in it; John admires the confidence.",
+      "accountabilityStatus": "Rules were tightened after the paperwork went out with the wrong name. John has updated the template.",
+      "lessonsLearned": "The Department has been advised that lobbying is completely normal, right up until it is searched.",
+      "departmentVerdict": "APPROVED."
+    },
+    "johnNotes": "John notes that one MEP has had his immunity lifted, three have kept theirs, one was cleared within a day, and eight people are charged and deny it. No court has ruled. John will update the file.",
+    "lastVerified": "2026-09-01",
+    "publishedDate": "2026-09-01",
+    "updatedDate": "2026-09-01"
+  }
+]

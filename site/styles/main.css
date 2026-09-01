@@ -148,6 +148,12 @@ h1, h2, h3 { margin: 0; font-family: var(--f-display); font-weight: 700; letter-
 }
 .filetab:hover { background: var(--manila); transform: translateY(-1px); }
 .filetab:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+/* Belgian Desk tab accent (self-contained so it also works on the main page) */
+.filetab--belgian { position: relative; }
+.filetab--belgian::after {
+  content: ""; position: absolute; left: 8px; right: 8px; bottom: 4px; height: 3px;
+  background: linear-gradient(90deg, #17130b 0 33.33%, #e6b325 33.33% 66.66%, #c1121f 66.66% 100%);
+}
 
 /* ---------------------------------------------------------------------
    HERO
