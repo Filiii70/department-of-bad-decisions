@@ -57,8 +57,33 @@ function statusSlug(label) {
   if (l.includes('immunity')) return 'immunity';
   if (l.includes('disciplinary')) return 'disciplinary';
   if (l.includes('ongoing')) return 'ongoing';
+  if (l.includes('not accused') || l.includes('cleared')) return 'acquitted';
+  if (l.includes('charged') || l.includes('indicted')) return 'charged';
+  if (l.includes('investigation')) return 'ongoing';
   return 'unclear';
 }
+
+// Plain-language status label for the citizen status cards.
+const SIMPLE_STATUS = {
+  CONVICTED: 'Convicted', ACQUITTED: 'Acquitted', CHARGED: 'Charged', INDICTED: 'Indicted',
+  'ON TRIAL': 'On trial', 'UNDER INVESTIGATION': 'Under investigation',
+  'IMMUNITY LIFTED': 'Immunity lifted', 'IMMUNITY UPHELD': 'Immunity kept',
+  'IMMUNITY REQUESTED': 'Immunity requested', 'COOPERATING WITNESS': 'Admitted / cooperating',
+  'NOT ACCUSED': 'Cleared', 'CASE DISMISSED': 'Case dropped', 'INVESTIGATION CLOSED': 'Case closed',
+  'STATUS UNKNOWN FROM PUBLIC RECORD': 'Status unclear', SUSPECTED: 'Suspected', ALLEGED: 'Alleged', WITNESS: 'Witness',
+};
+function simpleStatus(s) { return SIMPLE_STATUS[s] || s || 'Status unclear'; }
+
+// Plain-language relationship label for the public network map.
+const HUMAN_REL = {
+  'FORMER EMPLOYMENT': 'worked for', EMPLOYMENT: 'went to work for', 'BOARD MEMBERSHIP': 'board member of',
+  'PARLIAMENTARY ROLE': 'role in', 'LOBBY REGISTRATION': 'lobbied', 'DECLARED MEETING': 'met with',
+  PAYMENT: 'paid', 'DECLARED INTEREST': 'declared interest in', 'FAMILY RELATIONSHIP': 'family / partner of',
+  'OFFICIAL TRAVEL': 'travelled with', 'PUBLICLY DOCUMENTED COMMUNICATION': 'communicated with',
+  OWNERSHIP: 'owns', DONATION: 'donated to', 'INVESTIGATIVE RELATIONSHIP': 'investigated by',
+  'POLITICAL GROUP MEMBERSHIP': 'member of',
+};
+function humanRel(t) { return HUMAN_REL[t] || (t || '').toLowerCase(); }
 
 function editorialNotice() {
   const w = el('section', 'editorial-notice');
@@ -197,6 +222,7 @@ function whoKnowsWho(network, srcMap) {
     wrap.appendChild(note);
     return wrap;
   }
+  wrap.appendChild(el('div', 'wkw-banner', 'A connection is not an accusation. Every line on this map has a public source.'));
   const nodes = Array.isArray(network.nodes) ? network.nodes : [];
   const nodeById = new Map(nodes.map((n) => [n.id, n]));
   // Deterministic circular layout with generous padding so labels never clip.
@@ -218,8 +244,8 @@ function whoKnowsWho(network, srcMap) {
     lineNode.classList.add('active');
     detail.innerHTML = '';
     const a = nodeById.get(e.from), b = nodeById.get(e.to);
-    detail.appendChild(el('div', 'd-rel', `${(a && a.label) || e.from}  —[ ${e.relationshipType} ]→  ${(b && b.label) || e.to}`));
-    if (hasValue(e.description)) detail.appendChild(el('div', null, e.description));
+    detail.appendChild(el('div', 'd-rel', `${(a && a.label) || e.from}  ${humanRel(e.relationshipType)}  ${(b && b.label) || e.to}`));
+    if (hasValue(e.description)) { detail.appendChild(el('div', 'sr-meta', 'What this connection means')); detail.appendChild(el('div', null, e.description)); }
     const meta = [];
     if (hasValue(e.sourceDate)) meta.push('Dated ' + (formatDate(e.sourceDate) || e.sourceDate));
     if (meta.length) detail.appendChild(el('div', 'sr-meta', meta.join(' · ')));
@@ -239,7 +265,7 @@ function whoKnowsWho(network, srcMap) {
     s.appendChild(line); s.appendChild(hit);
     // edge label at midpoint, with a paper background for legibility
     const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
-    const label = e.relationshipType;
+    const label = humanRel(e.relationshipType);
     const w = label.length * 5.4 + 8;
     s.appendChild(svg('rect', { x: mx - w / 2, y: my - 11, width: w, height: 13, rx: 2, class: 'edge-label-bg' }));
     const lbl = svg('text', { x: mx, y: my - 1, 'text-anchor': 'middle', class: 'edge-label' });
@@ -338,115 +364,159 @@ function clerkAssessment(a) {
 // =====================================================================
 // CASE DETAIL
 // =====================================================================
+// A "Show receipt" control opens the full-file section and scrolls to it.
+function receiptButton(text) {
+  const b = el('button', 'receipt-btn', text || 'Show receipt');
+  b.addEventListener('click', () => {
+    const d = document.querySelector('details.receipt');
+    if (d) { d.open = true; d.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+  return b;
+}
+
+function citizenMoney(c) {
+  if (c.citizen && c.citizen.money) return c.citizen.money;
+  const hm = headlineMoney(c);
+  if (hm) return { figure: hm.value, label: hm.label, note: '' };
+  return null;
+}
+
 function caseDetail(c) {
   const srcMap = sourceMap(c.sources);
   const root = el('div');
 
-  // header
-  const header = el('section', 'gov-form');
-  const fh = el('div', 'form-head');
-  const left = el('div', 'fh-left');
-  left.appendChild(el('div', 'fh-id', c.caseNumber + ' · European Union Desk'));
-  left.appendChild(el('div', 'fh-title', c.title || 'Untitled'));
-  if (hasValue(c.subtitle)) left.appendChild(el('div', 'ec-cat', c.subtitle));
-  fh.appendChild(left);
-  const meta = el('div', 'fh-meta');
-  [].concat(c.institutions || [], [c.category]).filter(hasValue).forEach((b) => meta.appendChild(el('div', null, b)));
-  fh.appendChild(meta);
-  header.appendChild(fh);
-  const hb = el('div', 'form-body'); hb.appendChild(sourceStatus()); header.appendChild(hb);
-  root.appendChild(header);
+  // ================= CITIZEN CARD (the 30-second story; also the share block)
+  const card = el('section', 'citizen-card');
+  const top = el('div', 'cc-top');
+  top.appendChild(el('span', 'cc-no', c.caseNumber));
+  if (c.currentStatus && hasValue(c.currentStatus.statusLabel)) {
+    top.appendChild(el('span', 'status-pill ' + statusSlug(c.currentStatus.statusLabel), c.currentStatus.statusLabel));
+  }
+  card.appendChild(top);
+  card.appendChild(el('h1', 'cc-title', c.title));
+  if (hasValue(c.subtitle)) card.appendChild(el('div', 'cc-sub', c.subtitle));
 
-  root.appendChild(editorialNotice());
+  const wh = (c.citizen && c.citizen.whatHappened) || c.executiveSummary;
+  if (hasValue(wh)) {
+    card.appendChild(el('div', 'cc-q', 'What happened?'));
+    card.appendChild(el('p', 'cc-what', wh));
+  }
 
-  // WHERE IS THIS CASE NOW (prominent, near top)
+  const money = citizenMoney(c);
+  if (money) {
+    const m = el('div', 'cc-money');
+    m.appendChild(el('div', 'cc-q', "Where's the money?"));
+    m.appendChild(el('div', 'cc-figure', money.figure));
+    if (hasValue(money.label)) m.appendChild(el('div', 'cc-money-label', money.label));
+    if (hasValue(money.note)) m.appendChild(el('div', 'cc-money-note', money.note));
+    m.appendChild(receiptButton('Show receipt'));
+    card.appendChild(m);
+  }
+
+  if (Array.isArray(c.people) && c.people.length) {
+    card.appendChild(el('div', 'cc-q', 'What happened to them?'));
+    const grid = el('div', 'status-cards');
+    c.people.forEach((p) => {
+      const chip = el('div', 'status-card ' + statusSlug(p.proceduralStatus));
+      chip.appendChild(el('div', 'sc-name', p.name));
+      chip.appendChild(el('div', 'sc-status', simpleStatus(p.proceduralStatus)));
+      grid.appendChild(chip);
+    });
+    card.appendChild(grid);
+  }
+
+  const jl = c.citizen && c.citizen.johnLine;
+  if (hasValue(jl)) {
+    const j = el('div', 'cc-john');
+    j.appendChild(el('div', 'cc-john-label', "John's initial assessment"));
+    j.appendChild(el('div', 'cc-john-line', '“' + jl + '”'));
+    j.appendChild(approved(true));
+    card.appendChild(j);
+  }
+  root.appendChild(card);
+
+  // WHERE IS THIS CASE NOW (citizen-friendly)
   if (c.currentStatus) root.appendChild(statusBox(c.currentStatus));
 
-  // Fact layer
-  const fact = el('section', 'layer layer-fact');
-  fact.appendChild(el('span', 'layer-label', 'The Record · Sourced'));
-  if (hasValue(c.executiveSummary)) { fact.appendChild(sub('Executive summary')); fact.appendChild(el('p', null, c.executiveSummary)); }
-  if (hasValue(c.whatIsEstablished)) { fact.appendChild(sub('What is established')); fact.appendChild(el('p', null, c.whatIsEstablished)); }
-  root.appendChild(fact);
-
-  // Alleged layer (clearly separated)
-  if (hasValue(c.whatIsAlleged)) {
-    const al = el('section', 'layer layer-alleged');
-    al.appendChild(el('span', 'layer-label', 'What is alleged · not proven'));
-    al.appendChild(el('p', null, c.whatIsAlleged));
-    root.appendChild(al);
-  }
-
-  // The Money
-  if (Array.isArray(c.money) && c.money.length) {
-    const sec = el('section', 'eu-section');
-    sec.appendChild(el('div', 'eu-section-head', '')).appendChild(el('h2', null, 'The Money'));
-    sec.appendChild(el('p', 'sr-meta', 'Every amount is labelled by what it actually represents. A seizure is not a proven bribe; an allegation is not a payment.'));
-    sec.appendChild(moneyBlock(c.money));
-    root.appendChild(sec);
-  }
-
-  // The People
-  if (Array.isArray(c.people) && c.people.length) {
-    const sec = el('section', 'eu-section');
-    const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'The People')); sec.appendChild(h);
-    const grid = el('div', 'people-grid');
-    c.people.forEach((p) => grid.appendChild(personCard(p)));
-    sec.appendChild(grid);
-    root.appendChild(sec);
-  }
-
-  // Who Knows Who
+  // WHO KNOWS WHO (flagship, simplified public labels)
   if (c.network && Array.isArray(c.network.edges) && renderableEdges(c.network).length) {
     const sec = el('section', 'eu-section');
-    const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'Who Knows Who?')); h.appendChild(el('span', 'esh-meta', 'Documented relationships only')); sec.appendChild(h);
+    const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'Who knows who?')); h.appendChild(el('span', 'esh-meta', 'Documented links only')); sec.appendChild(h);
     sec.appendChild(whoKnowsWho(c.network, srcMap));
     root.appendChild(sec);
   }
 
-  // Investigation
-  if (Array.isArray(c.investigation) && c.investigation.length) {
-    const sec = el('section', 'eu-section');
-    const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'The Investigation')); sec.appendChild(h);
-    sec.appendChild(investigationTracker(c.investigation));
-    root.appendChild(sec);
+  // ================= THE FULL FILE (the receipts) — collapsed by default
+  const details = el('details', 'receipt');
+  const summary = el('summary');
+  summary.appendChild(el('span', 'receipt-label', 'Show the full file'));
+  summary.appendChild(el('span', 'receipt-hint', 'the receipts: money, people, timeline, sources'));
+  details.appendChild(summary);
+  const full = el('div', 'receipt-body');
+
+  full.appendChild(editorialNotice());
+
+  if (hasValue(c.whatIsAlleged)) {
+    const al = el('section', 'layer layer-alleged');
+    al.appendChild(el('span', 'layer-label', 'What is alleged · not proven'));
+    al.appendChild(el('p', null, c.whatIsAlleged));
+    full.appendChild(al);
+  }
+  if (hasValue(c.whatIsEstablished)) {
+    const es = el('section', 'layer layer-fact');
+    es.appendChild(el('span', 'layer-label', 'What is established'));
+    es.appendChild(el('p', null, c.whatIsEstablished));
+    full.appendChild(es);
   }
 
-  // Timeline
+  if (Array.isArray(c.money) && c.money.length) {
+    const sec = el('section', 'eu-section');
+    const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'The money — every amount, labelled')); sec.appendChild(h);
+    sec.appendChild(el('p', 'sr-meta', 'A seizure is not a proven bribe; an allegation is not a payment.'));
+    sec.appendChild(moneyBlock(c.money));
+    full.appendChild(sec);
+  }
+  if (Array.isArray(c.people) && c.people.length) {
+    const sec = el('section', 'eu-section');
+    const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'The people — exact status')); sec.appendChild(h);
+    const grid = el('div', 'people-grid'); c.people.forEach((p) => grid.appendChild(personCard(p))); sec.appendChild(grid);
+    full.appendChild(sec);
+  }
+  if (Array.isArray(c.investigation) && c.investigation.length) {
+    const sec = el('section', 'eu-section');
+    const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'The investigation')); sec.appendChild(h);
+    sec.appendChild(investigationTracker(c.investigation)); full.appendChild(sec);
+  }
   if (Array.isArray(c.timeline) && c.timeline.length) {
     const sec = el('section', 'eu-section');
     const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'Timeline')); sec.appendChild(h);
-    sec.appendChild(timeline(c.timeline));
-    root.appendChild(sec);
+    sec.appendChild(timeline(c.timeline)); full.appendChild(sec);
   }
-
-  // What happened next
   if (Array.isArray(c.whatHappenedNext) && c.whatHappenedNext.length) {
     const sec = el('section', 'eu-section');
-    const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'What Happened Next?')); sec.appendChild(h);
-    sec.appendChild(aftermath(c.whatHappenedNext));
-    root.appendChild(sec);
+    const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'What happened next?')); sec.appendChild(h);
+    sec.appendChild(aftermath(c.whatHappenedNext)); full.appendChild(sec);
   }
-
-  // Source file
   const sf = el('section', 'eu-section');
-  const sh = el('div', 'eu-section-head'); sh.appendChild(el('h2', null, 'Source File')); sh.appendChild(el('span', 'esh-meta', 'Primary sources highlighted')); sf.appendChild(sh);
+  const sh = el('div', 'eu-section-head'); sh.appendChild(el('h2', null, 'Source file — the receipts')); sh.appendChild(el('span', 'esh-meta', 'Primary sources highlighted')); sf.appendChild(sh);
   if (Array.isArray(c.sources) && c.sources.length) c.sources.forEach((s) => sf.appendChild(sourceRecord(s)));
   else sf.appendChild(el('p', null, 'No sources attached.'));
-  root.appendChild(sf);
+  full.appendChild(sf);
 
-  // John's assessment (satire)
   const ca = clerkAssessment(c.clerkAssessment || {});
   if (ca || hasValue(c.johnNotes)) {
     const satire = el('section', 'layer layer-satire');
-    satire.appendChild(el('span', 'layer-label', "John's Assessment · Editorial Satire"));
+    satire.appendChild(el('span', 'layer-label', "John's full assessment · Editorial Satire"));
     if (ca) satire.appendChild(ca);
     if (hasValue(c.johnNotes)) satire.appendChild(el('p', null, c.johnNotes));
     satire.appendChild(el('div', 'satire-note', 'John reads the paperwork; he does not make criminal findings. This block is satire, not a legal conclusion.'));
     const sw = el('div'); sw.style.marginTop = '14px'; sw.appendChild(approved(false));
     satire.appendChild(sw);
-    root.appendChild(satire);
+    full.appendChild(satire);
   }
+
+  details.appendChild(full);
+  root.appendChild(details);
   return root;
 }
 
