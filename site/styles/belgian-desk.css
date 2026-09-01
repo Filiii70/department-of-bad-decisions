@@ -493,3 +493,17 @@ body.belgian {
 
 /* $DBD demoted section header */
 .dbd-office .hs-head h2 { font-size: clamp(18px, 2.6vw, 24px); }
+
+/* EU-first homepage hero variant (used on the front door) */
+.home-hero.eu .flag {
+  background-color: #003399;
+  background-image: url("../assets/eu-flag.svg");
+  background-repeat: no-repeat;
+  background-position: 72% 42%;
+  background-size: 150% auto;
+}
+.home-hero.eu .home-eu-division {
+  display: inline-block; font-family: var(--f-stamp); text-transform: uppercase; letter-spacing: .2em; font-weight: 700;
+  font-size: 14px; color: #003399; border-bottom: 3px solid #e6b325; padding-bottom: 2px; margin: 2px 0 10px;
+}
+.home-hero.eu .hh-copy .pay { color: #003399; }
