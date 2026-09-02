@@ -478,7 +478,7 @@ function caseDetail(c) {
   if (Array.isArray(c.money) && c.money.length) {
     const sec = el('section', 'eu-section');
     const h = el('div', 'eu-section-head'); h.appendChild(el('h2', null, 'The money — every amount, labelled')); sec.appendChild(h);
-    sec.appendChild(el('p', 'sr-meta', 'A seizure is not a proven bribe; an allegation is not a payment.'));
+    sec.appendChild(el('p', 'sr-meta', hasValue(c.moneyNote) ? c.moneyNote : 'Every amount is labelled by what it is: an allegation is not a payment, an audit finding is not a loss, a seizure is not a proven bribe.'));
     sec.appendChild(moneyBlock(c.money));
     full.appendChild(sec);
   }

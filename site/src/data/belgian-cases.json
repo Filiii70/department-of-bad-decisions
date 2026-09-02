@@ -29,14 +29,14 @@
           "label": "Projected accounting value",
           "amount": 13600000000,
           "classification": "Projected accounting value at full completion (Lantis financial model)",
-          "asOf": "projected to 2034",
+          "asOf": "2034 (projected)",
           "represents": "Per the Flemish Government this reflects subordinated lending, risk financing and indexation over time, not additional construction cost. A projection, not money already spent."
         },
         {
           "label": "Projected financing shortfall",
           "amount": 2300000000,
           "classification": "Projected shortfall flagged by the Court of Audit (Rekenhof)",
-          "asOf": "reported 2025-2026",
+          "asOf": "2025-2026",
           "represents": "A projected financing gap above the loan ceiling, itself raised from €3.6bn to €6.7bn. A forward-looking projection, not a realised or documented loss."
         },
         {
@@ -100,7 +100,7 @@
       "administrativeCompetence": "Under administrative review, indefinitely.",
       "paperworkGenerated": "Exceptional. Possibly the true deliverable.",
       "accountabilityStatus": "Please contact another department, or the next generation.",
-      "lessonsLearned": "Pending.",
+      "lessonsLearned": "The ring road will close before the budget does.",
       "departmentVerdict": "APPROVED."
     },
     "departmentNotes": "The Department admires any road whose financing model requires a projected accounting value larger than several small economies. Filed under 'mobility, eventually'.",
@@ -155,9 +155,9 @@
     "lastVerified": "2026-09-02",
     "sources": [
       {
-        "sourceName": "Encyclopaedia Universalis",
+        "sourceName": "Encyclopaedia Universalis (reference work)",
         "sourceTitle": "23 decembre 1998 – Decision judiciaire dans l'affaire Agusta-Dassault",
-        "sourceType": "OFFICIAL REPORT",
+        "sourceType": "MEDIA",
         "sourceURL": "https://www.universalis.fr/evenement/23-decembre-1998-decision-judiciaire-dans-l-affaire-agusta-dassault/",
         "accessDate": "2026-09-02"
       },
@@ -314,7 +314,7 @@
           "label": "Estimated total penalties owed",
           "amount": 100000000,
           "classification": "Estimated total astreintes owed by the State, reportedly unpaid",
-          "asOf": "reported 2025",
+          "asOf": "2025 (reported)",
           "represents": "An Amnesty International estimate of penalty payments the State owes but has, per the report, largely not paid. An estimate, not a single court-certified sum, and not money recovered."
         }
       ],
@@ -475,7 +475,7 @@
     "status": "INQUIRY FINDINGS; REFERRED TO TRIAL (2026); NO CONVICTION (presumed innocent)",
     "institution": "Brussels COCOM Parliament (inquiry) · Brussels judiciary · Samusocial (ASBL)",
     "governmentLevel": "BRUSSELS",
-    "location": "Brussels",
+    "location": "",
     "date": "2018-02-21",
     "year": 2018,
     "category": "CONFLICT OF INTEREST",
@@ -489,21 +489,21 @@
           "label": "Attendance fees to reimburse (total)",
           "amount": 346300,
           "classification": "Parliamentary-inquiry finding; reimbursement sought",
-          "asOf": "over several years to 2016",
+          "asOf": "to 2016",
           "represents": "Total attendance fees the inquiry considered improperly received by twelve administrators and sought to have reimbursed. An inquiry finding, not a criminal judgment."
         },
         {
           "label": "Attendance fees, former mayor",
           "amount": 112980,
           "classification": "Parliamentary-inquiry finding; reimbursement sought from Yvan Mayeur",
-          "asOf": "over several years",
+          "asOf": "multi-year",
           "represents": "The share of attendance fees the inquiry sought to have reimbursed by the former Brussels mayor. An inquiry finding, not proof of a crime."
         },
         {
           "label": "Attendance fees, former CPAS president",
           "amount": 113400,
           "classification": "Parliamentary-inquiry finding; reimbursement sought from Pascale Peraita",
-          "asOf": "over several years",
+          "asOf": "multi-year",
           "represents": "The share of attendance fees the inquiry sought to have reimbursed by the former CPAS president. An inquiry finding, not proof of a crime."
         },
         {
@@ -568,6 +568,141 @@
     "departmentNotes": "The Department notes that the criminal case has been referred to trial but not decided: no one here has been convicted, and the defendants are presumed innocent. The established findings are the parliamentary inquiry's. Filed under 'charity, overhead-heavy'.",
     "illustration": null,
     "tags": ["brussels", "conflict-of-interest", "parliamentary-inquiry", "referred-to-trial", "presumed-innocent"],
+    "publishedDate": "2026-09-02",
+    "updatedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-0007",
+    "title": "COVID vaccine distribution (Medista / Movianto)",
+    "subtitle": "A contract switch, an internal audit, and a great many lawyers",
+    "status": "ADMINISTRATIVE AUDIT FINDING (an official, not the minister); REFERRED TO PROSECUTOR; DISPUTES PENDING; NO CHARGES OR CONVICTIONS",
+    "institution": "FPS Public Health (SPF Sante publique) · Federal Internal Audit (FIA) · Belgian federal government",
+    "governmentLevel": "FEDERAL",
+    "location": "Belgium",
+    "date": "2024-03-26",
+    "year": 2024,
+    "category": "PROCUREMENT",
+    "intended": "Store and distribute Belgium's strategic reserve of medicines, COVID tests and vaccines under a public contract run by the federal health service (FPS Public Health).",
+    "actual": "The distribution contract shifted from the incumbent Medista to Movianto in mid-2022, primarily on price. Millions of doses of original-strain vaccine were later slated for destruction as superseded by variant-adapted vaccines. A federal internal audit reported an administrative conflict of interest by an FPS Health official (not the minister). The minister ordered the audit, opened disciplinary action against the official and referred matters to the public prosecutor. Medista lost its challenge to the award at the Council of State; invoice disputes and criminal complaints remain pending. No wrongdoing by the minister has been established, and no one has been charged or convicted.",
+    "summary": "Belgium's strategic reserve of medicines, COVID tests and vaccines was stored and distributed under a public contract run by the federal health service (FPS Public Health). The incumbent, Medista, had held the warehouse-management contract (a 2020 negotiated procedure without prior publication, because at the crisis onset it was reportedly the only wholesaler with immediate capacity, per the minister's statement to Parliament on 15 July 2021). After a new tender (2022STRSTK), the 2022-2025 distribution contract was awarded to Movianto in mid-2022, primarily on price: reported bids were about €10.8 million (Movianto) against €15.2 million (Medista), a gap of roughly €4.4 million. On 6 June 2023 the minister told Parliament that quantities to be destroyed as superseded by variant-adapted vaccines included 2,631,000 doses of original-strain Moderna and 3,305,220 doses of original-strain Pfizer. In late March 2024, reporting by VRT and L'Avenir described a non-public Federal Internal Audit (FIA) report finding that an FPS Health official had placed herself and a Deloitte Legal lawyer (who had helped draft the tender conditions) in a conflict of interest, describing this as 'at minimum a deontological breach', flagging possible passive corruption as something to be investigated, and stating there were 'no indications of ill intent at this stage'. That is an administrative and deontological audit finding, not a criminal determination, and it did not invalidate the award. The finding concerns an official, not the minister. Minister Frank Vandenbroucke, who has political and oversight responsibility for the administration, is the person who ordered the audit, opened a disciplinary procedure against the official, and referred the audit's problem points to the public prosecutor (also filing a civil-party complaint about secret recordings made by the supplier). Separately, Medista challenged the award before the Council of State and lost; invoice disputes and criminal complaints between the parties remain pending. No authoritative finding of any kind exists against the minister, and no one has been charged or convicted.",
+    "publicMoney": {
+      "currency": "EUR",
+      "figures": [
+        {
+          "label": "Winning bid (Movianto)",
+          "amount": 10800000,
+          "classification": "Reported bid amount (secondary: VRT reporting)",
+          "asOf": "2022 tender 2022STRSTK",
+          "represents": "The reported winning bid for the 2022-2025 strategic-stock distribution contract. Price was reported as the primary decisive factor. A reported figure, not an audited one."
+        },
+        {
+          "label": "Incumbent bid (Medista)",
+          "amount": 15200000,
+          "classification": "Reported bid amount (secondary: VRT reporting)",
+          "asOf": "2022 tender",
+          "represents": "The incumbent's higher reported bid, about €4.4 million above the winner. A reported figure, not proof of anything improper."
+        },
+        {
+          "label": "Paid to Medista (2021)",
+          "amount": 23500000,
+          "classification": "Payment made for services (secondary: VRT reporting); established payment",
+          "asOf": "2021",
+          "represents": "Reported payment by FPS Health to Medista in 2021, on top of about €4.01 million in 2020; cumulative government payments to Medista were reported above €40 million. Payments for services rendered, not a loss."
+        },
+        {
+          "label": "Disputed invoices",
+          "amount": 4000000,
+          "classification": "Disputed / in civil litigation (secondary: VRT reporting); not established as owed",
+          "asOf": "November 2023",
+          "represents": "About €4 million of Medista invoices in dispute; Medista's total claim including interest and costs is reported at about €5.6 million. Claims and disputed amounts, not court-established debts."
+        }
+      ],
+      "currentStatus": "The euro figures above are reported bids, reported payments and disputed claims, not audited losses. The vaccine destruction figures (2,631,000 original Moderna and 3,305,220 original Pfizer doses) are dose counts the minister gave to Parliament, for doses superseded by newer vaccines, not a euro loss figure. No single authoritative total-waste cost figure is established."
+    },
+    "documentedOutcome": "Council of State rejected Medista's challenge to the Movianto award. A federal internal audit reported an administrative conflict of interest by an FPS Health official and flagged possible passive corruption for further investigation, with 'no indications of ill intent at this stage'. The minister referred matters to the public prosecutor and opened disciplinary action against the official. Invoice disputes and criminal complaints remain pending. No charges and no convictions; no finding against the minister.",
+    "timeline": [
+      { "date": "2021-07-15", "event": "Minister tells Parliament the Medista warehouse contract ended in May 2021 and explains the 2020 negotiated procedure without prior publication (Chamber record ic558)." },
+      { "date": "2022-06-30", "event": "After the 2022STRSTK tender, the 2022-2025 strategic-stock distribution contract is awarded to Movianto (with Raes Logistics), ending Medista's role (reported)." },
+      { "date": "2023-06-06", "event": "Minister gives Parliament the destruction figures: 2,631,000 original Moderna and 3,305,220 original Pfizer doses, as superseded by variant-adapted vaccines (Chamber record ic1106)." },
+      { "date": "2023-12-11", "event": "Reporting details the Medista-Movianto dispute; Medista's challenge to the award at the Council of State is rejected (reported)." },
+      { "date": "2024-03-26", "event": "Reporting describes the FIA audit's conflict-of-interest finding against an FPS Health official; the minister opens disciplinary action and refers problem points to the public prosecutor (reported)." }
+    ],
+    "whoInvolved": [
+      { "name": "Frank Vandenbroucke", "role": "Federal Minister of Public Health; political and oversight responsibility for the administration. Ordered the internal audit, opened disciplinary action against the official, and referred matters to the prosecutor. No finding of any kind against him" },
+      { "name": "An FPS Health official (not named in sources)", "role": "Subject of the internal audit's administrative conflict-of-interest finding; the audit reported 'no indications of ill intent at this stage'; not charged or convicted; presumed innocent" },
+      { "name": "Deloitte Legal", "role": "Advised the administration on the tender conditions; entangled in the reported conflict-of-interest finding" },
+      { "name": "Medista and Movianto", "role": "Incumbent and awardee; parties to the award challenge and the pending civil and criminal complaints" }
+    ],
+    "officialFindings": [
+      { "institution": "Federal Internal Audit (FIA), via VRT / L'Avenir (report non-public)", "finding": "An FPS Health official placed herself and a Deloitte Legal lawyer in a conflict of interest ('at minimum a deontological breach'); possible passive corruption flagged as something to be investigated; 'no indications of ill intent at this stage'; the award was not invalidated. Administrative and deontological, not a criminal determination." },
+      { "institution": "Council of State", "finding": "Rejected Medista's challenge to the Movianto award (reported)." },
+      { "institution": "Federal Internal Audit (FIA), on a separate matter", "finding": "A separate FIA audit into a possible conflict of interest around COVID serological tests (DiaSorin) found no conflict of interest established (minister's statement to Parliament, 6 June 2023)." }
+    ],
+    "lastVerified": "2026-09-02",
+    "sources": [
+      {
+        "sourceName": "Belgian Chamber of Representatives, Health Committee (verbatim record ic558)",
+        "sourceTitle": "Integraal verslag CCRI ic558 (procurement timeline; Medista incumbency)",
+        "sourceType": "PARLIAMENT",
+        "sourceURL": "https://www.dekamer.be/doc/CCRI/html/55/ic558x.html",
+        "publicationDate": "2021-07-15",
+        "primary": true,
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "Belgian Chamber of Representatives, Health Committee (verbatim record ic1106)",
+        "sourceTitle": "Integraal verslag CCRI ic1106 (vaccine-destruction dose figures; DiaSorin audit 'no conflict')",
+        "sourceType": "PARLIAMENT",
+        "sourceURL": "https://www.dekamer.be/doc/CCRI/html/55/ic1106x.html",
+        "publicationDate": "2023-06-06",
+        "primary": true,
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "Belgian Chamber of Representatives, Health Committee (verbatim record ic1271)",
+        "sourceTitle": "Integraal verslag CCRI ic1271 (rescEU / Movianto procurement defended)",
+        "sourceType": "PARLIAMENT",
+        "sourceURL": "https://www.dekamer.be/doc/CCRI/html/55/ic1271x.html",
+        "publicationDate": "2024-02-20",
+        "primary": true,
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "VRT NWS (public broadcaster)",
+        "sourceTitle": "Vandenbroucke start tuchtprocedure en stapt naar het parket in de zaak-Medista",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.vrt.be/vrtnws/nl/2024/03/26/medista-ambtenaar-audit-vaccins/",
+        "publicationDate": "2024-03-26",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "VRT NWS (public broadcaster)",
+        "sourceTitle": "Hoe Medista de strijd met de federale overheid blijft opvoeren (bids, invoices, Council of State)",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.vrt.be/vrtnws/nl/2024/01/25/medista-vandenbroucke-conflict/",
+        "publicationDate": "2024-01-25",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "L'Avenir",
+        "sourceTitle": "Conflit d'interets: les remarques de l'audit federal interne pour le SPF Sante publique et Deloitte",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.lavenir.net/actu/belgique/2024/03/27/conflit-dinterets-les-remarques-accablantes-de-laudit-federal-interne-pour-le-spf-sante-publique-et-deloitte-englues-dans-laffaire-medista-MTCQJS6XONBRHAW6OJIZA7D3MU/",
+        "publicationDate": "2024-03-27",
+        "accessDate": "2026-09-02"
+      }
+    ],
+    "clerkAssessment": {
+      "financialJudgement": "A contract switched to save about €4.4 million, followed by litigation about rather more than that.",
+      "administrativeCompetence": "An internal audit found an official in a conflict of interest with the tender's own legal advisers.",
+      "paperworkGenerated": "One tender, one audit, one disciplinary file, several lawsuits, and a referral to the prosecutor.",
+      "accountabilityStatus": "The minister ordered the audit and went to the prosecutor. Nothing has been decided against anyone.",
+      "lessonsLearned": "Do not let the people who wrote the tender grade the bids they advised on.",
+      "departmentVerdict": "APPROVED."
+    },
+    "departmentNotes": "The Department states plainly: no wrongdoing by Minister Vandenbroucke has been established; his documented role is oversight, and he is the one who ordered the audit and referred it to the prosecutor. The audit finding concerns an official, is administrative rather than criminal, and no one has been charged or convicted. Filed under 'procurement, with lawyers'.",
+    "illustration": null,
+    "tags": ["federal", "procurement", "covid", "audit-finding", "conflict-of-interest", "pending"],
     "publishedDate": "2026-09-02",
     "updatedDate": "2026-09-02"
   }

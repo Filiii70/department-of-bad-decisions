@@ -505,6 +505,7 @@
     "caseNumber": "DBD-EU-0004",
     "title": "Agrofert / Andrej Babis",
     "subtitle": "An EU conflict-of-interest finding over subsidies to a prime minister's former company",
+    "moneyNote": "An audit finding is not a criminal finding; EU funding that was questioned or blocked is not money proven stolen.",
     "category": "CONFLICT OF INTEREST",
     "institutions": ["European Commission", "European Parliament", "European Court of Auditors"],
     "citizen": {
@@ -597,6 +598,7 @@
     "caseNumber": "DBD-EU-0005",
     "title": "Frontex / Fabrice Leggeri",
     "subtitle": "The EU border agency, its director, and a refused budget discharge",
+    "moneyNote": "A refused budget discharge and an OLAF report are administrative and political findings, not a criminal finding; questioned accountability is not money proven misused.",
     "category": "POWER",
     "institutions": ["European Parliament", "OLAF (European Anti-Fraud Office)", "Frontex"],
     "citizen": {
@@ -678,7 +680,7 @@
       "financialJudgement": "Not the point, for once. The Parliament simply declined to sign.",
       "paperworkGenerated": "An OLAF report, a refused discharge, seventeen harassment cases, and one resignation letter.",
       "accountabilityStatus": "The director resigned in 2022 and was elected to the European Parliament in 2024.",
-      "lessonsLearned": "Pending. The Parliament declined to approve the 2020 file and suggested the problems might be structural.",
+      "lessonsLearned": "The Parliament declined to approve the 2020 file and suggested the problems might be structural.",
       "departmentVerdict": "APPROVED."
     },
     "johnNotes": "John notes that OLAF found misconduct, the Parliament refused the discharge, the director resigned and then joined the Parliament, and a French court has since ordered an investigation with no charges. John needs a bigger drawer.",

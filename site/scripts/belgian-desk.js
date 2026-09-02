@@ -17,7 +17,10 @@ function el(tag, cls, text) {
 }
 function link(href, text, cls) {
   const a = el('a', cls, text || href);
-  a.href = href; a.rel = 'noopener noreferrer'; a.target = '_blank';
+  a.href = href;
+  // Only external (http/https) links open in a new tab. Internal case links
+  // (relative hrefs) navigate in the same tab.
+  if (/^https?:/i.test(href)) { a.rel = 'noopener noreferrer'; a.target = '_blank'; }
   return a;
 }
 function mount(id, node) { const h = document.getElementById(id); if (h) { h.innerHTML = ''; if (node) h.appendChild(node); } }
