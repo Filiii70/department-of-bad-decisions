@@ -157,27 +157,64 @@
       </div>
     </section>
 
-    <!-- PUBLIC RECORDS (FORM DBD-002) -->
-    <section class="section" id="public-records" aria-labelledby="pr-title">
-      <div class="sec-kicker">Public Records</div>
+    <!-- PUBLIC RECORDS (homepage verification snapshot; full layer at transparency.html) -->
+    <section class="home-section public-records" id="public-records" aria-labelledby="pr-h">
+      <div class="hs-head">
+        <h2 id="pr-h">Public Records</h2>
+        <div class="hs-note pr-tagline">Don't trust us. Verify us.</div>
+      </div>
+
+      <div id="pr-loaderr" class="load-error" style="display:none;"></div>
+
+      <!-- Project snapshot (canonical values injected from config; static text is a safe default) -->
       <div class="gov-form">
         <div class="form-head">
           <div class="fh-left">
             <div class="fh-id">FORM DBD-002</div>
-            <div class="fh-title" id="pr-title">Register of Public Wallets &amp; Channels</div>
+            <div class="fh-title">Project Record</div>
+          </div>
+          <div class="fh-meta">CLASSIFICATION: PUBLIC</div>
+        </div>
+        <div class="form-body">
+          <div class="field"><span class="f-label">Project</span><span class="f-value" id="pr-project">Department of Bad Decisions</span></div>
+          <div class="field"><span class="f-label">Token</span><span class="f-value" id="pr-token">$DBD</span></div>
+          <div class="field"><span class="f-label">Status</span><span class="f-value" id="pr-status">Pre-Launch</span></div>
+          <div class="field"><span class="f-label">Network</span><span class="f-value" id="pr-network">Solana</span></div>
+          <div class="field"><span class="f-label">Official Mint</span><span class="f-value addr" id="pr-mint">Not Yet Issued</span></div>
+        </div>
+      </div>
+
+      <!-- No-mint warning -->
+      <div class="verify-alert" role="alert">
+        <div class="va-title">No official $DBD contract address exists yet.</div>
+        <p>Any token claiming to be the official $DBD before the verified mint appears here is <strong>not verified by the Department</strong>.</p>
+      </div>
+
+      <!-- Wallets (canonical, no balances) -->
+      <h3 class="pr-subhead">Official wallets</h3>
+      <div class="wallet-grid" id="pr-wallets">
+        <p class="verify-fineprint" id="pr-wallets-fallback">Loading public wallet addresses from the canonical record&hellip;</p>
+      </div>
+      <p class="verify-fineprint">Public addresses only. No balances shown. Open each on Solscan to inspect it yourself.</p>
+
+      <!-- Channels (canonical) -->
+      <div class="gov-form">
+        <div class="form-head">
+          <div class="fh-left">
+            <div class="fh-id">FORM DBD-002 / B</div>
+            <div class="fh-title">Official Channels</div>
           </div>
           <div class="fh-meta">FILED WITH THE<br />OFFICE OF RECORDS</div>
         </div>
         <div class="form-body">
-          <div class="field"><span class="f-label">Creator Wallet</span><span class="f-value addr" id="pub-creator">&hellip;</span></div>
-          <div class="field"><span class="f-label">Treasury Wallet</span><span class="f-value addr" id="pub-treasury">&hellip;</span></div>
-          <div class="field" id="pub-operational-row"><span class="f-label">Operational Wallet</span><span class="f-value addr" id="pub-operational">&hellip;</span></div>
-          <div class="field"><span class="f-label">Official X</span><span class="f-value" id="pub-x">&hellip;</span></div>
-          <div class="field"><span class="f-label">Official Telegram</span><span class="f-value" id="pub-telegram">&hellip;</span></div>
-          <div class="field"><span class="f-label">GitHub</span><span class="f-value" id="pub-github">&hellip;</span></div>
-          <div class="field"><span class="f-label">Mint Address</span><span class="f-value addr" id="pub-mint">&hellip;</span></div>
+          <div class="field"><span class="f-label">Website</span><span class="f-value" id="pr-website">&hellip;</span></div>
+          <div class="field"><span class="f-label">X</span><span class="f-value" id="pr-x">&hellip;</span></div>
+          <div class="field"><span class="f-label">Telegram</span><span class="f-value" id="pr-telegram">&hellip;</span></div>
+          <div class="field"><span class="f-label">GitHub</span><span class="f-value" id="pr-github">&hellip;</span></div>
         </div>
       </div>
+
+      <a class="cta-btn pr-full" href="./transparency.html">Full transparency file &rarr;</a>
     </section>
 
     <!-- FRAUD OFFICE -->
@@ -192,26 +229,6 @@
             <li>Never trust a mint address posted outside official channels without verifying it against this portal.</li>
             <li>The Department will <strong>never</strong> ask you for your seed phrase or private key. Anyone who does is committing fraud, not paperwork.</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- TRANSPARENCY (FORM DBD-003) -->
-    <section class="section" id="transparency" aria-labelledby="tr-title">
-      <div class="sec-kicker">Office of Transparency</div>
-      <div class="gov-form">
-        <div class="form-head">
-          <div class="fh-left">
-            <div class="fh-id">FORM DBD-003</div>
-            <div class="fh-title" id="tr-title">Public Records Registry</div>
-          </div>
-          <div class="fh-meta">MAINTAINED FOR<br />PUBLIC INSPECTION</div>
-        </div>
-        <div class="form-body">
-          <div class="field"><span class="f-label">GitHub</span><span class="f-value" id="t-github">&hellip;</span></div>
-          <div class="field"><span class="f-label">Launch Status</span><span class="f-value" id="t-status">&hellip;</span></div>
-          <div class="field"><span class="f-label">Config Version</span><span class="f-value" id="t-version">&hellip;</span></div>
-          <div class="field"><span class="f-label">Last Updated</span><span class="f-value" id="t-updated">&hellip;</span></div>
         </div>
       </div>
     </section>
@@ -268,5 +285,6 @@
 
   <script src="./scripts/site.js"></script>
   <script type="module" src="./scripts/home-cases.js"></script>
+  <script type="module" src="./scripts/public-records.js"></script>
 </body>
 </html>

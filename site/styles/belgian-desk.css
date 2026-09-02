@@ -568,6 +568,14 @@ body.belgian {
   .eu-more-grid { grid-template-columns: 1fr; }
 }
 
+/* Homepage Public Records verification snapshot */
+.public-records .pr-tagline { font-family: var(--f-stamp); text-transform: uppercase; letter-spacing: .16em; font-weight: 700; color: var(--red); font-size: clamp(13px, 1.8vw, 16px); }
+.public-records .gov-form { margin-bottom: 18px; }
+.public-records .verify-alert { margin: 4px 0 20px; }
+.public-records .pr-subhead { font-family: var(--f-display); text-transform: uppercase; letter-spacing: .04em; font-size: clamp(18px, 2.4vw, 24px); margin: 6px 0 12px; }
+.public-records .wallet-grid { margin-bottom: 8px; }
+.public-records .pr-full { display: inline-block; margin-top: 20px; }
+
 /* Make the EU flag POP on the homepage hero: bolder stars, lighter aging */
 .home-hero.eu { border-top: 5px solid #e6b325; }
 .home-hero.eu .flag { background-position: 80% 45%; background-size: 128% auto; }
