@@ -578,3 +578,44 @@ body.belgian {
 }
 .home-hero.eu .flag::after { opacity: .3; }
 .home-hero.eu .hh-copy { background: rgba(244,236,214,.9); }
+
+/* ===================== VERIFY / TRANSPARENCY PAGE ===================== */
+.verify-hero { position: relative; margin: 18px 0 8px; padding: 34px 30px; background: var(--sheet); border: 1.5px solid var(--line); border-top: 6px solid var(--red); box-shadow: var(--shadow); }
+.verify-hero .division { font-family: var(--f-stamp); text-transform: uppercase; letter-spacing: .18em; font-size: 12px; color: var(--ink-2); }
+.verify-hero h1 { font-family: var(--f-display); text-transform: uppercase; line-height: .95; margin: 8px 0 10px; font-size: clamp(38px, 7vw, 78px); }
+.verify-hero h1 .pay { color: var(--red); }
+.verify-hero .hh-lead { font-family: var(--f-display); font-size: clamp(16px, 2.1vw, 20px); max-width: 60ch; margin: 0 0 16px; }
+
+.verify-alert { margin-top: 16px; border: 2px solid var(--red); background: rgba(179,42,42,.06); padding: 16px 18px; }
+.verify-alert .va-title { font-family: var(--f-stamp); text-transform: uppercase; letter-spacing: .08em; font-weight: 700; font-size: clamp(15px, 2.4vw, 19px); color: var(--red); }
+.verify-alert p { margin: 6px 0 0; }
+
+.verify-fineprint { font-family: var(--f-mono); font-size: 12px; color: var(--ink-2); margin-top: 12px; }
+
+/* Wallet cards */
+.wallet-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+@media (max-width: 900px) { .wallet-grid { grid-template-columns: 1fr; } }
+.wallet-card { position: relative; border: 1.5px solid var(--line); background: var(--sheet); box-shadow: var(--shadow); padding: 18px 18px 16px; }
+.wallet-card .wc-role { font-family: var(--f-stamp); text-transform: uppercase; letter-spacing: .12em; font-weight: 700; font-size: 14px; color: #003399; }
+.wallet-card .wc-desc { font-family: var(--f-display); font-size: 14px; line-height: 1.4; color: var(--ink-2); margin: 6px 0 12px; }
+.wallet-card .wc-addr { display: inline-block; font-family: var(--f-mono); font-size: 20px; font-weight: 700; color: var(--ink); border-bottom: 2px solid rgba(0,51,153,.4); }
+.wallet-card .wc-addr:hover { background: rgba(230,179,37,.18); }
+.wallet-card .wc-full { display: block; font-family: var(--f-mono); font-size: 11px; color: var(--ink-2); word-break: break-all; margin: 8px 0 12px; }
+.wallet-card .wc-actions { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.wallet-card .wc-copy { font-family: var(--f-stamp); text-transform: uppercase; letter-spacing: .1em; font-weight: 700; font-size: 11px; color: #fff; background: var(--ink); border: 1.5px solid var(--line); padding: 8px 12px; cursor: pointer; }
+.wallet-card .wc-copy:hover { background: #003399; }
+.wallet-card .wc-copy.is-copied { background: var(--green); }
+.wallet-card .wc-solscan { font-family: var(--f-stamp); text-transform: uppercase; letter-spacing: .08em; font-weight: 700; font-size: 11px; }
+
+/* Why this exists */
+.why-body { border-left: 4px solid #003399; padding-left: 16px; }
+.why-body p { font-family: var(--f-display); font-size: clamp(15px, 2vw, 18px); margin: 0 0 8px; }
+.why-nots { margin: 8px 0 0; padding-left: 20px; font-family: var(--f-mono); font-size: 13px; color: var(--ink-2); }
+
+/* Bad Decision Register */
+.register { display: grid; gap: 14px; }
+.reg-entry { border: 1.5px solid var(--line); background: var(--sheet); box-shadow: var(--shadow); padding: 16px 18px; border-left: 6px solid var(--red); }
+.reg-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; font-family: var(--f-stamp); text-transform: uppercase; letter-spacing: .1em; font-size: 11px; color: var(--ink-2); }
+.reg-decision { font-family: var(--f-display); text-transform: uppercase; font-size: clamp(18px, 2.8vw, 26px); line-height: 1.05; margin: 8px 0 10px; }
+.reg-foot { display: flex; align-items: center; gap: 10px; }
+.reg-status-label { font-family: var(--f-stamp); text-transform: uppercase; letter-spacing: .1em; font-size: 11px; color: var(--ink-2); }

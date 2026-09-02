@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Don't Trust Us. Verify Us. - Department of Bad Decisions</title>
+  <meta name="description" content="Official DBD verification page. Real Solana wallets, official channels, launch policy and anti-scam guidance. There is no official $DBD mint address yet. Verify everything here before interacting with any token claiming to be $DBD." />
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/belgian-desk.css" />
+  <script>document.documentElement.className += ' js';</script>
+</head>
+<body class="belgian verify">
+  <div class="portal">
+
+    <!-- MASTHEAD -->
+    <header class="masthead">
+      <img class="seal" src="./assets/seal.svg" alt="Official seal of the Department of Bad Decisions" />
+      <div>
+        <div class="m-title">Department of Bad Decisions</div>
+        <div class="m-sub">Office of Transparency &middot; Public Verification</div>
+      </div>
+      <div class="m-right">
+        <div class="doc-no">FILE NO. DBD-VERIFY</div>
+        <div>DON'T TRUST US.</div>
+        <div>VERIFY US.</div>
+      </div>
+    </header>
+
+    <!-- NAV -->
+    <nav class="filetabs" aria-label="Department sections">
+      <a class="filetab" href="./index.html">Department</a>
+      <a class="filetab" href="./eu-desk.html">EU Desk</a>
+      <a class="filetab filetab--belgian" href="./belgian-desk.html">Belgian Desk</a>
+      <a class="filetab" href="./index.html#token-file">$DBD</a>
+      <a class="filetab" href="#wallets">Wallets</a>
+      <a class="filetab" href="#anti-scam">Anti-Scam</a>
+      <a class="filetab" href="#launch-policy">Launch Policy</a>
+    </nav>
+
+    <div id="load-error" class="load-error"></div>
+
+    <!-- VERIFY HERO -->
+    <section class="verify-hero" aria-label="Don't trust us. Verify us.">
+      <div class="vh-copy">
+        <span class="division">Department of Bad Decisions &middot; Office of Transparency</span>
+        <h1>Don't trust us.<br /><span class="pay">Verify us.</span></h1>
+        <p class="hh-lead">Every official wallet, channel and launch fact is published here from a single canonical record. Check it yourself.</p>
+        <div class="stamp" role="img" aria-label="APPROVED">
+          <span class="micro">Official use only</span>
+          <span class="stamp-main">Approved</span>
+          <span class="micro">Do not distribute</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1. PROJECT STATUS -->
+    <section class="home-section" id="project-status" aria-labelledby="ps-h">
+      <div class="hs-head">
+        <h2 id="ps-h">1 &middot; Project Status</h2>
+        <div class="hs-note">The current, canonical state of the $DBD project.</div>
+      </div>
+      <div class="gov-form">
+        <div class="form-head">
+          <div class="fh-left">
+            <div class="fh-id">STATUS RECORD</div>
+            <div class="fh-title">$DBD &middot; Pre-Launch</div>
+          </div>
+          <div class="fh-meta">CLASSIFICATION: PUBLIC</div>
+        </div>
+        <div class="form-body">
+          <div class="field"><span class="f-label">Token</span><span class="f-value" id="ps-token">&hellip;</span></div>
+          <div class="field"><span class="f-label">Status</span><span class="f-value" id="ps-status">&hellip;</span></div>
+          <div class="field"><span class="f-label">Network</span><span class="f-value" id="ps-network">&hellip;</span></div>
+          <div class="field"><span class="f-label">Launch Platform</span><span class="f-value" id="ps-platform">&hellip;</span></div>
+          <div class="field"><span class="f-label">Official Mint</span><span class="f-value addr" id="ps-mint">&hellip;</span></div>
+        </div>
+      </div>
+      <div class="verify-alert" role="alert">
+        <div class="va-title">No official $DBD contract address exists yet.</div>
+        <p>Any token currently claiming to be the official $DBD is <strong>not verified by the Department</strong>. When a mint is issued, it will appear on this page and in the record above.</p>
+      </div>
+    </section>
+
+    <!-- 2. OFFICIAL WALLETS -->
+    <section class="home-section" id="wallets" aria-labelledby="w-h">
+      <div class="hs-head">
+        <h2 id="w-h">2 &middot; Official Wallets</h2>
+        <div class="hs-note">Real Solana addresses. No balances shown. Verify each on Solscan.</div>
+      </div>
+      <div class="wallet-grid" id="wallet-grid"></div>
+      <p class="verify-fineprint">Balances are intentionally not displayed. Click an address to open it on Solscan and inspect it yourself.</p>
+    </section>
+
+    <!-- 3. OFFICIAL CHANNELS -->
+    <section class="home-section" id="channels" aria-labelledby="ch-h">
+      <div class="hs-head">
+        <h2 id="ch-h">3 &middot; Official Channels</h2>
+        <div class="hs-note">The only channels the Department speaks through. Anything else is not us.</div>
+      </div>
+      <div class="gov-form">
+        <div class="form-head">
+          <div class="fh-left">
+            <div class="fh-id">FORM DBD-002</div>
+            <div class="fh-title">Register of Official Channels</div>
+          </div>
+          <div class="fh-meta">FILED WITH THE<br />OFFICE OF RECORDS</div>
+        </div>
+        <div class="form-body">
+          <div class="field"><span class="f-label">Website</span><span class="f-value" id="ch-website">&hellip;</span></div>
+          <div class="field"><span class="f-label">X</span><span class="f-value" id="ch-x">&hellip;</span></div>
+          <div class="field"><span class="f-label">Telegram</span><span class="f-value" id="ch-telegram">&hellip;</span></div>
+          <div class="field"><span class="f-label">GitHub</span><span class="f-value" id="ch-github">&hellip;</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. ANTI-SCAM -->
+    <section class="section" id="anti-scam" aria-labelledby="as-h">
+      <div class="sec-kicker">Office of Fraud Prevention</div>
+      <div class="case-file" data-tab="Case File No. DBD-419">
+        <h2 id="as-h">4 &middot; Anti-Scam Notice</h2>
+        <div class="cf-body">
+          <ul>
+            <li>The Department will <strong>never</strong> ask for your seed phrase or private key.</li>
+            <li>The Department will <strong>never DM you first</strong> asking for money.</li>
+            <li>There is currently <strong>no official $DBD mint address</strong>.</li>
+            <li>Verify the future mint <strong>on this page</strong> before interacting with any token claiming to be $DBD.</li>
+            <li>Ignore contract addresses published by <strong>unofficial accounts</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. LAUNCH POLICY -->
+    <section class="home-section" id="launch-policy" aria-labelledby="lp-h">
+      <div class="hs-head">
+        <h2 id="lp-h">5 &middot; Launch Policy</h2>
+        <div class="hs-note">What the Department is not doing. On the record.</div>
+      </div>
+      <div class="gov-form">
+        <div class="form-head">
+          <div class="fh-left">
+            <div class="fh-id">POLICY RECORD</div>
+            <div class="fh-title">Launch Policy</div>
+          </div>
+          <div class="fh-meta">DEPARTMENT STATUS: QUESTIONABLE</div>
+        </div>
+        <div class="form-body">
+          <div class="field"><span class="f-label">Presale</span><span class="f-value"><span class="status stamp-red">None</span></span></div>
+          <div class="field"><span class="f-label">Private Round</span><span class="f-value"><span class="status stamp-red">None</span></span></div>
+          <div class="field"><span class="f-label">Guaranteed Returns</span><span class="f-value"><span class="status stamp-red">None</span></span></div>
+          <div class="field"><span class="f-label">Promised Utility</span><span class="f-value"><span class="status stamp-red">None</span></span></div>
+          <div class="field"><span class="f-label">Official Mint</span><span class="f-value" id="lp-mint">&hellip;</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. WHY THIS EXISTS -->
+    <section class="home-section" id="why" aria-labelledby="why-h">
+      <div class="hs-head">
+        <h2 id="why-h">6 &middot; Why This Exists</h2>
+      </div>
+      <div class="why-body">
+        <p><strong>Department of Bad Decisions is satire first, token second.</strong></p>
+        <p>We are not asking visitors to trust anonymous promises. The official website, channels, wallets, launch information and, once issued, the official mint will be published here for verification.</p>
+        <ul class="why-nots">
+          <li>No guaranteed returns.</li>
+          <li>No guaranteed liquidity.</li>
+          <li>No promise that $DBD will increase in value.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. JOHN -->
+    <section class="home-section" id="john" aria-labelledby="john-h">
+      <div class="hs-head"><h2 id="john-h">7 &middot; John</h2></div>
+      <div class="meet-clerk">
+        <div class="mc-portrait"><img src="./assets/clerk.png" alt="John, The Clerk" /></div>
+        <div class="mc-body">
+          <div class="mc-name">John &middot; The Clerk</div>
+          <p>John has reviewed the paperwork.</p>
+          <p>He recommends checking it yourself.</p>
+          <p><span class="stamp small"><span class="stamp-main">Approved</span></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. BAD DECISION REGISTER -->
+    <section class="home-section" id="register" aria-labelledby="reg-h">
+      <div class="hs-head">
+        <h2 id="reg-h">8 &middot; Bad Decision Register</h2>
+        <div class="hs-note">A running record of decisions that should probably not have been made.</div>
+      </div>
+      <div class="register" id="register-list"></div>
+    </section>
+
+    <!-- 9. DISCLAIMER -->
+    <section class="legal" aria-labelledby="legal-title">
+      <details open>
+        <summary>
+          <span><span class="l-id">FORM DBD-000</span> &middot; <span id="legal-title">Mandatory Boring Legal Document</span></span>
+          <span class="l-toggle"></span>
+        </summary>
+        <div class="l-body" id="disclaimer">&hellip;</div>
+      </details>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="dept-footer">
+      <img class="seal" src="./assets/seal.svg" alt="Department seal" />
+      <div>
+        <div class="f-title">Department of Bad Decisions &middot; Solana Division</div>
+        <div class="f-sub">Office of Transparency</div>
+      </div>
+      <div class="f-rules">
+        No wallet connection.<br />
+        No tracking. No login.<br />
+        Facts sourced. Satire obvious.
+      </div>
+    </footer>
+
+  </div>
+
+  <script type="module" src="./scripts/transparency.js"></script>
+</body>
+</html>
