@@ -12,6 +12,7 @@
     "serve": "node scripts/serve.js",
     "prelaunch-check": "node scripts/prelaunch-check.js",
     "postlaunch-check": "node scripts/postlaunch-check.js",
+    "apply-launch": "node scripts/apply-launch.js",
     "monitor": "node monitoring/monitor.js",
     "solana": "node scripts/solana-util.js",
     "test": "node --test --test-concurrency=1 \"tests/**/*.test.js\""

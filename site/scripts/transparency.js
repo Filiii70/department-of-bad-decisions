@@ -84,8 +84,10 @@ function walletCard(cfg, w) {
   return card;
 }
 
-// Bad Decision Register. Add future entries here; each may carry an optional ISO `date`.
-const REGISTER = [
+// Bad Decision Register. The canonical entries live in data/register.json so that
+// post-creation tooling can append dated entries deterministically. This built-in
+// list is only a fallback if that file cannot be loaded.
+const REGISTER_FALLBACK = [
   { ref: 'BD-000', date: null, decision: 'The Department decided to launch a meme coin.', status: 'Approved' },
 ];
 
@@ -154,9 +156,17 @@ async function render() {
     ? extLink(cfg.official_github)
     : make('span', 'status pending', 'Public repository — not yet released'));
 
-  // 8 - BAD DECISION REGISTER
+  // 8 - BAD DECISION REGISTER (canonical entries from data/register.json)
   const reg = el('register-list');
-  if (reg) { reg.innerHTML = ''; REGISTER.forEach((e) => reg.appendChild(registerEntry(e))); }
+  if (reg) {
+    let entries = REGISTER_FALLBACK;
+    try {
+      const loaded = await loadJson('./data/register.json');
+      if (Array.isArray(loaded) && loaded.length) entries = loaded;
+    } catch { /* keep fallback */ }
+    reg.innerHTML = '';
+    entries.forEach((e) => reg.appendChild(registerEntry(e)));
+  }
 
   // 9 - DISCLAIMER (canonical, verbatim from config)
   set('disclaimer', cfg.disclaimer_text || '');

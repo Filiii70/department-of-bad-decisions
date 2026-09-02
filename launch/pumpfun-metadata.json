@@ -1,0 +1,15 @@
+{
+  "_comment": "Exact, final Pump.fun coin metadata for $DBD. Non-secret. All fields are immutable once the coin is created, so treat these as final. No private keys or seeds here or anywhere.",
+  "name": "Department of Bad Decisions",
+  "symbol": "DBD",
+  "description": "Department of Bad Decisions ($DBD): bureaucratic satire on Solana. John, The Clerk, has reviewed your judgement. It was terrible. APPROVED. A parody meme coin built from public records. No utility, no roadmap, no promises, no guaranteed value, no presale. Just official forms, red stamps, and regret. Don't trust us. Verify us: https://department-of-bad-decisions.pages.dev",
+  "image": "assets/brand/dbd-token-launch.png",
+  "website": "https://department-of-bad-decisions.pages.dev",
+  "twitter": "https://x.com/DBDDepartment",
+  "telegram": "https://t.me/DBDDepartment",
+  "creatorWallet": "9tQxzr7NVS4FuxR2iHQ4McekjPdwF9j6Jy1ZrpHHVvRU",
+  "mayhem": "OFF",
+  "creatorBuy": "OPTIONAL - human decides amount (or 0) at signing time",
+  "chain": "solana",
+  "platform": "pump.fun"
+}
