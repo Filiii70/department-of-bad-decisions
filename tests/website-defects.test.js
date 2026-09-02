@@ -116,6 +116,28 @@ test('Agrofert and Frontex money notes are case-appropriate (no seizure/bribe wo
   assert.match(euJs, /c\.moneyNote/, 'eu-desk.js does not consume the per-case moneyNote');
 });
 
+test('Court-of-Audit bulletins cite specific report pages, not generic listings', () => {
+  build();
+  const bs = readJson(join(DIST, 'data', 'belgian-bulletins.json'));
+  for (const id of ['DBD-BE-B-0001', 'DBD-BE-B-0002', 'DBD-BE-B-0003', 'DBD-BE-B-0004']) {
+    const b = bs.find((x) => x.caseNumber === id);
+    assert.ok(b, `${id} missing`);
+    const audit = (b.sources || []).find((s) => s.sourceType === 'COURT OF AUDIT');
+    assert.ok(audit, `${id} has no COURT OF AUDIT source`);
+    // Must be a specific publication/document page, not a generic listing.
+    assert.match(audit.sourceURL, /\/publicatie\/|iddoc=/, `${id} audit source is a generic page: ${audit.sourceURL}`);
+    assert.doesNotMatch(audit.sourceURL, /\/rekenhof\/publicaties$|documentation-fr/, `${id} audit source is a generic listing`);
+  }
+});
+
+test('Agusta cites an authoritative court source (ECtHR)', () => {
+  build();
+  const c = readJson(join(DIST, 'data', 'belgian-cases.json')).find((x) => x.caseNumber === 'DBD-BE-0002');
+  const court = (c.sources || []).find((s) => s.sourceType === 'JUDGMENT');
+  assert.ok(court, 'Agusta has no authoritative court (JUDGMENT) source');
+  assert.match(court.sourceURL || '', /hudoc\.echr\.coe\.int/, 'Agusta court source is not the ECtHR HUDOC judgment');
+});
+
 test('the Vandenbroucke / Medista-Movianto file is present and separates allegation from finding', () => {
   build();
   const c = readJson(join(DIST, 'data', 'belgian-cases.json')).find((x) => x.caseNumber === 'DBD-BE-0007');

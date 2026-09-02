@@ -3,14 +3,14 @@
     "caseNumber": "DBD-BE-B-0001",
     "subject": "€13 billion in defence contracts, \"substantial irregularities\" in the paperwork",
     "governmentLevel": "FEDERAL",
-    "publicRecord": "In a report published on 25 May 2022, the Belgian Court of Audit (Rekenhof / Cour des comptes) examined how the Ministry of Defence awards public contracts. It found that Defence awarded more than €13 billion in contracts (excluding VAT) between 2018 and 2020. That €13 billion is the total value of contracts awarded, not a loss and not an overrun. The control framework was 'reasonably well developed', but the audit flagged substantial regularity shortcomings: weak application of the competition and equal-treatment rules on smaller contracts, and insufficient scrutiny of bidders' prices on larger ones. This is an audit-regularity finding, not a finding of criminal wrongdoing.",
+    "publicRecord": "In a report approved on 14 September 2022, the Belgian Court of Audit (Rekenhof / Cour des comptes) examined how the Ministry of Defence awards public contracts. It found that Defence awarded more than €13 billion in contracts (excluding VAT) between 2018 and 2020. That €13 billion is the total value of contracts awarded, not a loss and not an overrun. The control framework was 'reasonably well developed', but the audit flagged substantial regularity shortcomings: weak application of the competition and equal-treatment rules on smaller contracts, and insufficient scrutiny of bidders' prices on larger ones. This is an audit-regularity finding, not a finding of criminal wrongdoing.",
     "sources": [
       {
         "sourceName": "Belgian Court of Audit (Rekenhof / Cour des comptes)",
-        "sourceTitle": "Overheidsopdrachten van Defensie – Regelmatigheid en goed beheer",
+        "sourceTitle": "Overheidsopdrachten van Defensie – Regelmatigheid en goed beheer (report 2022_32)",
         "sourceType": "COURT OF AUDIT",
-        "sourceURL": "https://www.ccrek.be/nl/rekenhof/publicaties",
-        "publicationDate": "2022-05-25"
+        "sourceURL": "https://www.ccrek.be/nl/publicatie/overheidsopdrachten-van-defensie-regelmatigheid-en-goed",
+        "publicationDate": "2022-09-14"
       }
     ],
     "departmentNote": "Filed under 'procurement, allegedly competitive'.",
@@ -22,6 +22,13 @@
     "governmentLevel": "FEDERAL",
     "publicRecord": "A Belgian Court of Audit report, reported on 12 November 2025, found that the federal government spent about €2.5 billion on external consultants over 2020-2022, roughly €2 billion of it on IT. The Court found that 78.22% of the contracts it examined lacked proper justification and 44.55% carried unrealistic cost estimates, and it cited one contract estimated at €400,000 that ultimately cost €10 million. The Court described the weaknesses as 'structural'. This is an audit finding on spending controls, not a finding of criminal wrongdoing.",
     "sources": [
+      {
+        "sourceName": "Belgian Court of Audit (Rekenhof / Cour des comptes)",
+        "sourceTitle": "Inzet van consultancy door de federale overheid (report 2025_39)",
+        "sourceType": "COURT OF AUDIT",
+        "sourceURL": "https://www.ccrek.be/nl/publicatie/inzet-van-consultancy-door-de-federale-overheid",
+        "publicationDate": "2025-11-12"
+      },
       {
         "sourceName": "VRT NWS (reporting the Court of Audit / Rekenhof)",
         "sourceTitle": "Rapport Rekenhof: federale overheid gaf 2,5 miljard uit aan consultants",
@@ -40,6 +47,13 @@
     "publicRecord": "A Court of Audit (Rekenhof) audit of Flanders' Integrated Investment Programme (GIP), reported on 18 June 2026, put the region's infrastructure maintenance backlog at about €14.5 billion, needing roughly €1.45 billion a year for ten years to clear. It found that a promised €530 million of extra 2025 investment came to €363 million in practice, and criticised that more than 150 projects were added on political grounds without objective scoring, with the roads agency warning it could not rule out safety-related closures of lanes, tunnels or bridges. This is an audit finding, not an allegation of wrongdoing.",
     "sources": [
       {
+        "sourceName": "Belgian Court of Audit (Rekenhof)",
+        "sourceTitle": "Geintegreerd Investeringsprogramma (GIP) – Verslag aan het Vlaams Parlement (report 2026_27)",
+        "sourceType": "COURT OF AUDIT",
+        "sourceURL": "https://www.ccrek.be/nl/publicatie/geintegreerd-investeringsprogramma-gip",
+        "publicationDate": "2026-06-18"
+      },
+      {
         "sourceName": "VRT NWS (reporting the Court of Audit / Rekenhof)",
         "sourceTitle": "Rekenhof-rapport over het Geïntegreerd Investeringsprogramma (GIP)",
         "sourceType": "MEDIA",
@@ -54,19 +68,20 @@
     "caseNumber": "DBD-BE-B-0004",
     "subject": "Walloon direct debt projected at €32.8 billion, accounts not certifiable",
     "governmentLevel": "WALLOON",
-    "publicRecord": "In its 37th cahier of observations to the Walloon Parliament, the Court of Audit (Cour des comptes) projected Wallonia's direct regional debt at about €32.8 billion by the end of 2026, up roughly 60% in five years, with €873 million of debt-interest charges in 2024. The Court reported that many receivables and the Region's property portfolio are not properly inventoried or valued, which prevents it from certifying a true-and-fair view of the accounts, and it flagged weaknesses in public-procurement procedures. These are audit observations, not findings of criminal wrongdoing.",
+    "publicRecord": "In its 37th cahier of observations to the Walloon Parliament (28 October 2025), the Court of Audit (Cour des comptes) documented Wallonia's rising regional debt, including direct-debt interest charges of €471.7 million in 2024, up from €344.1 million in 2023. As reported by RTBF from the same cahier, the Court projected Wallonia's direct regional debt at about €32.8 billion by the end of 2026. The Court reported that many receivables and the Region's property portfolio are not properly inventoried or valued, which prevents it from certifying a true-and-fair view of the accounts, and it flagged weaknesses in public-procurement procedures. These are audit observations, not findings of criminal wrongdoing.",
     "sources": [
+      {
+        "sourceName": "Cour des comptes, 37e cahier d'observations au Parlement wallon (via Parlement de Wallonie)",
+        "sourceTitle": "37e cahier d'observations, Doc. 377 (2025-2026) N°1",
+        "sourceType": "COURT OF AUDIT",
+        "sourceURL": "https://www.parlement-wallonie.be/pwpages?p=doc-recherche-det&iddoc=139551",
+        "publicationDate": "2025-10-28"
+      },
       {
         "sourceName": "RTBF (reporting the Cour des comptes)",
         "sourceTitle": "La dette wallonne inquiète toujours la Cour des comptes",
         "sourceType": "MEDIA",
         "sourceURL": "https://www.rtbf.be/article/la-dette-wallonne-inquiete-toujours-la-cour-des-comptes-11644820"
-      },
-      {
-        "sourceName": "Cour des comptes / SPW Finances (official documentation)",
-        "sourceTitle": "Cour des comptes – documentation des finances wallonnes",
-        "sourceType": "COURT OF AUDIT",
-        "sourceURL": "https://finances.wallonie.be/en/accueil-entreprises/finances-wallonnes/documentation-fr--en/cour-des-comptes.html"
       }
     ],
     "departmentNote": "The Department admires any balance sheet that cannot be balanced.",

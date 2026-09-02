@@ -155,6 +155,15 @@
     "lastVerified": "2026-09-02",
     "sources": [
       {
+        "sourceName": "European Court of Human Rights (HUDOC)",
+        "sourceTitle": "Coeme and Others v. Belgium, nos. 32492/96 and others, judgment of 22 June 2000 (fairness of the Court of Cassation trial of former minister Coeme and co-defendants)",
+        "sourceType": "JUDGMENT",
+        "sourceURL": "https://hudoc.echr.coe.int/eng?i=001-59194",
+        "publicationDate": "2000-06-22",
+        "primary": true,
+        "accessDate": "2026-09-02"
+      },
+      {
         "sourceName": "Encyclopaedia Universalis (reference work)",
         "sourceTitle": "23 decembre 1998 – Decision judiciaire dans l'affaire Agusta-Dassault",
         "sourceType": "MEDIA",
