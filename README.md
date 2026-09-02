@@ -1,171 +1,136 @@
-# Department of Bad Decisions ($DBD)
+# Department of Bad Decisions
 
-> The Department does not recommend purchasing meme coins.
-> Unfortunately, the Department has issued one.
-
-A zero-budget public launch repository for **Department of Bad Decisions**
-(`$DBD`), a bureaucratic-parody meme coin on **Solana**.
+**Bureaucratic satire built from public records.**
 
 > "Your judgement has been reviewed. It was terrible. **APPROVED**."
 
----
+The Department of Bad Decisions is an independent, tongue-in-cheek "government
+office" that files the powerful the way a tired civil servant files paperwork.
+It reads the public record, keeps the receipts, and stamps the result.
 
-## What DBD is
+**Current active desk: European Union Desk.**
 
-A parody meme coin with an exhausted-government-clerk aesthetic: official forms,
-red APPROVED stamps, dry humor. It has no intrinsic value, no promise of return,
-and no team obligation. It is a joke you can verify.
+## They run Europe. We pay.
+
+The European Union Desk documents real, publicly sourced cases about money,
+power and connections around the institutions of the EU: what happened, where
+the money went, what happened to the people involved, and who knows who.
+
+Each case is written in two clearly separated layers:
+
+- **The factual record.** Every money figure, legal status, charge,
+  conviction, institutional finding and network connection is stated in precise
+  language and backed by a cited public source, with a `lastVerified` date.
+- **The satire.** The Department's commentary (delivered by John, the Clerk)
+  lives in its own labelled fields. It never rewrites a fact, and it is never
+  presented as a finding.
+
+The Department does not make legal findings. Courts, prosecutors and
+investigators do that. An allegation is never printed as fact, an investigation
+is never printed as guilt, a charge is never printed as a conviction, and an
+audit finding is never printed as a criminal finding.
+
+### Evidence standard
+
+Sources are drawn from primary and institutional records first: courts and
+prosecutors, EU institutions, OLAF, the EPPO, the European Court of Auditors,
+the European Ombudsman, national parliaments and their official publications.
+Reputable reporting is used to add context, not to establish legal status.
+Cases without a citeable public source are not published.
+
+## The $DBD token (pre-launch)
+
+There is, regrettably, a token. It is satire first and a token second.
+
+- **Status: PRE-LAUNCH.**
+- **Network: Solana.**
+- **Intended launch platform: Pump.fun.**
+- **No presale.**
+- **No private round.**
+- **No guaranteed returns**, no guaranteed liquidity, and no promise that the
+  token will increase in value.
+- **Official mint: NOT YET ISSUED.**
+
+There is currently no official `$DBD` contract address. When a mint is issued,
+it will be published on the official website and in this repository, and it can
+be verified on the site's public verification page before anyone interacts with
+any token claiming to be `$DBD`. The Department will never ask you for your seed
+phrase or private key, and will never DM you first asking for money.
+
+## Official links
+
+- Website: https://department-of-bad-decisions.pages.dev
+- X: https://x.com/DBDDepartment
+- Telegram: https://t.me/DBDDepartment
+
+The website's Verify page ("Don't trust us. Verify us.") lists the official
+wallets, channels and launch policy from a single canonical configuration.
 
 ## What this repository is
 
-A complete, honest launch kit that costs nothing to run beyond unavoidable
-Solana on-chain fees at launch:
+A zero-dependency, read-only static site plus its supporting tooling and docs.
 
-- A static, read-only website (single HTML page, one CSS file, one small script).
-- A canonical config that is the single source of truth for everything.
-- A pre-launch checker that gates readiness and refuses to hide problems.
-- A post-launch checker that verifies the live mint against the website.
-- Read-only Solana utilities and a monitor (supply, concentration, balances).
-- Launch checklist, manual runbook, and full operational docs.
+- The website source (`site/`), assembled into `site/dist/` by a small build
+  script. No framework, no bundler, no third-party scripts.
+- A canonical config (`config/dbd.config.json`) that is the single source of
+  truth for wallets, channels, status and, eventually, the mint.
+- Pre-launch and post-launch checkers, read-only Solana utilities and a monitor.
+- Full operational documentation under `docs/`.
 
-## What this repository does NOT do
-
-- It does not launch, mint, or sign anything. The final token creation is a
-  deliberate manual action from the creator wallet. See
-  `launch/manual-launch-runbook.md`.
-- It never asks for, stores, or needs a private key or seed phrase.
-- It has no wallet connection, no login, no user input, no database, no backend.
-- It has no analytics, no tracking, no third-party scripts.
-- It never fabricates data or fakes holders, volume, liquidity, or engagement.
-
-## Zero-budget philosophy
-
-The only unavoidable cost is Solana on-chain fees at launch, paid manually by the
-creator wallet. Everything else is local tooling or free static hosting. There
-are zero npm dependencies: a clean clone needs only Node.js 18+.
-
-## Security model (short version)
-
-- Read-only everywhere. Nothing here can move funds.
-- Secrets never enter the repo. `.gitignore` blocks `.env`, keypairs, and wallet
-  exports; the pre-launch checker scans tracked files and fails on anything
-  key-like or on a committed `.env`.
-- No hidden owner privileges. Full detail in `docs/security.md`.
-
----
+It never launches, mints or signs anything. The eventual token creation is a
+deliberate manual action from the creator wallet. It has no wallet connection,
+no login, no database, no backend, no analytics and no tracking. It never
+fabricates holders, volume, liquidity or engagement.
 
 ## Requirements
 
-- Node.js 18 or newer. That is the only prerequisite. (No paid services, no RPC
-  account required for basic use.)
+- Node.js 18 or newer. That is the only prerequisite. There are zero npm
+  dependencies.
 
 ## Run locally
 
 ```bash
-# from a clean clone
 npm install          # no-op: there are zero dependencies
 npm run build        # assembles site/dist from config
 npm run serve        # preview at http://localhost:4321
 ```
 
-## Configure for pre-launch
-
-1. Copy the environment example (optional, only for RPC/port):
-   ```bash
-   cp .env.example .env
-   ```
-2. Edit `config/dbd.config.json`. Fill the placeholders marked `REPLACE_ME`:
-   `creator_wallet`, `treasury_wallet`, `operational_wallet` (optional),
-   `official_x`, `official_telegram`, `official_github`, `official_website`.
-   Leave `official_mint` as `NOT_YET_ISSUED` and `launch_status` as `prelaunch`.
-3. See `config/README.md` for every field's meaning.
-
 ## Run checks
 
 ```bash
-npm run prelaunch-check     # gate readiness; exits non-zero on critical failure
 npm test                    # full suite: config, checkers, URLs, secrets, build
+npm run prelaunch-check     # gate readiness; exits non-zero on critical failure
 ```
-
-Example pre-launch output:
-
-```
-DBD PRE-LAUNCH CHECK
-====================
-
-Website ........... PASS
-Configuration ..... PASS
-Social links ...... PASS
-Security scan ..... PASS
-Secrets ........... PASS
-Mint address ...... NOT YET CREATED
-
-STATUS: READY
-```
-
-## Run monitoring
-
-```bash
-npm run monitor             # CLI summary + monitoring/output/monitor.json
-```
-
-Read-only Solana lookups:
-
-```bash
-npm run solana balance <address>
-npm run solana supply <mint>
-npm run solana holders <mint>
-npm run solana token-balance <owner> <mint>
-```
-
-RPC endpoint is configurable via `SOLANA_RPC_URL` (defaults to the public
-mainnet endpoint). No paid RPC provider is required for basic use.
-
-## Transition to live (after the manual launch)
-
-You change exactly three fields in `config/dbd.config.json` and nothing else:
-
-1. `official_mint` -> the real mint address from the launch transaction.
-2. `launch_status` -> `"live"`.
-3. `launch_timestamp` -> the real ISO 8601 time.
-
-Then bump `config_version`, update `last_updated`, and:
-
-```bash
-npm run build               # rebuild the site with the live mint
-npm run postlaunch-check    # verify the mint exists on chain and matches the site
-```
-
-Full sequence: `launch/launch-checklist.md` and `launch/manual-launch-runbook.md`.
-
----
 
 ## Repository layout
 
 ```
 config/       canonical config + field docs
 site/         static website source (dist/ is generated, git-ignored)
-assets/       favicon, APPROVED stamp, clerk mascot placeholder (SVG)
+assets/       favicon, APPROVED stamp, brand art, the Clerk
 scripts/      build, serve, checkers, solana utility, shared libs
 monitoring/   read-only monitor (CLI + JSON)
 launch/       checklist + manual runbook
 docs/         architecture, security, wallet policy, incident response,
-              transparency policy, post-launch operations
+              transparency policy, EU/Belgian desk notes
 tests/        node --test suite, zero dependencies
 ```
 
 ## Documentation
 
 - `docs/architecture.md`
+- `docs/eu-desk.md`
 - `docs/security.md`
 - `docs/wallet-policy.md`
-- `docs/incident-response.md`
 - `docs/transparency-policy.md`
+- `docs/incident-response.md`
 - `docs/post-launch-operations.md`
 
 ## Disclaimer
 
-This is a parody project. Nothing here is financial advice. `$DBD` is not an
-investment, security, or financial product. Only ever trust the single official
-mint address published on the official website, and verify it against this
-repository. The project will never ask you for your seed phrase or private key.
+This is a parody project. Nothing here is financial, investment, legal or tax
+advice. `$DBD` is not an investment, a security or a financial product. Digital
+assets are highly speculative and may lose all value. Only ever trust the single
+official mint address published on the official website once it exists, and
+verify it against this repository. The project will never ask you for your seed
+phrase or private key.
