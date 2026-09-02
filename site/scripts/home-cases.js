@@ -1,6 +1,7 @@
-/* Homepage "Files currently under review" — features the current EU Desk case
-   files (Qatargate, Huaweigate) on the front door. Read-only, no backend.
-   No development samples are ever loaded here. Cards link into the EU Desk. */
+/* Homepage "Current EU Case Files" — features the current EU Desk dossiers
+   (Qatargate, Huaweigate) as strong, editorial case cards on the front door.
+   Read-only, no backend. Source of truth: data/eu-cases.json. Facts and legal
+   classifications are used verbatim from the approved case data. */
 
 import { hasValue, validateCase } from './lib/eu.js';
 
@@ -12,43 +13,68 @@ async function loadJson(path, fb) {
   try { const r = await fetch(path, { cache: 'no-store' }); return r.ok ? await r.json() : fb; } catch { return fb; }
 }
 
+function statusClass(label) {
+  const l = (label || '').toLowerCase();
+  if (l.includes('convicted')) return 'convicted';
+  if (l.includes('acquit') || l.includes('dismiss') || l.includes('closed')) return 'closed';
+  return 'ongoing';
+}
+
+// A short, plain-English teaser from the approved citizen summary (never rewritten facts).
+function teaser(c) {
+  const t = (c.citizen && c.citizen.whatHappened) || c.subtitle || '';
+  if (t.length <= 210) return t;
+  const cut = t.slice(0, 210);
+  const dot = cut.lastIndexOf('. ');
+  return dot > 90 ? cut.slice(0, dot + 1) : cut.trim() + '…';
+}
+
 function money(c) {
   if (c.citizen && c.citizen.money && hasValue(c.citizen.money.figure)) return c.citizen.money;
   return null;
 }
 
-function homeCard(c) {
-  const card = el('article', 'home-file');
-  card.appendChild(el('span', 'hf-tag', (c.currentStatus && c.currentStatus.statusLabel) || c.category || 'Under review'));
-  card.appendChild(el('span', 'hf-no', c.caseNumber));
+function caseCard(c) {
+  const href = './eu-desk.html?case=' + encodeURIComponent(c.caseNumber);
+  const card = el('article', 'eu-home-card');
+  card.appendChild(el('div', 'ehc-spine'));
 
-  const title = el('h3', 'hf-title');
-  const a = el('a', null, c.title || 'Untitled');
-  a.href = './eu-desk.html?case=' + encodeURIComponent(c.caseNumber);
+  const top = el('div', 'ehc-top');
+  top.appendChild(el('span', 'ehc-no', c.caseNumber));
+  if (c.currentStatus && hasValue(c.currentStatus.statusLabel)) {
+    top.appendChild(el('span', 'ehc-status ' + statusClass(c.currentStatus.statusLabel), c.currentStatus.statusLabel));
+  }
+  card.appendChild(top);
+
+  const title = el('h3', 'ehc-title');
+  const a = el('a', null, c.title || 'Untitled'); a.href = href;
   title.appendChild(a);
   card.appendChild(title);
 
-  if (Array.isArray(c.institutions) && c.institutions.length) {
-    card.appendChild(el('div', 'hf-k', 'Institution'));
-    card.appendChild(el('div', 'hf-v', c.institutions[0]));
+  const m = money(c);
+  if (m) {
+    const box = el('div', 'ehc-money');
+    box.appendChild(el('div', 'ehc-money-figure', m.figure));
+    if (hasValue(m.label)) box.appendChild(el('div', 'ehc-money-label', m.label));
+    card.appendChild(box);
   }
 
-  const m = money(c);
-  card.appendChild(el('div', 'hf-k', m ? m.label : 'The money'));
-  if (m) card.appendChild(el('div', 'hf-money', m.figure));
-  else card.appendChild(el('div', 'hf-money nd', 'See file'));
-
-  if (hasValue(c.subtitle)) { card.appendChild(el('div', 'hf-k', 'In plain English')); card.appendChild(el('div', 'hf-v', c.subtitle)); }
+  const t = teaser(c);
+  if (hasValue(t)) card.appendChild(el('p', 'ehc-teaser', t));
 
   const john = c.citizen && c.citizen.johnLine;
-  if (hasValue(john)) { card.appendChild(el('div', 'hf-k', 'John (satire)')); card.appendChild(el('div', 'hf-v', john)); }
+  if (hasValue(john)) card.appendChild(el('div', 'ehc-john', 'John: ' + john));
 
-  const foot = el('div', 'hf-foot');
-  foot.appendChild(el('span', 'source-status', 'Verified Public Record'));
+  const foot = el('div', 'ehc-foot');
+  const cta = el('a', 'ehc-cta', 'Show receipts →'); cta.href = href;
+  foot.appendChild(cta);
+  const right = el('div', 'ehc-right');
+  right.appendChild(el('span', 'source-status', 'Verified Public Record'));
   const stamp = el('span', 'stamp be-approved small');
   stamp.setAttribute('role', 'img'); stamp.setAttribute('aria-label', 'APPROVED');
   stamp.appendChild(el('span', 'stamp-main', 'Approved'));
-  foot.appendChild(stamp);
+  right.appendChild(stamp);
+  foot.appendChild(right);
   card.appendChild(foot);
   return card;
 }
@@ -68,11 +94,10 @@ async function main() {
     empty.appendChild(el('div', 'bee-title', 'No files published yet'));
     empty.appendChild(el('p', null, 'Case files appear here once verified against public sources.'));
     grid.appendChild(empty);
-    grid.style.display = 'block';
     return;
   }
   if (count) count.textContent = cases.length + (cases.length === 1 ? ' file' : ' files');
-  cases.forEach((c) => grid.appendChild(homeCard(c)));
+  cases.forEach((c) => grid.appendChild(caseCard(c)));
 }
 
 document.addEventListener('DOMContentLoaded', main);
