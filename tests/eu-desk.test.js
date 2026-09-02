@@ -6,7 +6,7 @@ import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import {
   validateCase, validateMoney, validateEdge, validatePerson, validateInvestigationEvent,
-  renderableEdges, EU_CASE_NUMBER_RE,
+  renderableEdges, EU_CASE_NUMBER_RE, MONEY_CLASSIFICATIONS, PROCEDURAL_STATUS, ESTABLISHED_STATES,
 } from '../site/scripts/lib/eu.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -67,6 +67,22 @@ test('a case legal status requires lastVerified', () => {
 test('case number format enforced', () => {
   assert.ok(EU_CASE_NUMBER_RE.test('DBD-EU-0001'));
   assert.ok(!EU_CASE_NUMBER_RE.test('DBD-BE-0001'));
+});
+
+test('new conviction/audit statuses and money classifications are supported', () => {
+  for (const s of ['SENTENCED', 'RESIGNED', 'SANCTIONED', 'AUDIT FINDING', 'CONFLICT OF INTEREST FOUND', 'NO CRIMINAL FINDING DOCUMENTED']) {
+    assert.ok(PROCEDURAL_STATUS.includes(s), 'missing status ' + s);
+  }
+  for (const m of ['COURT-ESTABLISHED BRIBE', 'CONFISCATED', 'AUDIT-QUESTIONED EXPENDITURE']) {
+    assert.ok(MONEY_CLASSIFICATIONS.includes(m), 'missing classification ' + m);
+  }
+  // established findings allowed only for established states
+  assert.ok(ESTABLISHED_STATES.includes('SENTENCED') && ESTABLISHED_STATES.includes('CONFLICT OF INTEREST FOUND'));
+  assert.equal(validatePerson({ name: 'X', proceduralStatus: 'SENTENCED', establishedFindings: ['convicted'] }).length, 0);
+  assert.equal(validatePerson({ name: 'Y', proceduralStatus: 'CONFLICT OF INTEREST FOUND', establishedFindings: ['coi found'] }).length, 0);
+  // but a mere sanction/resignation may NOT carry an established finding
+  assert.ok(validatePerson({ name: 'Z', proceduralStatus: 'SANCTIONED', establishedFindings: ['guilty'] }).length > 0);
+  assert.equal(validateMoney({ amount: 40000, classification: 'COURT-ESTABLISHED BRIBE', sourceIds: ['S1'] }).length, 0);
 });
 
 test('PRODUCTION eu-cases.json is valid and free of sample/unfinished allegations', () => {

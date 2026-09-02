@@ -389,5 +389,301 @@
     "lastVerified": "2026-09-01",
     "publishedDate": "2026-09-01",
     "updatedDate": "2026-09-01"
+  },
+  {
+    "caseNumber": "DBD-EU-0003",
+    "title": "Nathan Gill",
+    "subtitle": "A former MEP, convicted of bribery for pro-Russian statements",
+    "category": "BRIBERY",
+    "institutions": ["UK Crown Prosecution Service", "Central Criminal Court (Old Bailey)", "Counter Terrorism Policing", "European Parliament"],
+    "citizen": {
+      "whatHappened": "Nathan Gill, a former UK Member of the European Parliament for Wales, was paid to make pro-Russian statements in the European Parliament and in the media. The payments came from Oleg Voloshyn, acting for the pro-Kremlin Ukrainian politician Viktor Medvedchuk. Gill pleaded guilty to eight counts of bribery and, on 21 November 2025, was sentenced at the Old Bailey to 10 years and 6 months in prison. The court has started proceeds-of-crime proceedings to claw back the money.",
+      "money": { "figure": "~£40,000", "label": "BRIBES — COURT-ESTABLISHED", "note": "The total the court found Gill accepted in cash between December 2018 and July 2019. He was convicted; proceeds-of-crime proceedings have begun." },
+      "johnLine": "The speeches were written by someone else and paid for in cash. John has questions about the editing process."
+    },
+    "whatIsAlleged": "The court made clear that the case was NOT presented on the basis that the other MEPs whom Gill enlisted to give interviews knew about his financial motivation. No wrongdoing is alleged against them here.",
+    "whatIsEstablished": "Established by the court (guilty plea and sentencing remarks): Gill, an MEP for Wales (2014-2020), accepted money on eight occasions between December 2018 and July 2019 to make statements favourable to Russian interests in the European Parliament and the media, using scripts supplied by Oleg Voloshyn. The court found Voloshyn to be 'the architect of these bribes' and Viktor Medvedchuk to be 'the ultimate source of the requests and the money'. Gill pleaded guilty to eight counts of bribery (section 2, Bribery Act 2010) on 26 September 2025 and was sentenced to 10 years and 6 months on 21 November 2025 at the Central Criminal Court. Proceeds-of-crime proceedings were commenced.",
+    "money": [
+      { "amount": 40000, "currency": "GBP", "classification": "COURT-ESTABLISHED BRIBE", "description": "Around £40,000: the total the court found Gill accepted in cash bribes between December 2018 and July 2019.", "date": "2019-07-01", "sourceIds": ["S1"] },
+      { "amount": 5000, "currency": "EUR", "classification": "COURT-ESTABLISHED BRIBE", "description": "One documented payment: €5,000 (with a further $2,000) received from Voloshyn on 3 April 2019, per the sentencing remarks.", "date": "2019-04-03", "sourceIds": ["S2"] },
+      { "amount": "NOT_DOCUMENTED", "currency": "GBP", "classification": "CONFISCATED", "description": "Proceeds-of-crime proceedings were commenced to recover the money; no confiscation amount has been set yet.", "sourceIds": ["S1"] }
+    ],
+    "people": [
+      {
+        "name": "Nathan Gill", "publicRole": "Former UK MEP for Wales (2014-2020); former UKIP Wales and Reform Wales leader", "roleAtTime": "MEP for Wales", "institution": "European Parliament",
+        "caseRole": "DEFENDANT", "proceduralStatus": "SENTENCED",
+        "allegations": [],
+        "establishedFindings": ["Pleaded guilty to eight counts of bribery (section 2, Bribery Act 2010) and was sentenced to 10 years and 6 months at the Central Criminal Court on 21 November 2025."],
+        "currentStatus": "Convicted and sentenced to 10 years and 6 months (eligible for release on licence after serving half). Proceeds-of-crime proceedings are ongoing.",
+        "lastVerified": "2025-11-21", "sourceIds": ["S1", "S2"]
+      },
+      {
+        "name": "Oleg Voloshyn", "publicRole": "Former pro-Russian Ukrainian MP and journalist", "roleAtTime": "Intermediary who paid Gill", "institution": "",
+        "caseRole": "OTHER", "proceduralStatus": "SANCTIONED",
+        "allegations": ["Named by the sentencing court as 'the architect of these bribes'."],
+        "establishedFindings": [],
+        "currentStatus": "US-sanctioned in January 2022 and indicted for treason in Ukraine in February 2023. He was not a defendant in the UK case.",
+        "lastVerified": "2025-11-21", "sourceIds": ["S2"]
+      },
+      {
+        "name": "Viktor Medvedchuk", "publicRole": "Pro-Kremlin Ukrainian politician", "roleAtTime": "Ultimate source of the money (per the court)", "institution": "",
+        "caseRole": "OTHER", "proceduralStatus": "SANCTIONED",
+        "allegations": ["Described by the sentencing court as 'the ultimate source of the requests and the money' Gill received."],
+        "establishedFindings": [],
+        "currentStatus": "Placed under house arrest in Ukraine in 2021 and transferred to Russia in a September 2022 prisoner exchange. He was not a defendant in the UK case.",
+        "lastVerified": "2025-11-21", "sourceIds": ["S2"]
+      }
+    ],
+    "network": {
+      "nodes": [
+        { "id": "gill", "label": "Nathan Gill", "nodeType": "PERSON" },
+        { "id": "voloshyn", "label": "Oleg Voloshyn", "nodeType": "PERSON" },
+        { "id": "medvedchuk", "label": "Viktor Medvedchuk", "nodeType": "PERSON" },
+        { "id": "ch112", "label": "112 Ukraine (TV)", "nodeType": "COMPANY" },
+        { "id": "ep", "label": "European Parliament", "nodeType": "AUTHORITY" }
+      ],
+      "edges": [
+        { "from": "gill", "to": "ep", "relationshipType": "PARLIAMENTARY ROLE", "description": "Member of the European Parliament for Wales, 2014-2020.", "sourceIds": ["S2"], "sourceDate": "2025-11-21" },
+        { "from": "voloshyn", "to": "gill", "relationshipType": "PAYMENT", "description": "The court found Voloshyn to be 'the architect of these bribes' who paid Gill for scripted pro-Russian statements.", "sourceIds": ["S2"], "sourceDate": "2025-11-21" },
+        { "from": "medvedchuk", "to": "gill", "relationshipType": "PAYMENT", "description": "The court found Medvedchuk to be 'the ultimate source of the requests and the money' Gill received.", "sourceIds": ["S2"], "sourceDate": "2025-11-21" },
+        { "from": "gill", "to": "ch112", "relationshipType": "BOARD MEMBERSHIP", "description": "Gill joined the editorial board of the Ukrainian TV channel 112 Ukraine.", "sourceIds": ["S2"], "sourceDate": "2025-11-21" }
+      ]
+    },
+    "investigation": [
+      { "date": "2021-09-13", "authority": "UK police / Counter Terrorism Policing", "event": "ARREST", "person": "Nathan Gill", "status": "Apprehended at Manchester Airport; mobile device seized.", "sourceIds": ["S2", "S3"] },
+      { "date": "2025-01-30", "authority": "Crown Prosecution Service", "event": "CHARGE", "person": "Nathan Gill", "status": "Charged by postal requisition with bribery.", "sourceIds": ["S1"] },
+      { "date": "2025-11-21", "authority": "Central Criminal Court (Old Bailey)", "event": "CONVICTION", "person": "Nathan Gill", "status": "Sentenced to 10 years and 6 months after guilty pleas to eight bribery counts.", "sourceIds": ["S1", "S2"] }
+    ],
+    "timeline": [
+      { "date": "2018-12-12", "event": "Gill delivers a scripted parliamentary speech favourable to Russian interests (count 2).", "sourceIds": ["S2"] },
+      { "date": "2019-04-03", "event": "Gill receives €5,000 and $2,000 from Voloshyn (count 6).", "sourceIds": ["S2"] },
+      { "date": "2021-09-13", "event": "Gill apprehended at Manchester Airport; phone seized.", "sourceIds": ["S2"] },
+      { "date": "2025-01-30", "event": "Charged by postal requisition.", "sourceIds": ["S2"] },
+      { "date": "2025-09-26", "event": "Gill pleads guilty to eight counts of bribery.", "sourceIds": ["S1", "S2"] },
+      { "date": "2025-11-21", "event": "Sentenced to 10 years and 6 months at the Old Bailey.", "sourceIds": ["S1", "S2"] }
+    ],
+    "whatHappenedNext": [
+      { "person": "Nathan Gill", "development": "Imprisoned for 10 years 6 months; proceeds-of-crime proceedings ongoing.", "date": "2025-11-21", "sourceIds": ["S1"] },
+      { "person": "Oleg Voloshyn", "development": "US-sanctioned (2022) and indicted for treason in Ukraine (2023); not a UK defendant.", "date": "2023-02-01", "sourceIds": ["S2"] },
+      { "person": "Viktor Medvedchuk", "development": "Transferred to Russia in a September 2022 prisoner exchange; not a UK defendant.", "date": "2022-09-01", "sourceIds": ["S2"] }
+    ],
+    "currentStatus": {
+      "statusLabel": "CONVICTED",
+      "lastProceduralEvent": "Sentenced to 10 years and 6 months after guilty pleas to eight bribery counts",
+      "date": "2025-11-21",
+      "authority": "Central Criminal Court (Old Bailey)",
+      "lastVerified": "2025-11-21",
+      "note": "Conviction and sentence final; proceeds-of-crime proceedings continue.",
+      "sourceIds": ["S1", "S2"]
+    },
+    "statusHistory": [
+      { "date": "2025-09-26", "status": "PRE-TRIAL", "note": "Guilty pleas entered.", "sourceIds": ["S2"] },
+      { "date": "2025-11-21", "status": "CONVICTED", "note": "Sentenced.", "sourceIds": ["S1"] }
+    ],
+    "sources": [
+      { "sourceId": "S1", "sourceType": "GOVERNMENT", "institution": "UK Crown Prosecution Service", "title": "Former UKIP MEP jailed for taking bribes", "publicationDate": "2025-11-21", "sourceURL": "https://www.cps.gov.uk/cps/news/former-ukip-mep-jailed-taking-bribes", "accessDate": "2026-09-02", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S2", "sourceType": "JUDGMENT", "institution": "Central Criminal Court (Judiciary of England and Wales)", "title": "R v Nathan Gill — Sentencing Remarks of Mrs Justice Cheema-Grubb", "publicationDate": "2025-11-21", "sourceURL": "https://www.judiciary.uk/wp-content/uploads/2025/11/R-v-Nathan-Gill.pdf", "accessDate": "2026-09-02", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S3", "sourceType": "GOVERNMENT", "institution": "Counter Terrorism Policing", "title": "Former MEP jailed after accepting bribes to make pro-Russian statements", "publicationDate": "2025-11-21", "sourceURL": "https://www.counterterrorism.police.uk/?p=31744&post_type=post", "accessDate": "2026-09-02", "language": "en", "primaryOrSecondary": "PRIMARY" }
+    ],
+    "claims": [
+      { "claimId": "c-conviction", "claimText": "Gill pleaded guilty to eight counts of bribery and was sentenced to 10 years 6 months.", "claimType": "legal", "status": "VERIFIED", "sourceIds": ["S1", "S2"], "lastVerified": "2026-09-02" }
+    ],
+    "clerkAssessment": {
+      "administrativeAmbition": "Impressive. A full parliamentary speech, delivered word for word, written by someone else.",
+      "financialJudgement": "Poor. The going rate for a scripted opinion turned out to be about £40,000 and ten and a half years.",
+      "paperworkGenerated": "A written parliamentary question, several speeches, and one confiscation timetable.",
+      "accountabilityStatus": "Settled by a court, for once.",
+      "lessonsLearned": "If you have to be paid to say it, it was not your opinion.",
+      "departmentVerdict": "APPROVED."
+    },
+    "johnNotes": "John notes that this is the Department's first file where a court has already done the stamping. John will keep the receipts anyway.",
+    "lastVerified": "2026-09-02",
+    "publishedDate": "2026-09-02",
+    "updatedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-EU-0004",
+    "title": "Agrofert / Andrej Babis",
+    "subtitle": "An EU conflict-of-interest finding over subsidies to a prime minister's former company",
+    "category": "CONFLICT OF INTEREST",
+    "institutions": ["European Commission", "European Parliament", "European Court of Auditors"],
+    "citizen": {
+      "whatHappened": "The European Commission audited how Czech EU subsidies were handled and found that Andrej Babis, then Czech Prime Minister, had a conflict of interest: he could influence how EU money was handed out while remaining the beneficial owner of Agrofert, the large group he founded. The Commission said the affected EU money had not actually been paid out, so the EU budget was protected. A separate Czech criminal case (the 'Stork Nest' subsidy) is a different matter and has not ended in a conviction. Babis and Agrofert reject the findings.",
+      "money": { "figure": "€0 wrongly paid", "label": "EU FUNDING — AUDIT-QUESTIONED, BUDGET PROTECTED", "note": "The Commission said no affected expenditure had been declared, so the EU budget was 'fully protected'. This is an administrative audit finding, not a proven theft or a criminal finding." },
+      "johnLine": "The conflict of interest was found, the money was not paid, and everyone disagreed about all of it."
+    },
+    "whatIsAlleged": "A separate Czech criminal case, known as 'Stork Nest', concerns an EU subsidy of about €2 million and is distinct from the Commission's conflict-of-interest audit. Babis was acquitted twice; the most recent acquittal was overturned on appeal in 2025 and proceedings continue. He denies wrongdoing and has not been convicted.",
+    "whatIsEstablished": "Established (administrative audit): the European Commission's audit of Czech management and control systems (period 2014-2020) confirmed that Andrej Babis was in a conflict of interest, because as Prime Minister he could influence the allocation of EU subsidies while remaining the beneficial owner of the Agrofert group he founded. On 19 May 2021, Commissioner Johannes Hahn told the European Parliament that 'no expenditure has been declared for any of the operations affected by this audit' and that the EU budget 'has been and remains fully protected'. This is an administrative audit finding, not a criminal finding. Babis and Agrofert contest it.",
+    "money": [
+      { "amount": 0, "currency": "EUR", "classification": "EU FUNDING", "description": "Per Commissioner Hahn (19 May 2021), no expenditure was declared for the operations the audit flagged, so the EU budget was 'fully protected'. Nothing was wrongly paid out.", "date": "2021-05-19", "sourceIds": ["S1"] },
+      { "amount": "NOT_DOCUMENTED", "currency": "EUR", "classification": "AUDIT-QUESTIONED EXPENDITURE", "description": "Amounts flagged for possible recovery were reported in the press (around €11 million) but are not stated in the primary Commission/Parliament release used here.", "sourceIds": ["S2"] },
+      { "amount": 2000000, "currency": "EUR", "classification": "EU FUNDING", "description": "About €2 million: the EU subsidy at issue in the SEPARATE Czech 'Stork Nest' criminal case. Not the same matter as the conflict-of-interest audit; no conviction.", "sourceIds": ["S3"] }
+    ],
+    "people": [
+      {
+        "name": "Andrej Babis", "publicRole": "Czech politician; former Prime Minister; founder of Agrofert", "roleAtTime": "Prime Minister of the Czech Republic", "institution": "Government of the Czech Republic",
+        "caseRole": "OFFICIAL", "proceduralStatus": "CONFLICT OF INTEREST FOUND",
+        "allegations": ["Separately, in the Czech 'Stork Nest' criminal case he faces an allegation over a subsidy of about €2 million; he was acquitted twice, the acquittal was overturned in 2025, and he denies wrongdoing. Not convicted."],
+        "establishedFindings": ["A European Commission audit confirmed he was in a conflict of interest over EU subsidies to Agrofert while he was Prime Minister (an administrative finding, which he contests)."],
+        "currentStatus": "The administrative conflict-of-interest finding stands and is contested by him. The separate criminal case continues with no conviction.",
+        "lastVerified": "2025-06-23", "sourceIds": ["S1", "S3"]
+      },
+      {
+        "name": "Agrofert", "publicRole": "Czech agriculture, food and chemicals group founded by Andrej Babis", "roleAtTime": "Beneficiary group named in the audit", "institution": "Agrofert",
+        "caseRole": "BUSINESS REPRESENTATIVE", "proceduralStatus": "NO CRIMINAL FINDING DOCUMENTED",
+        "allegations": ["Named in the Commission audit as the group receiving subsidies while Babis remained beneficial owner; it rejects the findings."],
+        "establishedFindings": [],
+        "currentStatus": "Contests the audit findings; no criminal finding is documented against the company here.",
+        "lastVerified": "2025-06-23", "sourceIds": ["S1"]
+      }
+    ],
+    "network": {
+      "nodes": [
+        { "id": "babis", "label": "Andrej Babis", "nodeType": "PERSON" },
+        { "id": "agrofert", "label": "Agrofert", "nodeType": "COMPANY" },
+        { "id": "trusts", "label": "Agrofert trust funds", "nodeType": "OTHER" },
+        { "id": "ec", "label": "European Commission", "nodeType": "AUTHORITY" }
+      ],
+      "edges": [
+        { "from": "babis", "to": "agrofert", "relationshipType": "OWNERSHIP", "description": "Founder of the Agrofert group.", "sourceIds": ["S1"], "sourceDate": "2021-05-19" },
+        { "from": "agrofert", "to": "trusts", "relationshipType": "OWNERSHIP", "description": "Agrofert was placed into two trust funds in 2017.", "sourceIds": ["S1"], "sourceDate": "2021-05-19" },
+        { "from": "babis", "to": "trusts", "relationshipType": "DECLARED INTEREST", "description": "The Commission found Babis remained the beneficial owner despite the trust structure.", "sourceIds": ["S1"], "sourceDate": "2021-05-19" }
+      ]
+    },
+    "timeline": [
+      { "date": "2019-11-29", "event": "European Commission (DG REGIO) audit report on Czech management and control systems is finalised.", "sourceIds": ["S2"] },
+      { "date": "2021-05-19", "event": "Commissioner Hahn tells the European Parliament that no affected EU expenditure was declared and the EU budget is 'fully protected'.", "sourceIds": ["S1"] },
+      { "date": "2025-06-23", "event": "In the separate Czech 'Stork Nest' criminal case, an appeals court overturns Babis's acquittal; proceedings continue.", "sourceIds": ["S3"] }
+    ],
+    "whatHappenedNext": [
+      { "person": "Andrej Babis", "development": "The administrative conflict-of-interest finding stands and is contested; the separate criminal case continues with no conviction.", "date": "2025-06-23", "sourceIds": ["S3"] },
+      { "person": "European Union budget", "development": "Per the Commission, affected expenditure was not declared, so the EU budget was protected; recovery handling fell to the Czech authorities (amount not documented in the primary release).", "date": "2021-05-19", "sourceIds": ["S1"] }
+    ],
+    "currentStatus": {
+      "statusLabel": "AUDIT FINDING",
+      "lastProceduralEvent": "Stork Nest acquittal overturned on appeal (separate criminal case)",
+      "date": "2025-06-23",
+      "authority": "European Commission (audit) / Czech courts (separate criminal case)",
+      "lastVerified": "2026-09-02",
+      "note": "The administrative conflict-of-interest finding stands and is contested; the separate criminal case continues with no conviction. NO LATER PRIMARY UPDATE VERIFIED AS OF 2 SEPTEMBER 2026.",
+      "sourceIds": ["S1", "S3"]
+    },
+    "statusHistory": [
+      { "date": "2021-05-19", "status": "AUDIT FINDING", "note": "Commission audit confirmed; budget protected.", "sourceIds": ["S1"] }
+    ],
+    "sources": [
+      { "sourceId": "S1", "sourceType": "PARLIAMENT", "institution": "European Parliament", "title": "Conflict of interest and misuse of EU funds: the case of Czech PM Babis", "publicationDate": "2021-05-19", "sourceURL": "https://www.europarl.europa.eu/news/en/press-room/20210517IPR04145/conflict-of-interest-and-misuse-of-eu-funds-the-case-of-czech-pm-babis", "accessDate": "2026-09-02", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S2", "sourceType": "GOVERNMENT", "institution": "European Commission, DG Regional Policy", "title": "Final report on the audit of management and control systems to avoid conflict of interest in Czechia", "publicationDate": "2021-04-23", "sourceURL": "https://ec.europa.eu/regional_policy/information-sources/publications/reports/2021/final-report-on-the-audit-of-the-functioning-of-the-management-and-control-systems-in-place-to-avoid-conflict-of-interest-in-czechia_en", "accessDate": "2026-09-02", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S3", "sourceType": "MEDIA", "institution": "Brno Daily", "title": "Appeals Court Overturns Acquittal of Babis in Capi Hnizdo (Stork Nest) Case", "publicationDate": "2025-06-23", "sourceURL": "https://brnodaily.com/2025/06/23/news/politics/appeals-court-overturns-acquittal-of-babis-in-capi-hnizdo-case/", "accessDate": "2026-09-02", "language": "en", "primaryOrSecondary": "SECONDARY" }
+    ],
+    "claims": [
+      { "claimId": "c-coi", "claimText": "The European Commission audit found Babis was in a conflict of interest over EU subsidies to Agrofert.", "claimType": "audit", "status": "VERIFIED", "sourceIds": ["S1"], "lastVerified": "2026-09-02" },
+      { "claimId": "c-protected", "claimText": "The Commission said the affected EU expenditure was not declared and the budget was protected.", "claimType": "audit", "status": "VERIFIED", "sourceIds": ["S1"], "lastVerified": "2026-09-02" }
+    ],
+    "clerkAssessment": {
+      "administrativeAmbition": "Structurally ambitious. Two trust funds, one conglomerate, one prime minister, and a great deal of paperwork.",
+      "financialJudgement": "Undetermined. The auditors found a conflict of interest; the money, helpfully, had not moved.",
+      "paperworkGenerated": "Multiple audits, one parliamentary resolution, several denials.",
+      "accountabilityStatus": "Forwarded to the Czech authorities. And the courts. And the next election.",
+      "lessonsLearned": "A trust fund is only as blind as the auditor is willing to believe.",
+      "departmentVerdict": "APPROVED."
+    },
+    "johnNotes": "John notes that a conflict of interest was found, the affected money was not paid, and a completely separate criminal case is doing something else entirely. John has filed them in different drawers.",
+    "lastVerified": "2026-09-02",
+    "publishedDate": "2026-09-02",
+    "updatedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-EU-0005",
+    "title": "Frontex / Fabrice Leggeri",
+    "subtitle": "The EU border agency, its director, and a refused budget discharge",
+    "category": "POWER",
+    "institutions": ["European Parliament", "OLAF (European Anti-Fraud Office)", "Frontex"],
+    "citizen": {
+      "whatHappened": "OLAF, the EU's anti-fraud office, investigated the EU border agency Frontex and its director Fabrice Leggeri. After an OLAF report revealed misconduct, Leggeri resigned in April 2022. In October 2022 the European Parliament refused to sign off Frontex's 2020 accounts, citing serious misconduct, involvement in illegal 'pushbacks' of asylum seekers, and harassment problems. These are administrative and political findings, not a criminal conviction. In 2026 a French court ordered a separate judicial investigation into Leggeri; no charges have been filed.",
+      "money": { "figure": "2020 accounts", "label": "BUDGET DISCHARGE REFUSED", "note": "The European Parliament refused to approve Frontex's 2020 budget discharge. This is a political and budgetary accountability decision, not a finding that money was stolen." },
+      "johnLine": "The agency was told its 2020 paperwork would not be approved, and the director had already left the building."
+    },
+    "whatIsAlleged": "In 2026 the Paris Court of Appeal ordered a judicial investigation into Leggeri over alleged complicity in crimes against humanity linked to migrant interceptions, following a complaint by a human-rights organisation. No charges have been filed and the presumption of innocence applies.",
+    "whatIsEstablished": "Established (institutional): OLAF investigated Frontex and its then-director Fabrice Leggeri and found misconduct; Leggeri resigned on 28 April 2022 following the OLAF report. On 13 October 2022 the European Parliament refused to grant Frontex's 2020 budget discharge by 345 votes to 284 with 8 abstentions, citing serious misconduct under the previous leadership, a failure to protect fundamental rights, alleged involvement in illegal pushbacks of at least 957 people between March 2020 and September 2021, and harassment problems (17 reported cases in 2020). These are administrative and political findings, not a criminal conviction of any individual.",
+    "money": [
+      { "amount": "NOT_DOCUMENTED", "currency": "EUR", "classification": "AUDIT-QUESTIONED EXPENDITURE", "description": "The European Parliament refused to sign off Frontex's 2020 budget discharge. No specific sum was found to be stolen or recovered; the refusal is an accountability decision.", "date": "2022-10-13", "sourceIds": ["S1"] }
+    ],
+    "people": [
+      {
+        "name": "Fabrice Leggeri", "publicRole": "Former executive director of Frontex; later Member of the European Parliament", "roleAtTime": "Executive director of Frontex", "institution": "Frontex",
+        "caseRole": "OFFICIAL", "proceduralStatus": "RESIGNED",
+        "allegations": ["OLAF found misconduct in its investigation (an administrative finding). In 2026 a French court ordered a judicial investigation into alleged complicity in crimes against humanity; no charges have been filed and the presumption of innocence applies."],
+        "establishedFindings": [],
+        "currentStatus": "Resigned as Frontex executive director on 28 April 2022 after the OLAF report. Later elected to the European Parliament (2024). A French judicial investigation was ordered in 2026; he has not been charged.",
+        "lastVerified": "2026-03-18", "sourceIds": ["S1", "S3"]
+      },
+      {
+        "name": "Frontex", "publicRole": "European Border and Coast Guard Agency", "roleAtTime": "EU agency", "institution": "European Union",
+        "caseRole": "OFFICIAL", "proceduralStatus": "AUDIT FINDING",
+        "allegations": [],
+        "establishedFindings": ["The European Parliament refused its 2020 budget discharge (345-284-8), citing serious misconduct, alleged pushbacks and harassment problems."],
+        "currentStatus": "Under new leadership since 2022; the 2020 budget discharge was refused.",
+        "lastVerified": "2022-10-13", "sourceIds": ["S1"]
+      }
+    ],
+    "network": {
+      "nodes": [
+        { "id": "leggeri", "label": "Fabrice Leggeri", "nodeType": "PERSON" },
+        { "id": "frontex", "label": "Frontex", "nodeType": "AUTHORITY" },
+        { "id": "olaf", "label": "OLAF", "nodeType": "AUTHORITY" },
+        { "id": "rn", "label": "Rassemblement National", "nodeType": "POLITICAL GROUP" }
+      ],
+      "edges": [
+        { "from": "leggeri", "to": "frontex", "relationshipType": "EMPLOYMENT", "description": "Executive director of Frontex until his resignation in April 2022.", "sourceIds": ["S1"], "sourceDate": "2022-10-14" },
+        { "from": "frontex", "to": "olaf", "relationshipType": "INVESTIGATIVE RELATIONSHIP", "description": "OLAF investigated Frontex and its management.", "sourceIds": ["S2"], "sourceDate": "2022-07-29" },
+        { "from": "leggeri", "to": "rn", "relationshipType": "POLITICAL GROUP MEMBERSHIP", "description": "Elected to the European Parliament for Rassemblement National in 2024.", "sourceIds": ["S3"], "sourceDate": "2026-03-18" }
+      ]
+    },
+    "timeline": [
+      { "date": "2022-02-15", "event": "OLAF closes its investigation into Frontex (administrative findings of misconduct).", "sourceIds": ["S2"] },
+      { "date": "2022-04-28", "event": "Fabrice Leggeri resigns as Frontex executive director following the OLAF report.", "sourceIds": ["S1"] },
+      { "date": "2022-10-13", "event": "European Parliament refuses Frontex's 2020 budget discharge, 345-284-8.", "sourceIds": ["S1"] },
+      { "date": "2024-07-16", "event": "Leggeri takes office as a Member of the European Parliament for Rassemblement National.", "sourceIds": ["S3"] },
+      { "date": "2026-03-18", "event": "A French court (Paris Court of Appeal) orders a judicial investigation into Leggeri over alleged complicity in crimes against humanity; no charges filed.", "sourceIds": ["S3"] }
+    ],
+    "whatHappenedNext": [
+      { "person": "Fabrice Leggeri", "development": "Elected to the European Parliament in 2024; a French judicial investigation was ordered in 2026 with no charges filed.", "date": "2026-03-18", "sourceIds": ["S3"] },
+      { "person": "Frontex", "development": "Operated under new leadership after 2022; the 2020 discharge refusal stands as an accountability decision.", "date": "2022-10-13", "sourceIds": ["S1"] }
+    ],
+    "currentStatus": {
+      "statusLabel": "ONGOING INVESTIGATION",
+      "lastProceduralEvent": "French court ordered a judicial investigation (no charges filed)",
+      "date": "2026-03-18",
+      "authority": "Paris Court of Appeal (France) / OLAF (EU) / European Parliament",
+      "lastVerified": "2026-09-02",
+      "note": "The OLAF and Parliament findings are administrative and political, not criminal. The French judicial investigation has produced no charges. NO LATER PRIMARY UPDATE VERIFIED AS OF 2 SEPTEMBER 2026.",
+      "sourceIds": ["S1", "S3"]
+    },
+    "statusHistory": [
+      { "date": "2022-10-13", "status": "AUDIT FINDING", "note": "Discharge refused.", "sourceIds": ["S1"] },
+      { "date": "2026-03-18", "status": "ONGOING INVESTIGATION", "note": "French judicial investigation ordered.", "sourceIds": ["S3"] }
+    ],
+    "sources": [
+      { "sourceId": "S1", "sourceType": "PARLIAMENT", "institution": "European Parliament", "title": "Frontex: MEPs refuse to discharge EU border agency over its management in 2020", "publicationDate": "2022-10-14", "sourceURL": "https://www.europarl.europa.eu/news/en/press-room/20221014IPR43210/frontex-meps-refuse-to-discharge-eu-border-agency-over-its-management-in-2020", "accessDate": "2026-09-02", "language": "en", "primaryOrSecondary": "PRIMARY" },
+      { "sourceId": "S2", "sourceType": "MEDIA", "institution": "Euronews", "title": "Leaked report finds Frontex 'covered up' illegal migrant pushbacks by Greek authorities", "publicationDate": "2022-07-29", "sourceURL": "https://www.euronews.com/my-europe/2022/07/29/leaked-report-finds-frontex-covered-up-illegal-migrant-pushbacks-by-greek-authorities", "accessDate": "2026-09-02", "language": "en", "primaryOrSecondary": "SECONDARY" },
+      { "sourceId": "S3", "sourceType": "MEDIA", "institution": "France 24 / RMX News", "title": "French court orders probe into ex-Frontex chief turned MEP Fabrice Leggeri", "publicationDate": "2026-03-18", "sourceURL": "https://www.france24.com/en/europe/20260324-french-judge-probes-ex-eu-border-chief-for-complicity-crimes-against-humanity", "accessDate": "2026-09-02", "language": "en", "primaryOrSecondary": "SECONDARY" }
+    ],
+    "claims": [
+      { "claimId": "c-discharge", "claimText": "The European Parliament refused Frontex's 2020 budget discharge (345-284-8).", "claimType": "institutional", "status": "VERIFIED", "sourceIds": ["S1"], "lastVerified": "2026-09-02" },
+      { "claimId": "c-french", "claimText": "A French court ordered a judicial investigation into Leggeri in 2026; no charges filed.", "claimType": "procedural", "status": "PROCEDURAL", "sourceIds": ["S3"], "lastVerified": "2026-09-02" }
+    ],
+    "clerkAssessment": {
+      "administrativeAmbition": "Considerable. Protecting a border, and, per the Parliament, occasionally the paperwork about the border.",
+      "financialJudgement": "Not the point, for once. The Parliament simply declined to sign.",
+      "paperworkGenerated": "An OLAF report, a refused discharge, seventeen harassment cases, and one resignation letter.",
+      "accountabilityStatus": "The director resigned in 2022 and was elected to the European Parliament in 2024.",
+      "lessonsLearned": "Pending. The Parliament declined to approve the 2020 file and suggested the problems might be structural.",
+      "departmentVerdict": "APPROVED."
+    },
+    "johnNotes": "John notes that OLAF found misconduct, the Parliament refused the discharge, the director resigned and then joined the Parliament, and a French court has since ordered an investigation with no charges. John needs a bigger drawer.",
+    "lastVerified": "2026-09-02",
+    "publishedDate": "2026-09-02",
+    "updatedDate": "2026-09-02"
   }
 ]

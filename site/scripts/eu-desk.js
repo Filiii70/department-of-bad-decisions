@@ -57,19 +57,24 @@ function statusSlug(label) {
   if (l.includes('immunity')) return 'immunity';
   if (l.includes('disciplinary')) return 'disciplinary';
   if (l.includes('ongoing')) return 'ongoing';
-  if (l.includes('not accused') || l.includes('cleared')) return 'acquitted';
+  if (l.includes('sentenced')) return 'convicted';
+  if (l.includes('not accused') || l.includes('cleared') || l.includes('no criminal finding') || l.includes('no breach')) return 'acquitted';
   if (l.includes('charged') || l.includes('indicted')) return 'charged';
+  if (l.includes('audit') || l.includes('conflict of interest') || l.includes('sanctioned') || l.includes('resigned') || l.includes('maladministration')) return 'ongoing';
   if (l.includes('investigation')) return 'ongoing';
   return 'unclear';
 }
 
 // Plain-language status label for the citizen status cards.
 const SIMPLE_STATUS = {
-  CONVICTED: 'Convicted', ACQUITTED: 'Acquitted', CHARGED: 'Charged', INDICTED: 'Indicted',
+  CONVICTED: 'Convicted', SENTENCED: 'Convicted & sentenced', ACQUITTED: 'Acquitted', CHARGED: 'Charged', INDICTED: 'Indicted',
   'ON TRIAL': 'On trial', 'UNDER INVESTIGATION': 'Under investigation',
   'IMMUNITY LIFTED': 'Immunity lifted', 'IMMUNITY UPHELD': 'Immunity kept',
   'IMMUNITY REQUESTED': 'Immunity requested', 'COOPERATING WITNESS': 'Admitted / cooperating',
   'NOT ACCUSED': 'Cleared', 'CASE DISMISSED': 'Case dropped', 'INVESTIGATION CLOSED': 'Case closed',
+  RESIGNED: 'Resigned', SANCTIONED: 'Sanctioned', 'AUDIT FINDING': 'Audit finding',
+  'CONFLICT OF INTEREST FOUND': 'Conflict of interest found', 'NO CRIMINAL FINDING DOCUMENTED': 'No criminal finding',
+  'MALADMINISTRATION FINDING': 'Maladministration finding', 'NO BREACH FOUND': 'No breach found',
   'STATUS UNKNOWN FROM PUBLIC RECORD': 'Status unclear', SUSPECTED: 'Suspected', ALLEGED: 'Alleged', WITNESS: 'Witness',
 };
 function simpleStatus(s) { return SIMPLE_STATUS[s] || s || 'Status unclear'; }
@@ -117,10 +122,11 @@ function euCard(c) {
   card.appendChild(title);
   if (hasValue(c.subtitle)) card.appendChild(el('div', 'ec-cat', c.subtitle));
 
-  const hm = headlineMoney(c);
+  const cm = (c.citizen && c.citizen.money && hasValue(c.citizen.money.figure)) ? c.citizen.money : null;
+  const hm = cm ? { label: cm.label, value: cm.figure } : headlineMoney(c);
   if (hm) {
     const box = el('div', 'ec-money');
-    box.appendChild(el('div', 'k', hm.label));
+    if (hasValue(hm.label)) box.appendChild(el('div', 'k', hm.label));
     box.appendChild(el('div', 'v', hm.value));
     card.appendChild(box);
   }
