@@ -17,11 +17,36 @@
     "summary": "The Oosterweelverbinding is the final phase of closing Antwerp's ring road (R1), part of the Flemish 'Toekomstverbond' programme and delivered through the project company Lantis (formerly BAM) on behalf of the Flemish Government. In its March 2026 progress report to the Flemish Parliament, Lantis and the responsible minister put the effective construction cost at €10 billion at 2024 price level, described as unchanged from the previous year. Lantis's financial model projects an accounting value of €13.6 billion by 2034 at full completion, a figure that (per the government) reflects subordinated lending, risk financing and indexation rather than additional construction cost. The Court of Audit (Rekenhof) has repeatedly reported that the financing is 'strongly problematic', flagging a projected financing shortfall of about €2.3 billion above a loan ceiling already raised from €3.6 billion to €6.7 billion, and warning that expected toll revenues after 2034 are overestimated. Earlier estimates for the project were reported to be far lower (around €7 billion); an exact original budget figure is not documented here.",
     "publicMoney": {
       "currency": "EUR",
-      "originalBudget": "NOT_DOCUMENTED",
-      "currentEstimate": 10000000000,
-      "finalCost": "NOT_DOCUMENTED",
-      "documentedLoss": "NOT_DOCUMENTED",
-      "currentStatus": "Under construction. Construction cost €10bn (2024 price level, Lantis/Flemish Government); projected accounting value €13.6bn by 2034; Court of Audit flags a projected financing shortfall of about €2.3bn above the raised €6.7bn loan ceiling."
+      "figures": [
+        {
+          "label": "Construction cost",
+          "amount": 10000000000,
+          "classification": "Effective construction cost (Lantis / Flemish Government)",
+          "asOf": "March 2026, at 2024 price level",
+          "represents": "The build cost of the works, reported unchanged from the previous year. This is a project cost figure, not a documented loss and not the projected accounting value."
+        },
+        {
+          "label": "Projected accounting value",
+          "amount": 13600000000,
+          "classification": "Projected accounting value at full completion (Lantis financial model)",
+          "asOf": "projected to 2034",
+          "represents": "Per the Flemish Government this reflects subordinated lending, risk financing and indexation over time, not additional construction cost. A projection, not money already spent."
+        },
+        {
+          "label": "Projected financing shortfall",
+          "amount": 2300000000,
+          "classification": "Projected shortfall flagged by the Court of Audit (Rekenhof)",
+          "asOf": "reported 2025-2026",
+          "represents": "A projected financing gap above the loan ceiling, itself raised from €3.6bn to €6.7bn. A forward-looking projection, not a realised or documented loss."
+        },
+        {
+          "label": "Original budget",
+          "amount": "NOT_DOCUMENTED",
+          "classification": "Not documented here",
+          "represents": "Earlier estimates were reported far lower (around €7bn), but an exact, authoritative original budget figure is not established in this file."
+        }
+      ],
+      "currentStatus": "Under construction. Figures are project-cost and projected-financing figures from Lantis / the Flemish Government and the Court of Audit, not documented losses. No wrongdoing is alleged."
     },
     "documentedOutcome": "Ongoing. The Court of Audit warns of budgetary shortfalls and a drastic increase in Flemish debt levels if no additional income or savings are found, and considers expected toll revenues after 2034 to be overestimated.",
     "timeline": [
@@ -82,6 +107,468 @@
     "illustration": null,
     "tags": ["infrastructure", "antwerp", "budget-overrun", "court-of-audit", "toekomstverbond"],
     "publishedDate": "2026-08-31",
-    "updatedDate": "2026-08-31"
+    "updatedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-0002",
+    "title": "Agusta-Dassault affair",
+    "subtitle": "Defence contracts, socialist party coffers, and the highest court in the land",
+    "status": "CONVICTED (final, Court of Cassation, 23 December 1998)",
+    "institution": "Belgian federal government · Court of Cassation (Cour de cassation / Hof van Cassatie)",
+    "governmentLevel": "FEDERAL",
+    "location": "Brussels",
+    "date": "1998-12-23",
+    "year": 1998,
+    "category": "PROCUREMENT",
+    "intended": "Award Belgian defence contracts in the late 1980s: helicopters from the Italian firm Agusta and electronic countermeasures for Belgian F-16s from the French firm Dassault.",
+    "actual": "The contracts were accompanied by bribes paid to the Flemish and Francophone socialist parties. When the scheme surfaced in the 1990s, senior ministers and party officials were prosecuted. Because sitting and former ministers were involved, they were tried directly by the Court of Cassation. On 23 December 1998 the court convicted all twelve defendants of corruption and related offences.",
+    "summary": "In the late 1980s the Belgian government awarded defence contracts to Agusta (helicopters) and Dassault (F-16 electronic countermeasures). In exchange, bribes were channelled to the Flemish socialist party (SP) and the Francophone socialist party (PS). Because the accused included sitting and former government ministers, who enjoyed a constitutional privilege of jurisdiction, they were tried directly by the Court of Cassation sitting as a trial court, in a single, non-appealable proceeding. On 23 December 1998 the court convicted all twelve defendants. Former Economy and Foreign Affairs minister Willy Claes, who had already resigned as NATO Secretary-General in 1995, was convicted of passive corruption and received a three-year suspended sentence, a fine and a five-year ban from public office. Former Defence minister Guy Coeme and former PS chairman Guy Spitaels received two-year suspended sentences and five-year office bans. Serge Dassault, head of the Dassault group, was convicted of active corruption. It remains the largest political-corruption conviction in modern Belgian history. The judgment was final and not subject to ordinary appeal.",
+    "publicMoney": {
+      "currency": "EUR",
+      "figures": [
+        {
+          "label": "Bribes (court-established)",
+          "amount": 4000000,
+          "classification": "Court-established bribe total, converted from Belgian francs",
+          "asOf": "facts 1988-1992; judgment 23 December 1998",
+          "represents": "More than 160 million Belgian francs the court found were paid by Agusta and Dassault to the two socialist parties, about €4 million at the fixed conversion rate of 40.3399 BEF to the euro. A court-established figure, not an allegation."
+        }
+      ],
+      "currentStatus": "Established by final judgment of the Court of Cassation on 23 December 1998. Punitive fines imposed on individuals were modest and are separate from the bribe amounts above."
+    },
+    "documentedOutcome": "All twelve defendants convicted (mostly suspended prison terms plus fines; several with five-year bans from public office). Final judgment, no ordinary appeal. Serge Dassault died in 2018.",
+    "timeline": [
+      { "date": "1988-01-01", "event": "Agusta wins a contract to supply military helicopters to the Belgian army; Dassault later wins an F-16 electronic-countermeasures contract (1989)." },
+      { "date": "1995-10-20", "event": "Willy Claes resigns as NATO Secretary-General as the affair closes in." },
+      { "date": "1998-08-01", "event": "Trial opens before the Court of Cassation, sitting as a trial court for ministers." },
+      { "date": "1998-12-23", "event": "The Court of Cassation convicts all twelve defendants of corruption and related offences. Final judgment." }
+    ],
+    "whoInvolved": [
+      { "name": "Willy Claes", "role": "Ex-Economy/Foreign Affairs minister; convicted of passive corruption (final, 1998)" },
+      { "name": "Guy Coeme", "role": "Ex-Defence minister; convicted of passive corruption and forgery (final, 1998)" },
+      { "name": "Guy Spitaels", "role": "Ex-PS chairman; convicted of passive corruption (final, 1998); died 2012" },
+      { "name": "Serge Dassault", "role": "Head of the Dassault group; convicted of active corruption (final, 1998); died 2018" }
+    ],
+    "officialFindings": [
+      { "institution": "Court of Cassation", "finding": "On 23 December 1998 convicted all twelve defendants of corruption and related offences; final, non-appealable judgment." }
+    ],
+    "lastVerified": "2026-09-02",
+    "sources": [
+      {
+        "sourceName": "Encyclopaedia Universalis",
+        "sourceTitle": "23 decembre 1998 – Decision judiciaire dans l'affaire Agusta-Dassault",
+        "sourceType": "OFFICIAL REPORT",
+        "sourceURL": "https://www.universalis.fr/evenement/23-decembre-1998-decision-judiciaire-dans-l-affaire-agusta-dassault/",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "The Irish Times (contemporaneous report of the verdict)",
+        "sourceTitle": "Belgian court finds Claes, 10 officials and French businessman guilty of corruption",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.irishtimes.com/news/belgian-court-finds-claes-10-officials-and-french-businessman-guilty-of-corruption-1.228702",
+        "publicationDate": "1998-12-24",
+        "accessDate": "2026-09-02"
+      }
+    ],
+    "clerkAssessment": {
+      "financialJudgement": "Corrupt, by final judgment of the highest court.",
+      "administrativeCompetence": "Efficient at the wrong things.",
+      "paperworkGenerated": "Including forged paperwork, per the court.",
+      "accountabilityStatus": "Actually delivered, for once.",
+      "lessonsLearned": "Reportedly.",
+      "departmentVerdict": "APPROVED."
+    },
+    "departmentNotes": "The Department notes, with rare admiration, that this file ends in an actual conviction. Filed under 'accountability, historically possible'.",
+    "illustration": null,
+    "tags": ["federal", "corruption", "defence", "court-of-cassation", "conviction"],
+    "publishedDate": "2026-09-02",
+    "updatedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-0003",
+    "title": "Kazakhgate",
+    "subtitle": "A settlement law, a Kazakh billionaire, and a parliamentary inquiry",
+    "status": "INQUIRY FINDINGS; NO CRIMINAL CONVICTION; settlement law annulled",
+    "institution": "Belgian Chamber of Representatives (inquiry) · Constitutional Court",
+    "governmentLevel": "FEDERAL",
+    "location": "Brussels",
+    "date": "2018-03-30",
+    "year": 2018,
+    "category": "POLITICAL DECISION",
+    "intended": "Belgium adopted a law of 14 April 2011 greatly expanding the out-of-court criminal settlement (transaction penale), allowing settlements even after prosecution had begun.",
+    "actual": "In June 2011, three Kazakh businessmen under Belgian criminal investigation settled and avoided trial with no finding of guilt. Suspicions that France had lobbied Belgium to pass the settlement law led to a federal parliamentary inquiry, which found French interference 'unacceptable' but could not establish that it influenced Parliament's vote. The Constitutional Court later annulled the 2011 settlement regime.",
+    "summary": "Three Kazakh businessmen (the 'Kazakh trio'), facing a Belgian money-laundering and fraud investigation, avoided trial in June 2011 by paying a criminal settlement under a new law that broadened the out-of-court transaction penale. Suspicions arose that France, under President Sarkozy, had pressed Belgium to pass that law so one of them, Patokh Chodiev, could be spared, allegedly in connection with arms and helicopter contracts. A federal parliamentary commission of inquiry examined the affair and adopted its final report on 30 March 2018. The commission concluded that French authorities had engaged in 'unacceptable interference' in Belgian judicial proceedings and singled out the role of a Belgian ex-Senate-president acting as a lawyer, but it could NOT establish that this interference influenced Parliament's 2011 vote on the settlement law. These are political findings of a parliamentary inquiry, not criminal convictions. Separately, on 2 June 2016 the Constitutional Court annulled the 2011 extended-settlement regime for lack of effective judicial control. No named individual has a criminal conviction arising from Kazakhgate: the 2011 transaction extinguished the prosecution with no finding of guilt.",
+    "publicMoney": {
+      "currency": "EUR",
+      "figures": [
+        {
+          "label": "Chodiev criminal settlement",
+          "amount": 522500,
+          "classification": "Amount paid under the 2011 criminal transaction (settlement, no finding of guilt)",
+          "asOf": "June 2011",
+          "represents": "The sum Patokh Chodiev personally paid in the 2011 transaction penale, plus roughly €251,000 in court fees. A settlement figure, not a fine after conviction and not proof of guilt."
+        },
+        {
+          "label": "Total settlement, all accused",
+          "amount": 3500000,
+          "classification": "Total paid by all seven accused in the 2011 criminal settlement",
+          "asOf": "June 2011",
+          "represents": "Penalties and fees across all accused in the 2011 transaction. Distinct from any tax matter."
+        },
+        {
+          "label": "Separate tax settlement (context)",
+          "amount": 23000000,
+          "classification": "SEPARATE mid-2000s tax settlement, not the criminal settlement",
+          "asOf": "mid-2000s",
+          "represents": "A widely-cited but different figure: an earlier tax settlement with the Belgian tax authorities. It is often wrongly reported as the Kazakhgate criminal amount. It is not."
+        }
+      ],
+      "currentStatus": "Only €522,500 (Chodiev) / €3.5 million (all accused) flowed through the 2011 criminal proceeding, which ended with no finding of guilt. The €23 million tax figure is a separate matter."
+    },
+    "documentedOutcome": "Parliamentary inquiry report adopted 30 March 2018: French interference judged 'unacceptable', but no proof it influenced the 2011 vote. Constitutional Court (decision no. 83/2016, 2 June 2016) annulled the extended settlement regime. No criminal conviction of any named individual arising from Kazakhgate.",
+    "timeline": [
+      { "date": "2011-04-14", "event": "Belgium adopts the law broadening the out-of-court criminal settlement (transaction penale)." },
+      { "date": "2011-06-01", "event": "The Brussels prosecutor concludes a settlement with the accused, ending the prosecution with no finding of guilt." },
+      { "date": "2016-06-02", "event": "The Constitutional Court annuls the 2011 extended-settlement regime for lack of effective judicial control." },
+      { "date": "2018-03-30", "event": "The Chamber inquiry commission adopts its final report: French interference 'unacceptable', but no proof it swayed the 2011 vote." }
+    ],
+    "whoInvolved": [
+      { "name": "Patokh Chodiev", "role": "Kazakh businessman; settled in 2011 with no finding of guilt; not convicted" },
+      { "name": "Armand De Decker", "role": "Belgian ex-Senate-president acting as a lawyer; role criticised by the inquiry; investigated but not convicted; died 2019" }
+    ],
+    "officialFindings": [
+      { "institution": "Chamber of Representatives (inquiry commission)", "finding": "Final report (30 March 2018): French interference 'unacceptable'; could not establish it influenced Parliament's 2011 vote." },
+      { "institution": "Constitutional Court", "finding": "Decision no. 83/2016 (2 June 2016): annulled the 2011 extended criminal-settlement regime for lack of effective judicial control." }
+    ],
+    "lastVerified": "2026-09-02",
+    "sources": [
+      {
+        "sourceName": "RTBF (public broadcaster)",
+        "sourceTitle": "Commission d'enquete Kazakhgate: le rapport final adopte",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.rtbf.be/article/commission-d-enquete-kazakhgate-le-rapport-final-adopte-majorite-contre-opposition-9880914",
+        "publicationDate": "2018-03-30",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "RTBF / Le Vif (on the true settlement amount)",
+        "sourceTitle": "Kazakhgate: la transaction penale de Chodiev lui a coute 522.500 euros",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.rtbf.be/article/kazakhgate-la-transaction-penale-de-chodiev-lui-a-coute-522500-euros-beaucoup-moins-qu-estime-9463840",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "Ligue des droits humains (on Constitutional Court arret 83/2016)",
+        "sourceTitle": "La transaction penale, le scandale presque oublie derriere le Kazakhgate",
+        "sourceType": "OFFICIAL REPORT",
+        "sourceURL": "https://www.liguedh.be/la-transaction-penale-le-scandale-presque-oublie-derriere-le-kazakhgate/",
+        "accessDate": "2026-09-02"
+      }
+    ],
+    "clerkAssessment": {
+      "financialJudgement": "A settlement, not a sentence. The Department notes the difference.",
+      "administrativeCompetence": "A law was passed. A court unpassed it.",
+      "paperworkGenerated": "One inquiry report, one annulment, zero convictions.",
+      "accountabilityStatus": "Institutional, not personal.",
+      "lessonsLearned": "The Constitutional Court had some.",
+      "departmentVerdict": "APPROVED."
+    },
+    "departmentNotes": "The Department reminds readers that a settlement extinguishes a prosecution without deciding guilt. No one here has been convicted of anything. Filed under 'legislation, briefly'.",
+    "illustration": null,
+    "tags": ["federal", "parliamentary-inquiry", "constitutional-court", "settlement"],
+    "publishedDate": "2026-09-02",
+    "updatedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-0004",
+    "title": "The reception crisis (Fedasil)",
+    "subtitle": "Thousands of court orders to house asylum seekers, largely unenforced",
+    "status": "STATE REPEATEDLY CONDEMNED; ECtHR violation found (2023); ongoing",
+    "institution": "Belgian federal State · Fedasil · labour courts · European Court of Human Rights",
+    "governmentLevel": "FEDERAL",
+    "location": "Belgium",
+    "date": "2023-07-18",
+    "year": 2023,
+    "category": "ADMINISTRATION",
+    "intended": "Provide asylum seekers with the housing and material reception the law requires (a federal competence, delivered through the agency Fedasil).",
+    "actual": "From 2021 onward Belgium chronically failed to house asylum seekers. Labour courts ordered the State and Fedasil to provide accommodation, backed by daily penalty payments; the State largely did not comply and, per the reported figures, largely did not pay the penalties. In 2023 the European Court of Human Rights found that Belgium's refusal to enforce these orders violated the Convention.",
+    "summary": "Since 2021 Belgium's federal reception agency, Fedasil, has repeatedly failed to provide asylum seekers with the accommodation and material support the law requires, leaving many on the street. Asylum seekers obtained urgent orders from the labour courts requiring Fedasil to house them, typically backed by a daily penalty payment (astreinte). The State systematically failed to comply. According to an Amnesty International tally (figures as of January 2025), the labour courts had condemned Fedasil 10,407 times since the start of the crisis, with the Brussels labour tribunal alone condemning it more than 5,000 times. Common orders set a penalty of €125 per person per day; on 31 October 2022 the Brussels Court of Appeal imposed a general penalty of €10,000 per day per person denied reception. Per Amnesty, the government has largely not paid these penalties, with total amounts owed estimated above €100 million. On 18 July 2023, in Camara v. Belgium (application no. 49255/22), the European Court of Human Rights held that Belgium had violated Article 6 of the Convention by refusing to execute an enforceable order to house an applicant, finding a systemic failure to enforce reception judgments. This is State and institutional liability, established by courts; it is not a finding of criminal guilt against any named individual.",
+    "publicMoney": {
+      "currency": "EUR",
+      "figures": [
+        {
+          "label": "Daily penalty per person",
+          "amount": 125,
+          "classification": "Court-ordered penalty payment (astreinte) per person per day",
+          "asOf": "2022-ongoing",
+          "represents": "The standard daily penalty labour tribunals attached to orders to house an applicant. A penalty rate, imposed by courts."
+        },
+        {
+          "label": "Court of Appeal penalty",
+          "amount": 10000,
+          "classification": "Penalty per day per person imposed by the Brussels Court of Appeal",
+          "asOf": "31 October 2022",
+          "represents": "A general daily penalty per asylum seeker denied reception. A court-imposed penalty rate, not a lump sum paid."
+        },
+        {
+          "label": "Estimated total penalties owed",
+          "amount": 100000000,
+          "classification": "Estimated total astreintes owed by the State, reportedly unpaid",
+          "asOf": "reported 2025",
+          "represents": "An Amnesty International estimate of penalty payments the State owes but has, per the report, largely not paid. An estimate, not a single court-certified sum, and not money recovered."
+        }
+      ],
+      "currentStatus": "Penalties were legally imposed but, per the reported figures, largely not paid. The 10,407 condemnations are a count of court decisions, not a sum of money."
+    },
+    "documentedOutcome": "State repeatedly condemned by the labour courts (10,407 times as of January 2025, per Amnesty). ECtHR found a Convention violation in Camara v. Belgium (18 July 2023). The reception shortfall remained a live issue.",
+    "timeline": [
+      { "date": "2021-01-01", "event": "Belgium's reception system enters chronic saturation; applicants are turned away." },
+      { "date": "2022-10-31", "event": "The Brussels Court of Appeal imposes a general penalty of €10,000 per day per person denied reception." },
+      { "date": "2023-07-18", "event": "ECtHR, Camara v. Belgium (no. 49255/22): Belgium violated Article 6 by refusing to enforce an order to house an applicant." },
+      { "date": "2025-01-01", "event": "Amnesty International tally: 10,407 labour-court condemnations of Fedasil since the start of the crisis." }
+    ],
+    "officialFindings": [
+      { "institution": "European Court of Human Rights", "finding": "Camara v. Belgium (18 July 2023): violation of Article 6; systemic failure to enforce reception judgments." },
+      { "institution": "Court of Justice of the EU", "finding": "Saciri and Others (C-79/13, 27 February 2014): sets the EU-law benchmark for adequate material reception conditions in Belgium." }
+    ],
+    "lastVerified": "2026-09-02",
+    "sources": [
+      {
+        "sourceName": "European Court of Human Rights (HUDOC)",
+        "sourceTitle": "Camara v. Belgium, no. 49255/22, judgment of 18 July 2023",
+        "sourceType": "JUDGMENT",
+        "sourceURL": "https://hudoc.echr.coe.int/eng?i=001-226093",
+        "publicationDate": "2023-07-18",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "Amnesty International",
+        "sourceTitle": "Unhoused and Unheard: Belgium's persistent failure to provide reception",
+        "sourceType": "OFFICIAL REPORT",
+        "sourceURL": "https://www.amnesty.org/en/latest/news/2025/04/belgium-persistent-failure-to-provide-reception-violates-rights-and-dignity-of-people-seeking-asylum/",
+        "publicationDate": "2025-04-01",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "Asylum Law Database (EDAL) — CJEU Saciri",
+        "sourceTitle": "CJEU, Saciri and Others, C-79/13, 27 February 2014",
+        "sourceType": "JUDGMENT",
+        "sourceURL": "https://www.asylumlawdatabase.eu/en/content/cjeu-new-reference-reception-conditions-directive-case-c-7913-saciri-and-others",
+        "accessDate": "2026-09-02"
+      }
+    ],
+    "clerkAssessment": {
+      "financialJudgement": "The State would rather owe €100 million in penalties than spend it on beds.",
+      "administrativeCompetence": "Condemned 10,407 times and counting.",
+      "paperworkGenerated": "Ten thousand court orders. Filed. Ignored.",
+      "accountabilityStatus": "Established by a European court. Enforcement pending.",
+      "lessonsLearned": "Not yet, per the astreinte counter.",
+      "departmentVerdict": "APPROVED."
+    },
+    "departmentNotes": "The Department notes that ignoring a court order is cheaper than obeying it, right up until the European Court of Human Rights notices. Filed under 'obligations, outstanding'.",
+    "illustration": null,
+    "tags": ["federal", "asylum", "labour-courts", "ecthr", "astreinte"],
+    "publishedDate": "2026-09-02",
+    "updatedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-0005",
+    "title": "Publifin / Nethys (Liege)",
+    "subtitle": "Sitting fees, an inquiry, and a set of acquittals",
+    "status": "INQUIRY FINDINGS; ACQUITTALS IN ONE STRAND; OTHER STRANDS PRE-TRIAL (presumed innocent)",
+    "institution": "Walloon Parliament (inquiry) · Liege judiciary · Publifin / Nethys / Enodia",
+    "governmentLevel": "WALLOON",
+    "location": "Liege",
+    "date": "2017-07-06",
+    "year": 2017,
+    "category": "CONFLICT OF INTEREST",
+    "intended": "Publifin was a Liege inter-municipal utility group, majority-owned by the Province of Liege, operating commercially through its subsidiary Nethys (telecoms, energy, media).",
+    "actual": "In December 2016 it emerged that local politicians drew attendance fees from Publifin 'sector committees' that had become largely useless. Concerns broadened to executive pay and governance. A Walloon Parliament inquiry reported in 2017 and referred possible offences to the prosecutor. In the main criminal strand, seven former board members were definitively acquitted. Separate strands involving former CEO Stephane Moreau remain at the charge / pre-trial stage; he denies wrongdoing and is presumed innocent. No one has been convicted.",
+    "summary": "Publifin was a Liege-based inter-municipal utility group, majority-owned by the Province of Liege, operating commercially through its subsidiary Nethys (later the group was renamed Enodia). In December 2016 it was revealed that local politicians sat on 'sector committees' that had become functionally useless after mergers, yet still drew attendance fees. The affair broadened to executive remuneration and governance. The Walloon Parliament created an inquiry commission whose final report (6 July 2017) flagged an 'abnormally high' rise in management remuneration and referred fifteen indices of possible offences to the Liege prosecutor. Those are inquiry findings and referrals, not charges or convictions. In the highest-profile criminal strand, on the sector committees, seven former board members went to trial and were acquitted by the Liege tribunal on 19 December 2019; the Court of Appeal confirmed the acquittals on 9 September 2021, and the Court of Cassation rejected the prosecution's appeal on 27 January 2022, making the acquittals final. Former CEO Stephane Moreau was not a defendant in that strand. He was separately charged in 2021 in another dossier and is a referral target in a further 'retention indemnities' dossier for which the prosecutor filed a referral request in 2025; both remain at the charge / pre-trial stage. Moreau denies all wrongdoing and is presumed innocent. As of the latest authoritative information, no Publifin or Nethys figure has been convicted of any offence; the only judicial finality to date is a set of acquittals.",
+    "publicMoney": {
+      "currency": "EUR",
+      "figures": [
+        {
+          "label": "Retention indemnities (alleged)",
+          "amount": 18600000,
+          "classification": "Allegation: prosecutor's figure in a 2025 referral request; no charges confirmed for trial, no conviction",
+          "asOf": "2018-2019",
+          "represents": "The gross total of 'retention indemnities' the prosecutor's referral request attributes to four Nethys managers. An allegation at the pre-trial stage; the beneficiaries are presumed innocent."
+        },
+        {
+          "label": "Portion attributed to former CEO (alleged)",
+          "amount": 11600000,
+          "classification": "Allegation: prosecutor's figure attributed to Stephane Moreau alone; pre-trial; presumed innocent",
+          "asOf": "2018-2019",
+          "represents": "The share of the alleged retention indemnities attributed to the former CEO in the referral request. An allegation, not an established or court-found amount."
+        },
+        {
+          "label": "Sector-committee attendance fees",
+          "amount": "NOT_DOCUMENTED",
+          "classification": "Underlying scandal sum not established from an authoritative source",
+          "represents": "The total attendance fees drawn from the near-useless sector committees was not established here. The board members tried over the committees were acquitted."
+        }
+      ],
+      "currentStatus": "The money figures above are prosecutors' allegations at the pre-trial stage, not established or court-found sums. No conviction has resulted. The only judicial finality is the acquittal of seven former board members."
+    },
+    "documentedOutcome": "Walloon Parliament inquiry reported 6 July 2017 (fifteen indices referred). Seven former board members definitively acquitted (Cassation, 27 January 2022). Other strands involving the former CEO remain at the charge / pre-trial stage; no conviction; presumed innocent.",
+    "timeline": [
+      { "date": "2016-12-01", "event": "Press reveals attendance fees drawn from largely useless Publifin sector committees." },
+      { "date": "2017-07-06", "event": "Walloon Parliament inquiry commission delivers its final report; refers fifteen indices of possible offences to the prosecutor." },
+      { "date": "2019-12-19", "event": "Liege tribunal acquits seven former board members in the sector-committees strand." },
+      { "date": "2022-01-27", "event": "Court of Cassation rejects the prosecution's appeal; the acquittals become final." },
+      { "date": "2025-09-15", "event": "Prosecutor files a referral request in the separate 'retention indemnities' dossier (pre-trial; presumed innocent)." }
+    ],
+    "whoInvolved": [
+      { "name": "Stephane Moreau", "role": "Former Nethys CEO; charged in one dossier and a referral target in another; denies wrongdoing; presumed innocent; not convicted" },
+      { "name": "Seven former Publifin board members", "role": "Tried over the sector committees and definitively acquitted (Cassation, 27 January 2022)" }
+    ],
+    "officialFindings": [
+      { "institution": "Walloon Parliament (inquiry commission)", "finding": "Final report (6 July 2017): 'abnormally high' management remuneration; referred fifteen indices of possible offences to the prosecutor. Findings and referrals, not convictions." },
+      { "institution": "Liege courts (tribunal, Court of Appeal, Court of Cassation)", "finding": "Seven former board members acquitted in the sector-committees strand; acquittals final on 27 January 2022." }
+    ],
+    "lastVerified": "2026-09-02",
+    "sources": [
+      {
+        "sourceName": "Walloon Parliament",
+        "sourceTitle": "Rapport de la Commission d'enquete parlementaire sur le Groupe Publifin, Doc. 861 (2016-2017)",
+        "sourceType": "PARLIAMENT",
+        "sourceURL": "https://www.parlement-wallonie.be/pwpages?p=doc-recherche-det&iddoc=80573",
+        "publicationDate": "2017-07-06",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "RTBF (public broadcaster)",
+        "sourceTitle": "Comites de secteur de Publifin: les anciens membres du CA definitivement acquittes",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.rtbf.be/article/clap-de-fin-pour-le-dossier-des-comites-de-secteur-de-publifin-les-anciens-membres-du-ca-definitivement-acquittes-10923262",
+        "publicationDate": "2022-01-27",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "La Libre",
+        "sourceTitle": "Affaire Nethys, dossier des indemnites: le parquet veut renvoyer 10 suspects devant le tribunal",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.lalibre.be/belgique/judiciaire/2025/12/11/affaire-nethys-dossier-des-indemnites-le-parquet-veut-renvoyer-10-suspects-devant-le-tribunal-OIYVKPKQQZFDLMHVSLNNDBV5BA/",
+        "publicationDate": "2025-12-11",
+        "accessDate": "2026-09-02"
+      }
+    ],
+    "clerkAssessment": {
+      "financialJudgement": "Committees that did nothing, paid for it anyway.",
+      "administrativeCompetence": "Governance reviewed by a parliament and several courts.",
+      "paperworkGenerated": "One inquiry, several dossiers, a great many hearings.",
+      "accountabilityStatus": "One strand acquitted; others still before the courts.",
+      "lessonsLearned": "The committees were abolished, at least.",
+      "departmentVerdict": "APPROVED."
+    },
+    "departmentNotes": "The Department stresses that the sector-committee defendants were acquitted, and that the remaining allegations against the former CEO are exactly that: allegations, before any trial. No one here has been convicted. Filed under 'committees, dissolved'.",
+    "illustration": null,
+    "tags": ["walloon", "conflict-of-interest", "parliamentary-inquiry", "acquittal", "pre-trial"],
+    "publishedDate": "2026-09-02",
+    "updatedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-0006",
+    "title": "Samusocial de Bruxelles",
+    "subtitle": "Attendance fees at a charity that ran on public money",
+    "status": "INQUIRY FINDINGS; REFERRED TO TRIAL (2026); NO CONVICTION (presumed innocent)",
+    "institution": "Brussels COCOM Parliament (inquiry) · Brussels judiciary · Samusocial (ASBL)",
+    "governmentLevel": "BRUSSELS",
+    "location": "Brussels",
+    "date": "2018-02-21",
+    "year": 2018,
+    "category": "CONFLICT OF INTEREST",
+    "intended": "Samusocial was a Brussels non-profit providing emergency shelter and aid to homeless people, funded almost entirely by public money.",
+    "actual": "In 2017 it emerged that board members, including the then Brussels mayor and the CPAS president, had drawn attendance fees from a body living off public subsidies. Both resigned. A Brussels parliamentary inquiry found improper attendance fees and governance failures and sought reimbursement. A criminal investigation followed; in February 2026 five defendants, including the two politicians, were referred to trial. There has been no conviction and they are presumed innocent.",
+    "summary": "The Samusocial de Bruxelles was a non-profit (ASBL) providing emergency shelter to homeless people, funded almost entirely by public money (about 98% of its income, roughly 10 million euros a year from the Brussels COCOM). In mid-2017 it emerged that board members, including then Brussels mayor Yvan Mayeur and CPAS president Pascale Peraita, had drawn attendance fees for board meetings over several years, in a body overseen by the same political actors it depended on. Both resigned and left the Socialist Party. A Brussels COCOM parliamentary inquiry adopted its final report on 21 February 2018, describing conflicts of interest and role-confusion (which it framed as more ethical than legal) and deficient governance, and it sought reimbursement of the attendance fees: about 346,300 euros in total from twelve administrators, including roughly 112,980 euros from Mayeur and about 113,400 euros from Peraita. Those are parliamentary-inquiry findings, not criminal verdicts. A separate criminal investigation examined possible forgery, embezzlement, misuse of ASBL assets and accounting offences. On 27 February 2026 the chambre du conseil referred five defendants, including Mayeur and Peraita, to the correctional tribunal on those charges. That is a referral to trial only: there has been no conviction, the defendants may still appeal the referral, and they are presumed innocent.",
+    "publicMoney": {
+      "currency": "EUR",
+      "figures": [
+        {
+          "label": "Attendance fees to reimburse (total)",
+          "amount": 346300,
+          "classification": "Parliamentary-inquiry finding; reimbursement sought",
+          "asOf": "over several years to 2016",
+          "represents": "Total attendance fees the inquiry considered improperly received by twelve administrators and sought to have reimbursed. An inquiry finding, not a criminal judgment."
+        },
+        {
+          "label": "Attendance fees, former mayor",
+          "amount": 112980,
+          "classification": "Parliamentary-inquiry finding; reimbursement sought from Yvan Mayeur",
+          "asOf": "over several years",
+          "represents": "The share of attendance fees the inquiry sought to have reimbursed by the former Brussels mayor. An inquiry finding, not proof of a crime."
+        },
+        {
+          "label": "Attendance fees, former CPAS president",
+          "amount": 113400,
+          "classification": "Parliamentary-inquiry finding; reimbursement sought from Pascale Peraita",
+          "asOf": "over several years",
+          "represents": "The share of attendance fees the inquiry sought to have reimbursed by the former CPAS president. An inquiry finding, not proof of a crime."
+        },
+        {
+          "label": "Public subsidy dependence",
+          "amount": 10000000,
+          "classification": "Context: approx. annual public subsidy (about 98% of the ASBL's income)",
+          "asOf": "around 2015",
+          "represents": "The scale of public money the charity ran on each year, from the Brussels COCOM. Context for why the attendance fees drew scrutiny; not an alleged loss."
+        }
+      ],
+      "currentStatus": "The attendance-fee figures are parliamentary-inquiry findings with reimbursement sought, not criminal judgments. The criminal case is at the referral-to-trial stage; there is no conviction and the defendants are presumed innocent."
+    },
+    "documentedOutcome": "Parliamentary inquiry report adopted 21 February 2018 (improper attendance fees, reimbursement sought; governance failures). Resignations of the mayor and the CPAS president (2017). Five defendants referred to trial on 27 February 2026; no conviction; presumed innocent; referral may still be appealed.",
+    "timeline": [
+      { "date": "2017-06-16", "event": "Brussels COCOM Parliament creates a parliamentary inquiry commission into Samusocial." },
+      { "date": "2018-02-21", "event": "Inquiry adopts its final report: improper attendance fees, reimbursement sought, governance failures." },
+      { "date": "2026-02-27", "event": "The chambre du conseil refers five defendants, including Mayeur and Peraita, to the correctional tribunal on charges. No conviction; presumed innocent." }
+    ],
+    "whoInvolved": [
+      { "name": "Yvan Mayeur", "role": "Former Brussels mayor; resigned 2017; referred to trial (27 February 2026); presumed innocent; not convicted" },
+      { "name": "Pascale Peraita", "role": "Former Brussels CPAS president; resigned 2017; referred to trial (27 February 2026); presumed innocent; not convicted" }
+    ],
+    "officialFindings": [
+      { "institution": "Brussels COCOM Parliament (inquiry commission)", "finding": "Final report (21 February 2018): improper attendance fees (reimbursement sought) and governance failures; conflicts framed as more ethical than legal. Findings, not convictions." },
+      { "institution": "Brussels judiciary (chambre du conseil)", "finding": "On 27 February 2026 referred five defendants to the correctional tribunal on charges of forgery, embezzlement, misuse of ASBL assets and accounting offences. A referral to trial, not a conviction." }
+    ],
+    "lastVerified": "2026-09-02",
+    "sources": [
+      {
+        "sourceName": "RTBF (public broadcaster)",
+        "sourceTitle": "Le Parlement bruxellois donne son feu vert aux recommandations de la commission Samusocial",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.rtbf.be/article/le-parlement-bruxellois-donne-son-feu-vert-aux-recommandations-de-la-commission-samusocial-9881089",
+        "publicationDate": "2018-02-21",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "RTBF (public broadcaster)",
+        "sourceTitle": "5 inculpes dont Mayeur et Peraita renvoyes devant le tribunal correctionnel dans le dossier du Samusocial",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.rtbf.be/article/5-inculpes-dont-yvan-mayeur-et-pascale-peraita-renvoyes-devant-le-tribunal-correctionnel-dans-le-dossier-de-l-ancien-samusocial-de-bruxelles-11686497",
+        "publicationDate": "2026-02-27",
+        "accessDate": "2026-09-02"
+      },
+      {
+        "sourceName": "L'Avenir",
+        "sourceTitle": "Samusocial: la commission reclame plus de 110.000 euros a Peraita et Mayeur",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.lavenir.net/cnt/dmf20180221_01128393/samusocial-la-commission-reclame-plus-de-110-000eur-a-peraita-et-mayeur",
+        "publicationDate": "2018-02-21",
+        "accessDate": "2026-09-02"
+      }
+    ],
+    "clerkAssessment": {
+      "financialJudgement": "A charity for the homeless, with attendance fees for the board.",
+      "administrativeCompetence": "The same people funding it, overseeing it, and sitting on it.",
+      "paperworkGenerated": "One 170-page inquiry report, roughly thirty recommendations.",
+      "accountabilityStatus": "Resignations, then a referral to trial. No verdict yet.",
+      "lessonsLearned": "Future mandates were made unpaid.",
+      "departmentVerdict": "APPROVED."
+    },
+    "departmentNotes": "The Department notes that the criminal case has been referred to trial but not decided: no one here has been convicted, and the defendants are presumed innocent. The established findings are the parliamentary inquiry's. Filed under 'charity, overhead-heavy'.",
+    "illustration": null,
+    "tags": ["brussels", "conflict-of-interest", "parliamentary-inquiry", "referred-to-trial", "presumed-innocent"],
+    "publishedDate": "2026-09-02",
+    "updatedDate": "2026-09-02"
   }
 ]

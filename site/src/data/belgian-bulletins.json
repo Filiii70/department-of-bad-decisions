@@ -1,1 +1,98 @@
-[]
+[
+  {
+    "caseNumber": "DBD-BE-B-0001",
+    "subject": "€13 billion in defence contracts, \"substantial irregularities\" in the paperwork",
+    "governmentLevel": "FEDERAL",
+    "publicRecord": "In a report published on 25 May 2022, the Belgian Court of Audit (Rekenhof / Cour des comptes) examined how the Ministry of Defence awards public contracts. It found that Defence awarded more than €13 billion in contracts (excluding VAT) between 2018 and 2020. That €13 billion is the total value of contracts awarded, not a loss and not an overrun. The control framework was 'reasonably well developed', but the audit flagged substantial regularity shortcomings: weak application of the competition and equal-treatment rules on smaller contracts, and insufficient scrutiny of bidders' prices on larger ones. This is an audit-regularity finding, not a finding of criminal wrongdoing.",
+    "sources": [
+      {
+        "sourceName": "Belgian Court of Audit (Rekenhof / Cour des comptes)",
+        "sourceTitle": "Overheidsopdrachten van Defensie – Regelmatigheid en goed beheer",
+        "sourceType": "COURT OF AUDIT",
+        "sourceURL": "https://www.ccrek.be/nl/rekenhof/publicaties",
+        "publicationDate": "2022-05-25"
+      }
+    ],
+    "departmentNote": "Filed under 'procurement, allegedly competitive'.",
+    "publishedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-B-0002",
+    "subject": "€2.5 billion on external consultants in three years, most of it inadequately justified",
+    "governmentLevel": "FEDERAL",
+    "publicRecord": "A Belgian Court of Audit report, reported on 12 November 2025, found that the federal government spent about €2.5 billion on external consultants over 2020-2022, roughly €2 billion of it on IT. The Court found that 78.22% of the contracts it examined lacked proper justification and 44.55% carried unrealistic cost estimates, and it cited one contract estimated at €400,000 that ultimately cost €10 million. The Court described the weaknesses as 'structural'. This is an audit finding on spending controls, not a finding of criminal wrongdoing.",
+    "sources": [
+      {
+        "sourceName": "VRT NWS (reporting the Court of Audit / Rekenhof)",
+        "sourceTitle": "Rapport Rekenhof: federale overheid gaf 2,5 miljard uit aan consultants",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.vrt.be/vrtnws/nl/2025/11/12/rapport-rekenhof-consultancy/",
+        "publicationDate": "2025-11-12"
+      }
+    ],
+    "departmentNote": "The Department commissioned a study on why it commissions so many studies. Pending.",
+    "publishedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-B-0003",
+    "subject": "€14.5 billion Flemish road and infrastructure maintenance backlog",
+    "governmentLevel": "FLEMISH",
+    "publicRecord": "A Court of Audit (Rekenhof) audit of Flanders' Integrated Investment Programme (GIP), reported on 18 June 2026, put the region's infrastructure maintenance backlog at about €14.5 billion, needing roughly €1.45 billion a year for ten years to clear. It found that a promised €530 million of extra 2025 investment came to €363 million in practice, and criticised that more than 150 projects were added on political grounds without objective scoring, with the roads agency warning it could not rule out safety-related closures of lanes, tunnels or bridges. This is an audit finding, not an allegation of wrongdoing.",
+    "sources": [
+      {
+        "sourceName": "VRT NWS (reporting the Court of Audit / Rekenhof)",
+        "sourceTitle": "Rekenhof-rapport over het Geïntegreerd Investeringsprogramma (GIP)",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.vrt.be/vrtnws/nl/2026/06/18/rekenhof-rapport-gip/",
+        "publicationDate": "2026-06-18"
+      }
+    ],
+    "departmentNote": "Filed under 'maintenance, deferred to a braver budget'.",
+    "publishedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-B-0004",
+    "subject": "Walloon direct debt projected at €32.8 billion, accounts not certifiable",
+    "governmentLevel": "WALLOON",
+    "publicRecord": "In its 37th cahier of observations to the Walloon Parliament, the Court of Audit (Cour des comptes) projected Wallonia's direct regional debt at about €32.8 billion by the end of 2026, up roughly 60% in five years, with €873 million of debt-interest charges in 2024. The Court reported that many receivables and the Region's property portfolio are not properly inventoried or valued, which prevents it from certifying a true-and-fair view of the accounts, and it flagged weaknesses in public-procurement procedures. These are audit observations, not findings of criminal wrongdoing.",
+    "sources": [
+      {
+        "sourceName": "RTBF (reporting the Cour des comptes)",
+        "sourceTitle": "La dette wallonne inquiète toujours la Cour des comptes",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.rtbf.be/article/la-dette-wallonne-inquiete-toujours-la-cour-des-comptes-11644820"
+      },
+      {
+        "sourceName": "Cour des comptes / SPW Finances (official documentation)",
+        "sourceTitle": "Cour des comptes – documentation des finances wallonnes",
+        "sourceType": "COURT OF AUDIT",
+        "sourceURL": "https://finances.wallonie.be/en/accueil-entreprises/finances-wallonnes/documentation-fr--en/cour-des-comptes.html"
+      }
+    ],
+    "departmentNote": "The Department admires any balance sheet that cannot be balanced.",
+    "publishedDate": "2026-09-02"
+  },
+  {
+    "caseNumber": "DBD-BE-B-0005",
+    "subject": "€462.6 million, 28-year contract to renovate Brussels' longest tunnel",
+    "governmentLevel": "BRUSSELS",
+    "publicRecord": "The renovation of the Leopold II tunnel (renamed Annie Cordy), Belgium's longest urban tunnel, was awarded to the Circul2020 consortium as a design-build-finance-maintain contract worth €462.6 million over 28 years: about €264.7 million for the works and €180.3 million for 25 years of maintenance, with the total later reported at around €512 million. Separately, the federal Beliris fund's 2023-2024 Brussels programme totalled €771 million. These are contract and programme figures, not audited overruns or losses.",
+    "sources": [
+      {
+        "sourceName": "news.belgium.be (federal government / Beliris)",
+        "sourceTitle": "Beliris-programma 2023-2024 voorziet 771 miljoen euro aan investeringen",
+        "sourceType": "GOVERNMENT",
+        "sourceURL": "https://news.belgium.be/nl/beliris-programma-2023-2024-voorziet-771-miljoen-euro-aan-investeringen-0"
+      },
+      {
+        "sourceName": "BRUZZ",
+        "sourceTitle": "Renovatie Leopold II-tunnel kostte 50 miljoen euro extra",
+        "sourceType": "MEDIA",
+        "sourceURL": "https://www.bruzz.be/mobiliteit/renovatie-leopold-ii-tunnel-kostte-50-miljoen-euro-extra-2022-05-16",
+        "publicationDate": "2022-05-16"
+      }
+    ],
+    "departmentNote": "Filed under 'infrastructure, eventually, at 3% interest'.",
+    "publishedDate": "2026-09-02"
+  }
+]

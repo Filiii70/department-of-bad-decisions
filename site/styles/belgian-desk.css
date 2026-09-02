@@ -288,6 +288,7 @@ body.belgian {
 .money-cell .mc-v { font-family: var(--f-stamp); font-weight: 700; font-size: 18px; color: var(--ink); margin-top: 3px; }
 .money-cell.loss .mc-v { color: var(--be-red); }
 .money-cell.notdoc .mc-v { color: var(--ink-3); font-style: italic; font-size: 13px; }
+.money-cell .mc-note { font-family: var(--f-mono); font-size: 11px; line-height: 1.4; color: var(--ink-3); margin-top: 6px; }
 
 /* ---------------------------------------------------------------------
    CLERK ASSESSMENT  (.clerk-assessment -> ClerkAssessment) : satire

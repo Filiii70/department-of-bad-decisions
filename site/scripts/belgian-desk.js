@@ -81,6 +81,11 @@ const KEY_ORDER = [
 
 export function keyMoney(c) {
   const m = c.publicMoney; if (!m) return null;
+  // Preferred: an explicit, precisely-classified figures[] list.
+  if (Array.isArray(m.figures) && m.figures.length) {
+    const fig = m.figures.find((x) => x && x.amount !== NOT_DOCUMENTED && formatAmount(x.amount, m.currency));
+    if (fig) return { label: fig.label || 'Amount', value: formatAmount(fig.amount, m.currency) };
+  }
   for (const [k, label] of KEY_ORDER) {
     const f = formatAmount(m[k], m.currency);
     if (f && m[k] !== NOT_DOCUMENTED) return { label, value: f };
@@ -92,6 +97,30 @@ function moneyRecord(m) {
   if (!m) return null;
   const wrap = el('div', 'money-record');
   let any = false;
+  // Preferred path: explicit figures[], each with its own classification, period and meaning.
+  if (Array.isArray(m.figures) && m.figures.length) {
+    for (const fig of m.figures) {
+      const cell = el('div', 'money-cell' + (fig.loss ? ' loss' : ''));
+      cell.appendChild(el('div', 'mc-k', fig.label || 'Amount'));
+      if (fig.amount === NOT_DOCUMENTED) {
+        cell.classList.add('notdoc');
+        cell.appendChild(el('div', 'mc-v', 'NOT DOCUMENTED'));
+      } else {
+        const f = formatAmount(fig.amount, m.currency);
+        cell.appendChild(el('div', 'mc-v', f || String(fig.amount)));
+      }
+      const bits = [fig.classification, fig.asOf ? ('As of ' + fig.asOf) : null, fig.represents].filter(hasValue);
+      if (bits.length) cell.appendChild(el('div', 'mc-note', bits.join(' · ')));
+      wrap.appendChild(cell); any = true;
+    }
+    if (hasValue(m.currentStatus)) {
+      const cell = el('div', 'money-cell');
+      cell.appendChild(el('div', 'mc-k', 'Current Status'));
+      cell.appendChild(el('div', 'mc-v', m.currentStatus));
+      wrap.appendChild(cell);
+    }
+    return wrap;
+  }
   for (const [k, label, isLoss] of MONEY_ROWS) {
     if (!(k in m)) continue;
     const cell = el('div', 'money-cell' + (isLoss ? ' loss' : ''));
@@ -194,15 +223,13 @@ function clerkAssessment(a) {
 }
 
 function illustrationFrame(ill) {
+  // Only render a frame when real artwork exists. No placeholder / "pending" copy.
+  if (!ill || !hasValue(ill.src)) return null;
   const frame = el('div', 'illus-frame');
-  if (ill && hasValue(ill.src)) {
-    const img = document.createElement('img');
-    img.src = ill.src; img.alt = ill.alt || 'Editorial illustration';
-    frame.appendChild(img);
-    if (hasValue(ill.caption)) frame.appendChild(el('div', 'illus-cap', ill.caption));
-  } else {
-    frame.appendChild(el('div', 'illus-empty', 'Editorial illustration slot · approved artwork pending'));
-  }
+  const img = document.createElement('img');
+  img.src = ill.src; img.alt = ill.alt || 'Editorial illustration';
+  frame.appendChild(img);
+  if (hasValue(ill.caption)) frame.appendChild(el('div', 'illus-cap', ill.caption));
   return frame;
 }
 
@@ -274,7 +301,8 @@ function caseDetail(c) {
   root.appendChild(header);
 
   root.appendChild(editorialNotice());
-  root.appendChild(illustrationFrame(c.illustration));
+  const ill = illustrationFrame(c.illustration);
+  if (ill) root.appendChild(ill);
 
   // LAYER 1 - PUBLIC RECORD (facts), as a full dossier
   const fact = el('section', 'layer layer-fact');
@@ -423,9 +451,11 @@ function renderBulletins(bulletins) {
   if (!host) return;
   host.innerHTML = '';
   if (!bulletins.length) {
+    // Bulletins ship with the site; an empty host only happens if the data file
+    // fails to load. Keep the message neutral, never "prototype / none filed yet".
     const empty = el('div', 'be-empty');
-    empty.appendChild(el('div', 'bee-title', 'No bulletins on file'));
-    empty.appendChild(el('p', null, 'Short files respond to documented Belgian public events. None have been filed yet.'));
+    empty.appendChild(el('div', 'bee-title', 'Bulletins are temporarily unavailable'));
+    empty.appendChild(el('p', null, 'The bulletin file could not be loaded. Serve this portal over http (npm run serve).'));
     host.appendChild(empty);
     return;
   }
