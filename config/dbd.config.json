@@ -1,6 +1,6 @@
 {
   "config_version": "1.0.0",
-  "last_updated": "2026-08-30T00:00:00Z",
+  "last_updated": "2026-09-06T00:00:00Z",
 
   "project_name": "Department of Bad Decisions",
   "ticker": "DBD",
@@ -8,7 +8,7 @@
 
   "launch_status": "prelaunch",
   "launch_platform": "pump.fun",
-  "launch_timestamp": null,
+  "launch_timestamp": "2026-09-15T18:00:00Z",
 
   "official_mint": "NOT_YET_ISSUED",
 
