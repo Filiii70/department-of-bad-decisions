@@ -44,7 +44,8 @@ There is, regrettably, a token. It is satire first and a token second.
 
 - **Status: PRE-LAUNCH.**
 - **Network: Solana.**
-- **Intended launch platform: Pump.fun.**
+- **Launch platform: Pump.fun.**
+- **Official launch: 15 September 2026 at 20:00 CEST (18:00 UTC).**
 - **No presale.**
 - **No private round.**
 - **No guaranteed returns**, no guaranteed liquidity, and no promise that the
@@ -57,11 +58,55 @@ be verified on the site's public verification page before anyone interacts with
 any token claiming to be `$DBD`. The Department will never ask you for your seed
 phrase or private key, and will never DM you first asking for money.
 
+## Community rewards and current allocation policy
+
+DBD is reserving **5% of the total 1,000,000,000 DBD supply (50,000,000 DBD)**
+for community rewards. The reserve is intended for early members, contests,
+exceptional contributors and future community actions; it is not intended to be
+distributed all at once.
+
+Current pre-launch rewards:
+
+- Every genuine pre-launch community member: **10,000 DBD reserved**.
+- Every valid original entry in the first DBD meme contest: **+25,000 DBD**
+  participation reward, once per person.
+- Contest 1st place: **2,000,000 DBD**.
+- Contest 2nd place: **1,000,000 DBD**.
+- Contest 3rd place: **500,000 DBD**.
+- Contest 4th through 10th place: **100,000 DBD each**.
+- Contest deadline: **12 September 2026 at 18:00 UTC**; winners are targeted
+  for announcement on **13 September 2026**.
+
+Rewards are denominated only in DBD and have no guaranteed fiat value. DBD has
+not been minted yet, so pre-launch rewards are recorded/reserved and can only be
+distributed after the official mint. No purchase, payment or wallet connection
+is required for the early-member reward or meme contest. Obvious bots,
+duplicate accounts and reward farming do not qualify.
+
+Current insider allocation policy:
+
+- Creator: **maximum 2.5% (25,000,000 DBD)**; creator fees are separate and
+  disclosed.
+- Each active moderator: **1% base for proven active contribution**, with up to
+  **1.5% additional performance allocation**, for a maximum of **2.5%
+  (25,000,000 DBD) per moderator**. The maximum is earned, not automatic.
+- Moderator bonuses are based on genuine community growth, correct execution of
+  the campaign/contest, and active launch support; they are not based on token
+  price, artificial volume, a pump, bots or fake engagement.
+
+Creator, moderator and project allocations are intended to be transparent and
+to use a locking/vesting structure where appropriate so insiders cannot simply
+receive large fully liquid allocations and dump them on the community. The
+exact technical vesting/unlock schedule is still being finalised and will be
+published before it is represented as final.
+
 ## Official links
 
 - Website: https://department-of-bad-decisions.pages.dev
 - X: https://x.com/DBDDepartment
-- Telegram: https://t.me/DBDDepartment
+- Telegram announcements: https://t.me/DBDDepartment
+- Telegram community: https://t.me/DBDDepartmentChat
+- GitHub: https://github.com/Filiii70/department-of-bad-decisions
 
 The website's Verify page ("Don't trust us. Verify us.") lists the official
 wallets, channels and launch policy from a single canonical configuration.
