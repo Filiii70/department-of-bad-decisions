@@ -48,57 +48,46 @@ There is, regrettably, a token. It is satire first and a token second.
 - **Official launch: 15 September 2026 at 20:00 CEST (18:00 UTC).**
 - **No presale.**
 - **No private round.**
-- **No guaranteed returns**, no guaranteed liquidity, and no promise that the
-  token will increase in value.
+- **No guaranteed returns**, no guaranteed liquidity, and no promise that the token will increase in value.
 - **Official mint: NOT YET ISSUED.**
 
 There is currently no official `$DBD` contract address. When a mint is issued,
-it will be published on the official website and in this repository, and it can
-be verified on the site's public verification page before anyone interacts with
-any token claiming to be `$DBD`. The Department will never ask you for your seed
-phrase or private key, and will never DM you first asking for money.
+it will be published on the official website and in this repository. The
+Department will never ask you for your seed phrase or private key, and will never
+DM you first asking for money.
 
 ## Community rewards and current allocation policy
 
 DBD is reserving **5% of the total 1,000,000,000 DBD supply (50,000,000 DBD)**
-for community rewards. The reserve is intended for early members, contests,
-exceptional contributors and future community actions; it is not intended to be
-distributed all at once.
+for community rewards: early members, contests, exceptional contributors and
+future community actions. It is not intended to be distributed all at once.
 
 Current pre-launch rewards:
 
 - Every genuine pre-launch community member: **10,000 DBD reserved**.
-- Every valid original entry in the first DBD meme contest: **+25,000 DBD**
-  participation reward, once per person.
-- Contest 1st place: **2,000,000 DBD**.
-- Contest 2nd place: **1,000,000 DBD**.
-- Contest 3rd place: **500,000 DBD**.
-- Contest 4th through 10th place: **100,000 DBD each**.
-- Contest deadline: **12 September 2026 at 18:00 UTC**; winners are targeted
-  for announcement on **13 September 2026**.
+- Every valid original entry in the first DBD meme contest: **+25,000 DBD** once per person.
+- 1st place: **2,000,000 DBD**.
+- 2nd place: **1,000,000 DBD**.
+- 3rd place: **500,000 DBD**.
+- 4th through 10th: **100,000 DBD each**.
+- Contest deadline: **12 September 2026 at 18:00 UTC**; winners targeted for **13 September 2026**.
 
 Rewards are denominated only in DBD and have no guaranteed fiat value. DBD has
 not been minted yet, so pre-launch rewards are recorded/reserved and can only be
 distributed after the official mint. No purchase, payment or wallet connection
-is required for the early-member reward or meme contest. Obvious bots,
-duplicate accounts and reward farming do not qualify.
+is required. Obvious bots, duplicate accounts and reward farming do not qualify.
 
 Current insider allocation policy:
 
-- Creator: **maximum 2.5% (25,000,000 DBD)**; creator fees are separate and
-  disclosed.
-- Each active moderator: **1% base for proven active contribution**, with up to
-  **1.5% additional performance allocation**, for a maximum of **2.5%
-  (25,000,000 DBD) per moderator**. The maximum is earned, not automatic.
-- Moderator bonuses are based on genuine community growth, correct execution of
-  the campaign/contest, and active launch support; they are not based on token
-  price, artificial volume, a pump, bots or fake engagement.
+- Creator: **maximum 2.5% (25,000,000 DBD)**; creator fees are separate and disclosed.
+- Each active moderator: **1% base for proven active contribution**, with up to **1.5% additional performance allocation**, maximum **2.5% (25,000,000 DBD) per moderator**. The maximum is earned, not automatic.
+- Moderator bonuses are based on genuine community growth, correct campaign/contest execution and active launch support — never token price, artificial volume, a pump, bots or fake engagement.
 
-Creator, moderator and project allocations are intended to be transparent and
-to use a locking/vesting structure where appropriate so insiders cannot simply
-receive large fully liquid allocations and dump them on the community. The
-exact technical vesting/unlock schedule is still being finalised and will be
-published before it is represented as final.
+Creator, moderator and project allocations are intended to be transparent and to
+use locking/vesting where appropriate so insiders cannot simply receive large
+fully liquid allocations and dump them on the community. The exact technical
+vesting/unlock schedule is still being finalised and will be published before it
+is represented as final.
 
 ## Official links
 
@@ -113,52 +102,51 @@ wallets, channels and launch policy from a single canonical configuration.
 
 ## What this repository is
 
-A zero-dependency, read-only static site plus its supporting tooling and docs.
+A zero-dependency, read-only static site plus its public supporting tooling and
+documentation.
 
-- The website source (`site/`), assembled into `site/dist/` by a small build
-  script. No framework, no bundler, no third-party scripts.
-- A canonical config (`config/dbd.config.json`) that is the single source of
-  truth for wallets, channels, status and, eventually, the mint.
-- Pre-launch and post-launch checkers, read-only Solana utilities and a monitor.
-- Full operational documentation under `docs/`.
+- Website source (`site/`), assembled into `site/dist/` by a small build script.
+- Canonical public config (`config/dbd.config.json`) for wallets, channels, status and eventually the mint.
+- Public pre/post-launch verification tools and read-only monitoring.
+- Public policy and editorial documentation under `docs/`.
 
-It never launches, mints or signs anything. The eventual token creation is a
-deliberate manual action from the creator wallet. It has no wallet connection,
-no login, no database, no backend, no analytics and no tracking. It never
-fabricates holders, volume, liquidity or engagement.
+Internal launch execution material is deliberately not part of the public working
+tree. Transparency means the public can verify what DBD claims and does; it does
+not require publishing operational execution playbooks.
+
+The repository never launches, mints or signs anything. It has no wallet
+connection, login, database, backend, analytics or tracking, and never fabricates
+holders, volume, liquidity or engagement.
 
 ## Requirements
 
-- Node.js 18 or newer. That is the only prerequisite. There are zero npm
-  dependencies.
+- Node.js 18 or newer. Zero npm dependencies.
 
 ## Run locally
 
 ```bash
-npm install          # no-op: there are zero dependencies
-npm run build        # assembles site/dist from config
-npm run serve        # preview at http://localhost:4321
+npm install
+npm run build
+npm run serve
 ```
 
 ## Run checks
 
 ```bash
-npm test                    # full suite: config, checkers, URLs, secrets, build
-npm run prelaunch-check     # gate readiness; exits non-zero on critical failure
+npm test
+npm run prelaunch-check
 ```
 
 ## Repository layout
 
 ```
-config/       canonical config + field docs
+config/       canonical public config + field docs
 site/         static website source (dist/ is generated, git-ignored)
 assets/       favicon, APPROVED stamp, brand art, the Clerk
-scripts/      build, serve, checkers, solana utility, shared libs
-monitoring/   read-only monitor (CLI + JSON)
-launch/       checklist + manual runbook
-docs/         architecture, security, wallet policy, incident response,
-              transparency policy, EU/Belgian desk notes
-tests/        node --test suite, zero dependencies
+scripts/      build, serve, checkers, Solana utility, shared libs
+monitoring/   read-only monitor
+docs/         public architecture, security, policy and editorial notes
+tests/        node --test suite
 ```
 
 ## Documentation
