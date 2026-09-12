@@ -1,0 +1,24 @@
+{
+  "_comment": "SAMPLE moderators for tests/simulation only. Not the real wallets.",
+  "lock_days": 7,
+  "moderators": [
+    {
+      "name": "Zafir",
+      "telegram": "@zafironchain",
+      "wallet": "9tQxzr7NVS4FuxR2iHQ4McekjPdwF9j6Jy1ZrpHHVvRU",
+      "allocation_tokens": 25000000,
+      "allocation_percent": 2.5,
+      "lock_provider": "streamflow",
+      "status": "READY_TO_LOCK"
+    },
+    {
+      "name": "Emmanuel Crypt",
+      "telegram": "",
+      "wallet": "BymiG3AzPu4jA7Aw4yrQD7qY6KXDUyEFtwN8z8WNQHsj",
+      "allocation_tokens": 25000000,
+      "allocation_percent": 2.5,
+      "lock_provider": "streamflow",
+      "status": "READY_TO_LOCK"
+    }
+  ]
+}

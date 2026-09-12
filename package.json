@@ -13,6 +13,13 @@
     "prelaunch-check": "node scripts/prelaunch-check.js",
     "postlaunch-check": "node scripts/postlaunch-check.js",
     "apply-launch": "node scripts/apply-launch.js",
+    "members:validate": "node scripts/validate-member-wallets.js",
+    "launch:obligations": "node scripts/calculate-launch-obligations.js",
+    "launch:quote": "node scripts/calculate-pumpfun-launch-buy.js",
+    "members:distribute": "node scripts/distribute-member-rewards.js",
+    "mods:locks": "node scripts/prepare-moderator-locks.js",
+    "launch:reconcile": "node scripts/reconcile-launch.js",
+    "launch:simulate": "node scripts/simulate-launch.js",
     "monitor": "node monitoring/monitor.js",
     "solana": "node scripts/solana-util.js",
     "test": "node --test --test-concurrency=1 \"tests/**/*.test.js\""

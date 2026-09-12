@@ -1,0 +1,4 @@
+# DBD member submissions (INPUT). Populate from the @zafironchain snapshot AFTER
+# the deadline 2026-09-15T12:00:00Z (14:00 CEST). One row per submission.
+# Do NOT invent records. Columns: telegram_username,wallet,submitted_at (ISO 8601 UTC).
+telegram_username,wallet,submitted_at
