@@ -15,13 +15,25 @@ test('production config stays pre-launch with no real mint', () => {
   assert.equal(cfg.official_mint, MINT_NOT_ISSUED);
 });
 
-test('real moderators.json is blocked until verified wallets are added', () => {
-  const doc = JSON.parse(readFileSync(resolve(ROOT, 'launch/moderators.json'), 'utf8'));
-  const res = validateModerators(doc);
-  assert.equal(res.ok, false); // wallets intentionally empty pre-launch
+test('moderators with empty wallets are blocked (no launch without verified wallets)', () => {
+  const empty = { moderators: [
+    { name: 'Zafir', wallet: '', allocation_tokens: 25_000_000 },
+    { name: 'Emmanuel Crypt', wallet: '', allocation_tokens: 25_000_000 },
+  ] };
+  const res = validateModerators(empty);
+  assert.equal(res.ok, false);
   assert.ok(res.blockers.some((b) => b.toLowerCase().includes('missing wallet')));
-  // amounts are still exactly 25M each
   for (const m of res.prepared) assert.equal(m.allocation_tokens, 25_000_000);
+});
+
+test('moderators with two valid wallets and exact 25M each pass', () => {
+  const ok = { moderators: [
+    { name: 'Zafir', wallet: 'MSwU6wSHP7weqDoqj1ZNUUQy17pjKVX4dfG9nysyHsL', allocation_tokens: 25_000_000 },
+    { name: 'Emmanuel Crypt', wallet: '5agVQzeiwTqDNuvB4AS5kccNwHNQBFvjzzf5GQzet5n6', allocation_tokens: 25_000_000 },
+  ] };
+  const res = validateModerators(ok);
+  assert.equal(res.ok, true);
+  assert.equal(res.blockers.length, 0);
 });
 
 test('moderator amounts can never be anything other than 25M', () => {

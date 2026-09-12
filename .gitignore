@@ -37,6 +37,10 @@ monitoring/output/
 *.report.json
 *.report.txt
 
+# === Moderator wallet mapping (personal data: wallet + telegram) kept LOCAL ===
+# Only the on-chain lock addresses go into the public transparency record.
+launch/moderators.json
+
 # === Local-only launch internals (kept OFF the public repo) ===
 # Superseded by scripts/calculate-pumpfun-launch-buy.js; the verification doc
 # below records the creator wallet balance, so it stays local.
